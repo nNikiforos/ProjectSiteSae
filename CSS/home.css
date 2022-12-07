@@ -1,0 +1,149 @@
+
+/* MAIN IMAGE FOR HOME HTML */
+.mainimg {
+  background: url(/img/img.jpg) no-repeat center/cover;
+  width: 100%;
+  height: 450px;
+}
+/* SWIPER TOP ACTIVITIES */
+.swipertitle {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 0.02em;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.swipercontainer {
+  padding: 40px 15%;
+  background-color: #f5f5f5;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background: rgb(177, 217, 255);
+  border-radius: 3% 3% 3% 3%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  border-radius: 3% 3% 0 0;
+}
+.swiper-slide .location {
+  font-size: 20px;
+  min-height: 4vh;
+  text-align: center;
+}
+.swiper-slide .info {
+  font-size: 15px;
+  min-height: 5vh;
+  text-align: center;
+}
+/* HISTORY SPECTATE BOX */
+.historytitle {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 0.02em;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.historyspec {
+  padding: 40px 15%;
+}
+.historyspec .historyimg {
+  width: 100%;
+  height: 78vh;
+}
+
+.borderinfo {
+  border: 1px solid black;
+}
+.historyspec #title1 {
+  font-size: 20px;
+  padding-left: 2px;
+}
+.historyspec #infohistory {
+  padding-left: 2px;
+}
+.historyspec #readmorehistory {
+  text-decoration: none;
+}
+/* GALLERY */
+.gallerycontainer {
+  padding: 40px 15%;
+  background-color: #f5f5f5;
+}
+.gallerycontainer .gallerytitle {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 0.02em;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+/* SWIPER CSS AT LINE65 */
+.swiper-slide .galimg {
+  height: 280px;
+  border-radius: 3% 3% 3% 3%;
+}
+/* UPCOMING EVENTS */
+.Eventscontainer {
+  padding: 40px 15%;
+}
+.eventtitle {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 0.02em;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.eventphoto {
+  width: 100%;
+  height: 40vh;
+}
+/* 3BOXES */
+.boxes3 {
+  display: flex;
+  height: 40vh;
+}
+.boxtitle {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin: 0 45%;
+}
+.box1 {
+  width: 40%;
+  text-decoration: none;
+  background: url(/img/img.jpg) no-repeat center center/cover;
+  bottom: 1px;
+}
+.box2 {
+  width: 30%;
+  text-decoration: none;
+  background: url(/img/img.jpg) no-repeat center center/cover;
+}
+.box3 {
+  width: 30%;
+  text-decoration: none;
+  background: url(/img/img.jpg) no-repeat center center/cover;
+}
+.boxtext {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ height: 95%;
+}

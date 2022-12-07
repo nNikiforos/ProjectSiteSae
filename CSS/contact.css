@@ -1,0 +1,41 @@
+
+.contact{
+    display: block;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: rgb(227, 241, 241);
+    
+}
+.conact-container {
+    width: 100%;
+    
+} 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-left{
+   flex: auto;
+   width: 50%;
+   background-color: antiquewhite; 
+}
+.infolist{
+    padding: 25px 70px;
+}
+.infolist h2{
+    height: 2em;
+}
+.infolist p{
+    font-size: 18px;
+    height: 1.7em;
+}
+.col-right{
+    flex:auto;
+    width: 50%;
+    background-color: azure;
+    padding-left: 25px 25px;
+}
+.col-right .row{
+    display:flex;
+   padding: 1rem 50px;
+}

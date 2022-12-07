@@ -1,0 +1,64 @@
+/* MAIN IMAGE FOR HISTORY HTML */
+.mainimg {
+  background: url(/img/img.jpg) no-repeat center center/cover;
+  width: 100%;
+  
+}
+/* HISTORY SECTION */
+.container {
+  background-color: rgba(177, 174, 170, 0.63);
+  display: flex;
+  padding: 30px 5px;
+  padding-bottom: 60px;
+}
+.col{ 
+    margin: 0 15px;
+    
+}
+/* LEFT COL */
+.left{
+  width:45%;
+  
+}
+.leftimg1 {
+  background: url(/img/img.jpg) no-repeat center center/cover;
+  width:30vw;
+  height: 50%;
+}
+.leftimg2 {
+  background: url(/img/img.jpg) no-repeat center center/cover;
+  width:30vw;
+  height: 50%;
+  margin-top: 25px;
+
+}
+/* MID COL */
+.mid {
+    width:40vw;
+}
+.mid h3{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em;
+    font-size: 25px;
+}
+.mid p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+/* RIGHT COL */
+.right {
+  width:45%;
+  
+}
+.rightimg1 {
+  background: url(/img/img.jpg) no-repeat center center/cover;
+  width:30vw;
+  height: 50%;
+  
+}
+.rightimg2 {
+  background: url(/img/img.jpg) no-repeat center center/cover;
+  width:30vw;
+  height: 50%;
+  margin-top: 25px;
+}

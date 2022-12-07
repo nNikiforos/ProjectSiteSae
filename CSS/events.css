@@ -1,0 +1,96 @@
+/* MAIN IMAGE FOR EVENTS HTML */
+.mainimg {
+  background: url(/img/img.jpg) no-repeat center center/cover;
+  display: flex;
+  width: 100%;
+  height: 450px;
+}
+/*  START OF INFO CONTENT  */
+.maininfocontainer {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+.maininfo h3 {
+  line-height: 2em;
+}
+.maininfo p {
+  line-height: 1.5em;
+}
+/* EVENT LIST  */
+.eventlistcontainer {
+  background-color: rgb(121, 138, 170);
+  padding: 1rem;
+  align-content: space-between;
+}
+.list {
+  background-color: aquamarine;
+  height: 55vh;
+  display: flex;
+  border: 1px solid black;
+}
+/* LIST EVENT NUMBER 1 */
+.event1 {
+    background-color: yellow;
+}
+.eventimg1 {
+  background: url(/img/img.jpg) no-repeat center center/cover;
+  width: 35%;
+  margin: 20px 20px;
+}
+.eventinfo1 {
+  padding: 60px 19px;
+}
+.eventgallery1 {
+  background: url(/img/img.jpg) no-repeat center center/cover;
+  width: 40%;
+}
+/* LIST EVENT NUMBER 2 */
+.event2 {
+    background-color: aquamarine;
+}
+.eventimg2 {
+  background: url(/img/img.jpg) no-repeat center center/cover;
+  width: 35%;
+  margin: 20px 20px;
+}
+.eventinfo1 {
+  padding: 60px 19px;
+}
+.eventgallery2 {
+  background: url(/img/img.jpg) no-repeat center center/cover;
+  width: 40%;
+}
+/* LIST EVENT NUMBER 3 */
+.event3 {
+    background-color: yellowgreen;
+}
+.eventimg3 {
+  background: url(/img/img.jpg) no-repeat center center/cover;
+  width: 35%;
+  margin: 20px 20px;
+}
+.eventinfo3 {
+  padding: 60px 19px;
+}
+.eventgallery3 {
+  background: url(/img/img.jpg) no-repeat center center/cover;
+  width: 40%;
+}
+/* LIST EVENT NUMBER 4 */
+.event4 {
+    background-color: bisque;
+}
+.eventimg4 {
+  background: url(/img/img.jpg) no-repeat center center/cover;
+  width: 35%;
+  margin: 20px 20px;
+}
+.eventinfo4 {
+  padding: 60px 19px;
+}
+.eventgallery4 {
+  background: url(/img/img.jpg) no-repeat center center/cover;
+  width: 40%;
+}
