@@ -17,7 +17,7 @@
 }
 .swipercontainer {
   padding: 40px 15%;
-  background-color: #f5f5f5;
+  background-color: #fafafa;
 }
 .swiper {
   width: 100%;
@@ -78,7 +78,7 @@
 /* GALLERY */
 .gallerycontainer {
   padding: 40px 15%;
-  background-color: #f5f5f5;
+  background-color: #fafafa;
 }
 .gallerycontainer .gallerytitle {
   font-family: Montserrat;
