@@ -1,4 +1,3 @@
-
 /* MAIN IMAGE FOR HOME HTML */
 .mainimg {
   background: url(/img/img.jpg) no-repeat center/cover;
@@ -117,13 +116,16 @@
   height: 40vh;
 }
 .boxtitle {
+  height: 8vh;
+}
+.boxtitle h1 {
   font-family: Montserrat;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   font-size: 25px;
   font-weight: 600;
-  margin-bottom: 5px;
-  margin: 0 45%;
+  margin: 0 46%;
+  border-bottom: 1px solid black;
 }
 .box1 {
   width: 40%;
@@ -142,8 +144,9 @@
   background: url(/img/img.jpg) no-repeat center center/cover;
 }
 .boxtext {
- display: flex;
- flex-direction: column;
- justify-content: flex-end;
- height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 95%;
+  margin: 0 25px;
 }

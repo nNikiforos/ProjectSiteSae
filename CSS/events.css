@@ -10,76 +10,109 @@
   background-color: white;
   display: flex;
   justify-content: center;
-  padding-top: 25px;
+  padding: 30px 0px;
 }
 .maininfo h3 {
-  line-height: 2em;
-  font-size: 19px;
+  font-size: 21px;
 }
 .maininfo p {
-  line-height: 1.5em;
-  font-size: 17px;
+  padding-top: 10px;
+  font-size: 20px;
 }
 /* EVENT LIST  */
 .eventlistcontainer {
   padding: 1rem 0;
-  align-content: space-between;
 }
 .list {
   height: 70vh;
   display: flex;
+  padding: 0 25px;
 }
 /* LIST EVENT NUMBER 1 */
 .event1 {
-  background-color: aliceblue;
+  background-color:#fafafa;
 }
 .eventinfo1 {
-  padding: 60px 19px;
+  width: 60%;
+  font-size: 20px;
 }
-.eventinfo1 h3{
-  line-height: 3em;;
+.eventinfo1 h3 {
+  line-height: 3em;
+  text-align: center;
+}
+.eventinfo1 p {
+  padding-top: 25px;
 }
 .eventgallery1 {
   background: url(/img/img.jpg) no-repeat center center/cover;
-  width: 50%;
-  margin: 50px 20px;
+  width: 40%;
+  margin: 25px 0px;
+  display: flex;
 }
 /* LIST EVENT NUMBER 2 */
 
-.eventinfo1 {
-  padding: 60px 19px;
+.event2 {
+  background-color: white
+}
+.eventinfo2 {
+  width: 60%;
+  font-size: 20px;
+  padding-left: 20px;
+}
+.eventinfo2 h3 {
+  text-align: center;
+  line-height: 3em;
+}
+.eventinfo2 p {
+  padding-top: 25px;
 }
 .eventgallery2 {
   background: url(/img/img.jpg) no-repeat center center/cover;
-  width: 55vw;
+  width: 40%;
+  margin: 25px 0px;
+  display: flex;
 }
 /* LIST EVENT NUMBER 3 */
 .event3 {
-  background-color: aliceblue;
-}
-.eventimg3 {
-  background: url(/img/img.jpg) no-repeat center center/cover;
-  width: 35vw;
-  margin: 80px 20px;
+  background-color:#fafafa;
 }
 .eventinfo3 {
-  padding: 60px 19px;
+  width: 60%;
+  font-size: 20px;
+}
+.eventinfo3 h3 {
+  line-height: 3em;
+  text-align: center;
+}
+.eventinfo3 p {
+  padding-top: 25px;
 }
 .eventgallery3 {
   background: url(/img/img.jpg) no-repeat center center/cover;
   width: 40%;
+  margin: 25px 0px;
+  display: flex;
 }
 /* LIST EVENT NUMBER 4 */
 
-.eventimg4 {
-  background: url(/img/img.jpg) no-repeat center center/cover;
-  width: 35vw;
-  margin: 80px 20px;
+.event4 {
+  background-color: white;
 }
 .eventinfo4 {
-  padding: 60px 19px;
+  width: 60%;
+  font-size: 20px;
+  padding-left: 20px;
+}
+.eventinfo4 h3 {
+  line-height: 3em;
+  text-align: center;
+}
+.eventinfo4 p {
+  padding-top: 25px;
 }
 .eventgallery4 {
   background: url(/img/img.jpg) no-repeat center center/cover;
   width: 40%;
+  margin: 25px 0px;
+  display: flex;
 }
