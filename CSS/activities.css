@@ -1,0 +1,56 @@
+.activitiesmainimg {
+  background: url(/img/img.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 450px;
+}
+.mytabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 18px 0;
+  width: 100%;
+  background-color: rgba(50, 70, 223, 0.827);
+}
+
+.mytabs input[type="radio"] {
+  display: none;
+}
+.mytabs label {
+  cursor: pointer;
+  padding: 25px 80px;
+  font-weight: bold;
+  background-color: #e3e4e9;
+  border-radius: 20px;
+  margin: 0 8px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 5px;
+}
+.mytabs .tab {
+  width: 100%;
+  padding: 40px;
+  background-color: #fafafa;
+  order: 1;
+  display: none;
+}
+.mytabs .tab h2 {
+  font-size: 3em;
+}
+.mytabs input[type="radio"]:checked + label + .tab {
+  display: block;
+  border-radius: 2px;
+}
+.mytabs input[type="radio"]:checked + label {
+  background: white;
+  margin-bottom: 0;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  transform: translateY(0px);
+}
+.mytabs label:hover {
+  background-color: antiquewhite;
+  transform: translateY(0px);
+}
+.mytabs::placeholder + label + .tab {
+  background-color: antiquewhite;
+  transform: translateY(-3px);
+}
