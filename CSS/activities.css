@@ -3,54 +3,68 @@
   width: 100%;
   height: 450px;
 }
+/* TABS  */
 .mytabs {
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
-  padding: 18px 0;
+  margin: 0 auto;
+  padding: 18px 20px;
   width: 100%;
-  background-color: rgba(50, 70, 223, 0.827);
+  background-color: rgb(85, 173, 250);
 }
 
 .mytabs input[type="radio"] {
   display: none;
 }
+/* BUTTON TABS */
 .mytabs label {
   cursor: pointer;
-  padding: 25px 80px;
-  font-weight: bold;
-  background-color: #e3e4e9;
-  border-radius: 20px;
-  margin: 0 8px;
+  padding: 15px 50px;
+  font-weight: 600;
+  background-color: #e5dada;
+  border-radius: 10px;
   color: rgb(0, 0, 0);
   margin-bottom: 5px;
+  margin-right: 12px;
+  box-shadow: 0 0 5px #4e4c4c;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
 }
-.mytabs .tab {
-  width: 100%;
-  padding: 40px;
-  background-color: #fafafa;
-  order: 1;
-  display: none;
-}
-.mytabs .tab h2 {
-  font-size: 3em;
-}
-.mytabs input[type="radio"]:checked + label + .tab {
-  display: block;
-  border-radius: 2px;
+.mytabs label:hover,
+.mytabs label:focus,
+.mytabs label:active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
 }
 .mytabs input[type="radio"]:checked + label {
   background: white;
   margin-bottom: 0;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  transform: translateY(0px);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: 0 0 0;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
-.mytabs label:hover {
-  background-color: antiquewhite;
-  transform: translateY(0px);
+
+/* MAIN TAB CONTENT */
+.mytabs .tab {
+  width: 100%;
+  padding: 90px 10px;
+  background-color: white;
+  order: 1;
+  display: none;
 }
-.mytabs::placeholder + label + .tab {
-  background-color: antiquewhite;
-  transform: translateY(-3px);
+.mytabs .tab h2 {
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 50px;
+}
+.mytabs input[type="radio"]:checked + label + .tab {
+  display: block;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  
 }
