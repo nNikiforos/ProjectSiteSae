@@ -16,22 +16,24 @@
 }
 .logo {
   margin: 0 10%;
+  display: flex;
 }
 .logo a {
   color: #fff;
   text-decoration: none;
   font-style: italic;
-  display: flex;
 }
 .navbar ul {
   display: flex;
   margin: 0 10%;
+  
 }
 .navbar ul li {
   list-style: none;
+  
 }
 .navbar ul li a {
-  padding: 19px;
+  padding: 19px ;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
