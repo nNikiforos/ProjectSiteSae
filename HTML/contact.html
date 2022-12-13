@@ -20,51 +20,58 @@
         <li><a class="current" href="/HTML/contact.html">Contact</a></li>
       </ul>
     </header>
-    <section class="contact">
+    <div class="contactform">
       <div class="contact-container">
-        <div class="row">
-          <div class="col-left">
-            <div class="infolist">
-              <h2>How can we assist you?</h2>
-              <p>Lorem, ipsum dolor.</p>
-              <p>Lorem ipsum dolor sit.</p>
-              <p>Lorem, ipsum dolor.</p>
-              <p>Lorem, ipsum dolor.</p>
-            </div>
+        <!-- LEFT SIDE -->
+        <div class="left">
+          <div class="leftinfo">
+            <h2>How can we assist you?</h2>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum dolor sit.</p>
           </div>
-          <div class="col-right">
-            <p>
-              Fill up this form to contact us if you have any further questions
-            </p>
-            <form>
-              <div class="row">
-                <div class="name">
-                  <label>Name</label>
-                  <input type="text" placeholder="Nikos" />
-                </div>
-                <div class="lname">
-                  <label>Last name</label>
-                  <input type="text" placeholder="Nikiforos" />
-                </div>
+        </div>
+        <!-- RIGHT SIDE -->
+        <div class="right">
+          <p>
+            Fill up this form to contact us if you have any further questions
+          </p>
+          <form>
+            <div class="item-group">
+              <div class="item item-input">
+                <label>FIRST NAME</label>
+                <input type="text" placeholder=" first name" />
               </div>
-              <div class="row">
-                <div class="email">email</div>
-                <div class="phone">phone</div>
+              <div class="item-input lname">
+                <label>LAST NAME</label>
+                <input type="text" placeholder=" last name" />
               </div>
-              <div class="row">
-                <div class="msg">bigbox</div>
+            </div>
+            <div class="item-group">
+              <div class="item-input">
+                <label>EMAIL ADDRESS</label>
+                <input type="text" placeholder=" email" />
               </div>
-              <div class="row content-info">
-                <p>
-                  I certify that the above information is accurate and true.
-                </p>
-                <button>SUBMIT</button>
+              <div class="item-input phone">
+                <label>PHONE</label>
+                <input type="text" placeholder=" phone" />
               </div>
-            </form>
+            </div>
+            <div class="item-group">
+              <div class="item-input itemmsg">
+                <label>MESSAGE</label>
+                <textarea rows="5" placeholder=" Your message"></textarea>
+              </div>
+            </div>
+          </form>
+          <div class="certify">
+            <p>I certify that the above information is accurate and true.</p>
+            <button class="submit">SUBMIT</button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <!-- FOOTER -->
     <footer>
       <div class="footercontainer">
