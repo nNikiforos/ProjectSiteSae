@@ -4,31 +4,49 @@ body {
   flex-direction: column;
   background-color: #fafafa;
 }
+
 .contact-container {
   display: flex;
-  padding: 100px 0;
+  justify-content: space-evenly;
+  padding: 5% 0;
 }
 /* LEFT SIDE  */
 .left {
-  width: 50%;
-  line-height: 2rem;
+  line-height: 3rem;
   justify-content: center;
   display: flex;
+  font-size: large;
+}
+.leftinfo h2 {
+  font-weight: lighter;
+}
+.leftinfo span {
+  font-weight: 600;
 }
 /* RIGHT SIDE */
-.right {
-  width: 50%;
-}
 .item-group {
   display: flex;
   margin: 20px 0px;
   width: 32vw;
 }
+.right p {
+  font-size: 16px;
+}
+.item-group {
+  padding-top: 10px;
+}
+.item-input :after {
+  content: "*";
+  color: red;
+  font-size: 20px;
+}
 .item-group .item-input {
   flex-basis: 100%;
-  background-color: #fafafa;
-  text-align: center;
+  background-color: white;
   border-bottom: 1px solid black;
+  font-size: 14px;
+  color: rgb(53, 53, 53);
+  padding-left: 5px;
 }
 .item-group .lname {
   margin-left: 20px;
@@ -46,11 +64,13 @@ input {
   outline: none;
   width: 100%;
   border-style: none;
-  background-color: #fafafa;
+  background-color: white;
+  margin-top: 5px;
 }
 /* MESSAGE  */
 .item-group .itemmsg {
   border-style: none;
+  background-color: #fafafa;
 }
 textarea {
   width: 100%;
@@ -59,6 +79,7 @@ textarea {
   padding: 10px;
   border-radius: 10px;
   resize: vertical;
+  margin-top: 9px;
 }
 .item-input:hover {
   box-shadow: 0 0 2px black;
@@ -72,11 +93,12 @@ textarea {
   padding: 3px 15px;
   border-radius: 10px;
   border-style: none;
+  box-shadow: 0 0 4px black;
   background-color: rgb(11, 182, 245);
   cursor: pointer;
 }
 .submit:hover {
   background-color: rgba(11, 183, 245, 0.858);
-  -webkit-transform: scale(1.03);
-  transform: scale(1.03);
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
 }
