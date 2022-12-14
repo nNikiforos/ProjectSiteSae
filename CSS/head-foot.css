@@ -7,7 +7,7 @@
 
 /* -----------Navigation Bar--------- */
 .navbar {
-  background-color: rgb(18, 44, 94);
+  background-color: #2b6777;
   width: 100%;
   padding: 11px 0;
   display: flex;
@@ -42,14 +42,14 @@
 /* -------HOVER--------- */
 .navbar ul li a:hover,
 .navbar ul li a.current {
-  background-color: rgb(22, 52, 109);
+  background-color: #397f92;;
 }
 /* FOOTER */
 footer{
   margin-top: auto;
 }
 .footercontainer {
-  background-color: rgb(36, 85, 177);
+  background-color: #287e96;
   width: 100%;
   padding: 20px 5%;
   display: flex;

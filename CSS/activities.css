@@ -10,7 +10,7 @@
   margin: 0 auto;
   padding: 18px 20px;
   width: 100%;
-  background-color: rgb(85, 173, 250);
+  background-color: #c8d8e4;
 }
 
 .mytabs input[type="radio"] {
@@ -78,7 +78,7 @@
 .box {
   border-radius: 5px 5px 5px 5px;
   display: block;
-  background-color: rgb(127, 243, 156);
+  ;
   box-shadow: 0 0 5px #4e4c4c;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;

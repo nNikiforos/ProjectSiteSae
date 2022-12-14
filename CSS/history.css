@@ -6,7 +6,7 @@
 }
 /* HISTORY SECTION */
 .container {
-  background-color: #fafafa;
+  background-color: #c8d8e4;
   display: flex;
   padding: 30px 5px;
 }
@@ -27,8 +27,7 @@
 }
 /* MID COL */
 .mid {
-  border: 1px solid black;
-  border-radius: 5px;
+  box-shadow: 0px 1px 1px #74a7ce;
 }
 .mid h3 {
   font-family: Arial, Helvetica, sans-serif;

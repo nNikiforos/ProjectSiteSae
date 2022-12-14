@@ -2,7 +2,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #fafafa;
+  background-color: #c8d8e4;
 }
 
 .contact-container {
@@ -64,13 +64,13 @@ input {
   outline: none;
   width: 100%;
   border-style: none;
-  background-color: white;
+  background-color: #ffffff;
   margin-top: 5px;
 }
 /* MESSAGE  */
 .item-group .itemmsg {
   border-style: none;
-  background-color: #fafafa;
+  background-color: #c8d8e4;
 }
 textarea {
   width: 100%;
@@ -94,11 +94,11 @@ textarea {
   border-radius: 10px;
   border-style: none;
   box-shadow: 0 0 4px black;
-  background-color: rgb(11, 182, 245);
+  background-color: #52b985;
   cursor: pointer;
 }
 .submit:hover {
-  background-color: rgba(11, 183, 245, 0.858);
+  background-color: #5ed89b;
   -webkit-transform: scale(0.95);
   transform: scale(0.95);
 }
