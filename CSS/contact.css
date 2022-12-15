@@ -94,11 +94,11 @@ textarea {
   border-radius: 10px;
   border-style: none;
   box-shadow: 0 0 4px black;
-  background-color: #52b985;
+  background-color: #598EC2;
   cursor: pointer;
 }
 .submit:hover {
-  background-color: #5ed89b;
+  background-color: #6ba7e2;
   -webkit-transform: scale(0.95);
   transform: scale(0.95);
 }
