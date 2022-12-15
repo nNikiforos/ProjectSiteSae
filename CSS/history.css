@@ -6,7 +6,7 @@
 }
 /* HISTORY SECTION */
 .container {
-  background-color: #c8d8e4;
+  background-color: #fafafa;
   display: flex;
   padding: 30px 5px;
 }
@@ -19,16 +19,15 @@
 .leftimg1 {
   background: url(/img/img.jpg) no-repeat center center/cover;
   height: 300px;
+  width: 30vw;
 }
 .leftimg2 {
   background: url(/img/img.jpg) no-repeat center center/cover;
   height: 300px;
+  width: 30vw;
   margin-top: 25px;
 }
 /* MID COL */
-.mid {
-  box-shadow: 0px 1px 1px #74a7ce;
-}
 .mid h3 {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 2em;

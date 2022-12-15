@@ -2,7 +2,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #c8d8e4;
+  background-color: #fafafa;
 }
 
 .contact-container {
@@ -70,7 +70,7 @@ input {
 /* MESSAGE  */
 .item-group .itemmsg {
   border-style: none;
-  background-color: #c8d8e4;
+  background-color: #fafafa;;
 }
 textarea {
   width: 100%;
@@ -90,15 +90,17 @@ textarea {
 /* button submit  */
 .submit {
   margin: 0 10px;
-  padding: 3px 15px;
+  padding: 4px 15px;
   border-radius: 10px;
+  font-weight: 600;
   border-style: none;
-  box-shadow: 0 0 4px black;
-  background-color: #598EC2;
+  box-shadow: 0 0 2px black;
+  background-color: #2b3985;
   cursor: pointer;
+  color: white;
 }
 .submit:hover {
-  background-color: #6ba7e2;
   -webkit-transform: scale(0.95);
   transform: scale(0.95);
+  
 }

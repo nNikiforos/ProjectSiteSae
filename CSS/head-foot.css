@@ -7,7 +7,7 @@
 
 /* -----------Navigation Bar--------- */
 .navbar {
-  background-color: #091f4d;
+  background-color: #05038b;
   width: 100%;
   padding: 11px 0;
   display: flex;
@@ -40,14 +40,14 @@
 /* -------HOVER--------- */
 .navbar ul li a:hover,
 .navbar ul li a.current {
-  background-color: #112c66;
+  background-color: #0b08b3;
 }
 /* FOOTER */
 footer {
   margin-top: auto;
 }
 .footercontainer {
-  background-color: #11378a;
+  background-color: #050374;
   width: 100%;
   padding: 20px 5%;
   display: flex;
@@ -62,21 +62,21 @@ footer {
   flex-direction: column;
 }
 .mid-side a {
-  color: rgb(228, 153, 13);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   height: 100%;
+  font-weight: 600;
 }
 .left-side h3 {
-  font-weight: 300;
-  margin-bottom: 30px;
+  font-weight:normal;
+  margin-bottom: 15px;
   letter-spacing: 1px;
-  font-size: 15px;
-  color: rgb(228, 153, 13);
+  color: white;
 }
 .left-side a {
   display: block;
   text-decoration: none;
-  color: #ffffffbe;
+  color: rgb(194, 193, 193);
   margin-bottom: 10px;
   font-size: 13px;
 }
@@ -84,6 +84,6 @@ footer {
   color: #f4f4f4;
 }
 .right-side p {
-  color: #f4f4f4d5;
+  color: white;
   padding: 25px 0;
 }

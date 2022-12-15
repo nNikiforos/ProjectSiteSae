@@ -21,9 +21,9 @@
   cursor: pointer;
   padding: 15px 50px;
   font-weight: 600;
-  background-color: #e5dada;
+  background-color: #2b3985;
   border-radius: 10px;
-  color: rgb(0, 0, 0);
+  color:white;
   margin-bottom: 5px;
   margin-right: 12px;
   box-shadow: 0 0 5px #4e4c4c;
@@ -41,12 +41,14 @@
 }
 .mytabs input[type="radio"]:checked + label {
   background: white;
+  color: #2b3985;
   margin-bottom: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   box-shadow: 0 0 0;
   -webkit-transform: scale(1);
   transform: scale(1);
+  
 }
 
 /* MAIN TAB CONTENT */
@@ -67,6 +69,7 @@
   display: block;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  
 }
 /* BOXES CONTENT  */
 .boxcontainer {
