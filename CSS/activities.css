@@ -75,20 +75,18 @@
 .boxcontainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding: 0 25px;
 }
 .box {
   border-radius: 5px 5px 5px 5px;
   display: block;
-  ;
   box-shadow: 0 0 5px #4e4c4c;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
   cursor: pointer;
-  margin: 25px 10px;
+  margin: 10px auto;
 }
 .box:hover,
 .box:focus,

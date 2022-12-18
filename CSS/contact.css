@@ -15,7 +15,7 @@ body {
   line-height: 3rem;
   justify-content: center;
   display: flex;
-  font-size: large;
+  font-size:x-large;
 }
 .leftinfo h2 {
   font-weight: lighter;
@@ -30,7 +30,7 @@ body {
   width: 32vw;
 }
 .right p {
-  font-size: 16px;
+  font-size:x-large;
 }
 .item-group {
   padding-top: 10px;
@@ -44,7 +44,7 @@ body {
   flex-basis: 100%;
   background-color: white;
   border-bottom: 1px solid black;
-  font-size: 14px;
+  font-size:large;
   color: rgb(53, 53, 53);
   padding-left: 5px;
 }

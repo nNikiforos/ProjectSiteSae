@@ -22,7 +22,6 @@ body {
 }
 .swiper {
   width: 100%;
-  height: 100%;
 }
 
 .swiper-slide {
@@ -61,11 +60,10 @@ body {
 }
 .historyspec .historyimg {
   width: 100%;
-  height: 78vh;
+  height: 60vh;
 }
 
 .borderinfo {
-  border: 1px solid black;
   background-color: #ffffff;
 }
 .historyspec #title1 {
@@ -91,9 +89,9 @@ body {
   font-weight: 600;
   margin-bottom: 5px;
 }
-/* SWIPER CSS AT LINE65 */
+/* SWIPER CSS AT LINE20 */
 .swiper-slide .galimg {
-  height: 280px;
+  height: 35vh;
   border-radius: 3% 3% 3% 3%;
 }
 /* UPCOMING EVENTS */
@@ -111,7 +109,7 @@ body {
 }
 .eventphoto {
   width: 100%;
-  height: 40vh;
+  height: 50vh;
 }
 /* 3BOXES */
 .boxes3 {
