@@ -13,8 +13,8 @@
   align-items: center;
   padding: 5px 0;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-
 .navbar ul {
   display: flex;
 }

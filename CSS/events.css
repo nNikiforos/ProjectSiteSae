@@ -4,12 +4,15 @@
   width: 100%;
   height: 450px;
 }
+body {
+  background-color: #a0e9fd9c
+}
+
 /*  START OF INFO CONTENT  */
 .maininfocontainer {
-  background-color: white;
   display: flex;
   justify-content: center;
-  padding: 80px 0px;
+  padding: 50px 0px;
 }
 .maininfo h3 {
   font-size: 21px;
@@ -20,98 +23,68 @@
 }
 /* EVENT LIST  */
 .eventlistcontainer {
-  padding: 1rem 0;
+  margin: auto;
+  width: 80%;
+  display: grid;
+  gap: 50px;
 }
 .list {
-  height: 70vh;
   display: flex;
-  padding: 0 25px;
+  justify-content: space-evenly;
+  padding: 20px;
+  width: 100%;
+  gap: 20px;
 }
-/* LIST EVENT NUMBER 1 */
-.event1 {
-  background-color: #fafafa;
+.eventgallery {
+  position: relative;
 }
-.eventinfo1 {
-  width: 60%;
+.eventgallery img {
+  width: 50vw;
+  height: 60vh;
+  border-radius: 10px;
+  box-shadow: 0 2px 9px 3px rgb(34, 34, 34);
+}
+.event {
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.event h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.event > p {
   font-size: 20px;
 }
-.eventinfo1 h3 {
-  line-height: 3em;
-  text-align: center;
-}
-.eventinfo1 p {
-  padding-top: 25px;
-}
-.eventgallery1 {
-  background: url(/img/img.jpg) no-repeat center center/cover;
-  width: 40%;
-  margin: 25px 0px;
-  display: flex;
-}
-/* LIST EVENT NUMBER 2 */
 
-.event2 {
-  background-color: white;
+.btns {
+  position: absolute;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
 }
-.eventinfo2 {
-  width: 60%;
-  font-size: 20px;
-  padding-left: 20px;
+.btns button {
+  cursor: pointer;
+  font-size: 70px;
+  border-style: none;
+  background: none;
+  color: rgba(255, 255, 255, 0.836);
+  margin-top: auto;
 }
-.eventinfo2 h3 {
-  text-align: center;
-  line-height: 3em;
+.btns #playStop {
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: 700;
+  border-style: none;
+  background: none;
+  color: rgba(255, 255, 255, 0.836);
 }
-.eventinfo2 p {
-  padding-top: 25px;
+.btns #playStop:hover {
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.158);
 }
-.eventgallery2 {
-  background: url(/img/img.jpg) no-repeat center center/cover;
-  width: 40%;
-  margin: 25px 0px;
-  display: flex;
-}
-/* LIST EVENT NUMBER 3 */
-.event3 {
-  background-color: #fafafa;
-}
-.eventinfo3 {
-  width: 60%;
-  font-size: 20px;
-}
-.eventinfo3 h3 {
-  line-height: 3em;
-  text-align: center;
-}
-.eventinfo3 p {
-  padding-top: 25px;
-}
-.eventgallery3 {
-  background: url(/img/img.jpg) no-repeat center center/cover;
-  width: 40%;
-  margin: 25px 0px;
-  display: flex;
-}
-/* LIST EVENT NUMBER 4 */
-
 .event4 {
-  background-color: white;
-}
-.eventinfo4 {
-  width: 60%;
-  font-size: 20px;
-  padding-left: 20px;
-}
-.eventinfo4 h3 {
-  line-height: 3em;
-  text-align: center;
-}
-.eventinfo4 p {
-  padding-top: 25px;
-}
-.eventgallery4 {
-  background: url(/img/img.jpg) no-repeat center center/cover;
-  width: 40%;
-  margin: 25px 0px;
-  display: flex;
+  margin-bottom: 10px;
 }

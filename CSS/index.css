@@ -1,11 +1,11 @@
 /* MAIN IMAGE FOR HOME HTML */
 .mainimg {
-  background: url(/img/rethmain.jpg) no-repeat center center/cover;
+  background: url(/img/index/rethmain.jpg) no-repeat center center/cover;
   width: 100%;
   height: 70vh;
 }
 body {
-  background-color: #f3f3f3;
+  background-color: #a0e9fd9c
 }
 /* SWIPER TOP ACTIVITIES */
 .swipertitle {
@@ -109,12 +109,13 @@ body {
 }
 .eventphoto {
   width: 100%;
-  height: 50vh;
+  height: 45vh;
 }
 /* 3BOXES */
 .boxes3 {
   display: flex;
   height: 40vh;
+  cursor: pointer;
 }
 .boxtitle {
   height: 8vh;
@@ -130,29 +131,34 @@ body {
 .box1 {
   width: 40%;
   text-decoration: none;
-  background: url(/img/img.jpg) no-repeat center center/cover;
+  background: url(/img/index/actlogo.jpg) no-repeat center center/cover;
   bottom: 1px;
-  color: black;
-  border: 1px solid black;
 }
+.boxes3 :hover {
+  transform: scaleY(1.02);
+  transition-duration: 0.2s;
+}
+
 .box2 {
   width: 30%;
   text-decoration: none;
-  background: url(/img/img.jpg) no-repeat center center/cover;
-  color: black;
-  border: 1px solid black;
+  background: url(/img/index/natlogo.jpg) no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .box3 {
   width: 30%;
   text-decoration: none;
-  background: url(/img/img.jpg) no-repeat center center/cover;
-  color: black;
-  border: 1px solid black;
+  background: url(/img/index/museumlogo.jpg) no-repeat center center/cover;
 }
-.boxtext {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 95%;
-  margin: 0 25px;
+.box {
+  font-size: 35px;
+  color: whitesmoke;
+}
+.box p {
+  margin: 50px;
+}
+.box p:hover {
+  transform: none;
 }

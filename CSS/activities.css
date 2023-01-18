@@ -10,7 +10,7 @@
   margin: 0 auto;
   padding: 18px 20px;
   width: 100%;
-  background-color: #c8d8e4;
+  background-color: #a0e9fd9c
 }
 
 .mytabs input[type="radio"] {
@@ -23,7 +23,7 @@
   font-weight: 600;
   background-color: #2b3985;
   border-radius: 10px;
-  color:white;
+  color: white;
   margin-bottom: 5px;
   margin-right: 12px;
   box-shadow: 0 0 5px #4e4c4c;
@@ -48,7 +48,6 @@
   box-shadow: 0 0 0;
   -webkit-transform: scale(1);
   transform: scale(1);
-  
 }
 
 /* MAIN TAB CONTENT */
@@ -65,12 +64,17 @@
   padding-bottom: 9px;
   padding-top: 15px;
 }
-.mytabs input[type="radio"]:checked + label + .tab {
+.activeTab {
+  display: block !important;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* .mytabs input[type="radio"]:checked + label + .tab {
   display: block;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   
-}
+} */
 /* BOXES CONTENT  */
 .boxcontainer {
   display: flex;

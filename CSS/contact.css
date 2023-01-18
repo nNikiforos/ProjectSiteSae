@@ -2,7 +2,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #fafafa;
+  background-color: #a0e9fd9c;
 }
 
 .contact-container {
@@ -15,7 +15,7 @@ body {
   line-height: 3rem;
   justify-content: center;
   display: flex;
-  font-size:x-large;
+  font-size: x-large;
 }
 .leftinfo h2 {
   font-weight: lighter;
@@ -30,7 +30,7 @@ body {
   width: 32vw;
 }
 .right p {
-  font-size:x-large;
+  font-size: x-large;
 }
 .item-group {
   padding-top: 10px;
@@ -44,7 +44,7 @@ body {
   flex-basis: 100%;
   background-color: white;
   border-bottom: 1px solid black;
-  font-size:large;
+  font-size: large;
   color: rgb(53, 53, 53);
   padding-left: 5px;
 }
@@ -70,7 +70,7 @@ input {
 /* MESSAGE  */
 .item-group .itemmsg {
   border-style: none;
-  background-color: #fafafa;;
+  background-color: #a0e9fd00;
 }
 textarea {
   width: 100%;
@@ -102,5 +102,4 @@ textarea {
 .submit:hover {
   -webkit-transform: scale(0.95);
   transform: scale(0.95);
-  
 }

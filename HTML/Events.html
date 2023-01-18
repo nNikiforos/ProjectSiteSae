@@ -7,11 +7,17 @@
     <title>Events</title>
     <link rel="stylesheet" href="/CSS/head-foot.css" />
     <link rel="stylesheet" href="/CSS/events.css" />
+    <!-- JAVA SCRIPT  -->
+    <script src="/JS/event.js" defer></script>
   </head>
   <body>
     <!-- --------HEADER------- -->
     <header class="navbar">
-      <div class="logo"><a href="/HTML/index.html"><img src="../img/rethlogo1.png" alt="logo"></a></div>
+      <div class="logo">
+        <a href="/HTML/index.html"
+          ><img src="../img/rethlogo1.png" alt="logo"
+        /></a>
+      </div>
       <div class="mylist">
         <ul>
           <li><a href="/HTML/index.html">Home</a></li>
@@ -42,7 +48,7 @@
     <div class="eventlistcontainer">
       <!-- LIST EVENT NUMBER 1 -->
       <div class="list event1">
-        <div class="eventinfo1">
+        <div class="event eventinfo1">
           <h3>Lorem ipsum dolor sit amet.</h3>
           <p>
             Lorem ilorem Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -51,15 +57,39 @@
             repellat, corrupti sunt, officiis tempora fuga esse maxime
             praesentium atque? Ut dolores distinctio facilis rem voluptatibus
             voluptas nostrum tempore, voluptates enim libero, explicabo modi
+            commodi?elit. Unde similique libero laborum cumque ratione quidem
+            tempore error perspiciatis labore? Illo quibusdam natus totam quis
+            nostrum repellat, corrupti sunt, officiis tempora fuga esse maxime
+            praesentium atque? Ut dolores distinctio facilis rem voluptatibus
+            voluptas nostrum tempore, voluptates enim libero, explicabo modi
             commodi?
           </p>
         </div>
-        <div class="eventgallery1"></div>
+        <div class="eventgallery eventgallery1">
+          <div class="btns">
+            <button id="prev" onclick="prev()">&#8249;</button>
+            <button id="playStop" onclick="playStopGallery()">
+              &#10095;&#10005;
+            </button>
+            <button id="next" onclick="next()">&#8250;</button>
+          </div>
+          <img src="../img/events/land.jpg" alt="img" />
+        </div>
       </div>
+      <hr>
       <!-- LIST EVENT NUMBER 2 -->
       <div class="list event2">
-        <div class="eventgallery2"></div>
-        <div class="eventinfo2">
+        <div class="eventgallery eventgallery2">
+          <div class="btns">
+            <button id="prev" onclick="prev()">&#8249;</button>
+            <button id="playStop" onclick="playStopGallery()">
+              &#10095;&#10005;
+            </button>
+            <button id="next" onclick="next()">&#8250;</button>
+          </div>
+          <img src="../img/events/tesla.jpg" alt="img" />
+        </div>
+        <div class="event eventinfo2">
           <h3>Lorem ipsum dolor sit amet.</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -72,9 +102,10 @@
           </p>
         </div>
       </div>
+      <hr>
       <!-- LIST EVENT NUMBER 3 -->
       <div class="list event3">
-        <div class="eventinfo3">
+        <div class="event eventinfo3">
           <h3>Lorem ipsum dolor sit amet.</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo amet
@@ -86,12 +117,31 @@
             velit error aut cum.
           </p>
         </div>
-        <div class="eventgallery3"></div>
+        <div class="eventgallery eventgallery3">
+          <div class="btns">
+            <button id="prev" onclick="prev()">&#8249;</button>
+            <button id="playStop" onclick="playStopGallery()">
+              &#10095;&#10005;
+            </button>
+            <button id="next" onclick="next()">&#8250;</button>
+          </div>
+          <img src="../img/events/sea.jpg" alt="img" />
+        </div>
       </div>
+      <hr>
       <!-- LIST4 -->
       <div class="list event4">
-        <div class="eventgallery4"></div>
-        <div class="eventinfo4">
+        <div class="eventgallery eventgallery4">
+          <div class="btns">
+            <button id="prev" onclick="prev()">&#8249;</button>
+            <button id="playStop" onclick="playStopGallery()">
+              &#10095;&#10005;
+            </button>
+            <button id="next" onclick="next()">&#8250;</button>
+          </div>
+          <img src="../img/events/mountain.jpg" alt="img" />
+        </div>
+        <div class="event eventinfo4">
           <h3>Lorem ipsum dolor sit amet.</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,

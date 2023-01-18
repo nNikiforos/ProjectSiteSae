@@ -11,12 +11,18 @@
   <body>
     <!-- --------HEADER------- -->
     <header class="navbar">
-      <div class="logo"><a href="/HTML/index.html"><img src="../img/rethlogo1.png" alt="logo"></a></div>
+      <div class="logo">
+        <a href="/HTML/index.html"
+          ><img src="../img/rethlogo1.png" alt="logo"
+        /></a>
+      </div>
       <div class="mylist">
         <ul>
           <li><a href="/HTML/index.html">Home</a></li>
           <li><a href="/HTML/history.html">History</a></li>
-          <li><a class="current" href="/HTML/Activities.html">Activities</a></li>
+          <li>
+            <a class="current" href="/HTML/Activities.html">Activities</a>
+          </li>
           <li><a href="/HTML/Events.html">Events</a></li>
           <li><a href="/HTML/contact.html">Contact</a></li>
         </ul>
@@ -28,8 +34,8 @@
     <div class="mytabs">
       <!-- TAB FOR ADVENTURES -->
       <input type="radio" id="tab1" name="mytabs" checked="checked" />
-      <label for="tab1">ADVENTURES</label>
-      <div class="tab">
+      <label for="tab1" onclick="changeTab('tab-adventures')">ADVENTURES</label>
+      <div class="tab activeTab" id="tab-adventures">
         <h2>ADVENTURES</h2>
         <div class="boxcontainer">
           <div class="box boxadv1">
@@ -61,8 +67,8 @@
       <!-- TAB FOR NATURE -->
 
       <input type="radio" id="tab2" name="mytabs" />
-      <label for="tab2">NATURE</label>
-      <div class="tab">
+      <label for="tab2" onclick="changeTab('tab-nature')">NATURE</label>
+      <div class="tab" id="tab-nature">
         <h2>NATURE</h2>
         <div class="boxcontainer">
           <div class="box boxnat1">
@@ -87,8 +93,8 @@
 
       <!-- TAB FOR MUSEUMS -->
       <input type="radio" id="tab3" name="mytabs" />
-      <label for="tab3">MUSEUMS</label>
-      <div class="tab">
+      <label for="tab3" onclick="changeTab('tab-museums')">MUSEUMS</label>
+      <div class="tab" id="tab-museums">
         <h2>MUSEUMS</h2>
         <div class="boxcontainer">
           <div class="box boxmus1">
@@ -139,5 +145,6 @@
         </div>
       </div>
     </footer>
+    <script src="../JS/activities.js"></script>
   </body>
 </html>

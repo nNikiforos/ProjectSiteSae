@@ -10,11 +10,17 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/CSS/head-foot.css" />
     <link rel="stylesheet" href="/CSS/index.css" />
+    <!-- JAVASCRIPT -->
+    <script src="/JS/index.js" defer></script>
   </head>
   <body>
     <!-- --------HEADER------- -->
     <header class="navbar">
-      <div class="logo"><a href="/HTML/index.html"><img src="../img/rethlogo1.png" alt="logo"></a></div>
+      <div class="logo">
+        <a href="/HTML/index.html"
+          ><img src="../img/rethlogo1.png" alt="logo"
+        /></a>
+      </div>
       <div class="mylist">
         <ul>
           <li><a class="current" href="/HTML/index.html">Home</a></li>
@@ -145,31 +151,22 @@
     </div>
     <!-- UP COMING EVENTS -->
     <div class="Eventscontainer">
-      <div class="eventtitle">Upcoming event</div>
+      <div class="eventtitle">Upcoming events</div>
       <div class="eventimg">
-        <img class="eventphoto" src="/img/img.jpg" alt="img" />
+        <img class="eventphoto" name="myevents" />
       </div>
     </div>
     <!-- 3BOXES -->
     <div class="boxtitle"><h1>EXPLORE</h1></div>
     <div class="boxes3">
-      <a class="box1" href="/HTML/Activities.html">
-        <div class="boxtext">
-          <h5>ADVENTURES</h5>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-        </div>
+      <a class="box box1" href="/HTML/Activities.html">
+        <p>ADVENTURES</p>
       </a>
-      <a class="box2" href="/HTML/Activities.html">
-        <div class="boxtext">
-          <h5>NATURE</h5>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-        </div>
+      <a class="box box2" onclick="goTo('tab-nature')">
+        <p>NATURE</p>
       </a>
-      <a class="box3" href="/HTML/Activities.html">
-        <div class="boxtext">
-          <h5>MUSEUMS</h5>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-        </div>
+      <a class="box box3" href="/HTML/Activities.html">
+        <p>MUSEUMS</p>
       </a>
     </div>
     <!-- FOOTER -->
@@ -199,5 +196,6 @@
     <!-- SWIPER JAVASCRIPT TOP-ACTIVITIES AND GALLERY -->
     <script src="/js/swiper-bundle.min.js"></script>
     <script src="/JS/SCRIPTSWIPER.JS"></script>
+    <script src="../JS/index.js"></script>
   </body>
 </html>
