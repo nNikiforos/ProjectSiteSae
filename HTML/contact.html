@@ -7,11 +7,17 @@
     <title>Contact</title>
     <link rel="stylesheet" href="/CSS/head-foot.css" />
     <link rel="stylesheet" href="/CSS/contact.css" />
+    <!-- JAVA SCRIPT  -->
+    <script src="../JS/contact.js" defer></script>
   </head>
   <body>
     <!-- --------HEADER------- -->
     <header class="navbar">
-      <div class="logo"><a href="/HTML/index.html"><img src="../img/rethlogo1.png" alt="logo"></a></div>
+      <div class="logo">
+        <a href="/HTML/index.html"
+          ><img src="../img/rethlogo1.png" alt="logo"
+        /></a>
+      </div>
       <div class="mylist">
         <ul>
           <li><a href="/HTML/index.html">Home</a></li>
@@ -22,7 +28,7 @@
         </ul>
       </div>
     </header>
-    <div class="contactform">
+    <div class="contactform" id="contactform">
       <div class="contact-container">
         <!-- LEFT SIDE -->
         <div class="left">
@@ -39,39 +45,43 @@
           <p>
             Fill up this form to contact us if you have any further questions
           </p>
-          <form>
+          <form id="form">
             <div class="item-group">
               <div class="item-input">
                 <label>FIRST NAME </label>
-                <input type="text" placeholder=""required/>
+                <input type="text" id="firstname" name="firstname" required />
               </div>
               <div class="item-input lname">
-                <label>LAST NAME  </label>
-                <input type="text" placeholder=""required/>
+                <label>LAST NAME </label>
+                <input type="text" id="lastname" name="lastname" required />
               </div>
             </div>
             <div class="item-group">
               <div class="item-input">
-                <label>EMAIL ADDRESS  </label>
-                <input type="text" placeholder=""required/>
+                <label>EMAIL </label>
+                <input type="text" id="email" name="email" />
               </div>
               <div class="item-input phone">
-                <label>PHONE  </label>
-                <input type="text" placeholder=""required/>
+                <label>PHONE </label>
+                <input type="text" id="phone" name="phone" required />
               </div>
             </div>
             <div class="item-group">
               <div class="item-input itemmsg">
-                <label>MESSAGE  </label>
-                <textarea rows="5" placeholder=" Your message" required></textarea>
+                <label>MESSAGE </label>
+                <textarea
+                  id="text"
+                  rows="5"
+                  placeholder=" Your message"
+                  required
+                ></textarea>
               </div>
             </div>
             <div class="certify">
               <p>I certify that the above information is accurate and true.</p>
-              <button class="submit" type="submit">SUBMIT</button>
+              <button class="submit" id="submit" type="submit">SUBMIT</button>
             </div>
           </form>
-          
         </div>
       </div>
     </div>

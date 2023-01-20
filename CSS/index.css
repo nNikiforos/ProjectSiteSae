@@ -5,7 +5,7 @@
   height: 70vh;
 }
 body {
-  background-color: #a0e9fd9c
+  background-color: #a0e9fd9c;
 }
 /* SWIPER TOP ACTIVITIES */
 .swipertitle {
@@ -132,11 +132,13 @@ body {
   width: 40%;
   text-decoration: none;
   background: url(/img/index/actlogo.jpg) no-repeat center center/cover;
+  
   bottom: 1px;
 }
 .boxes3 :hover {
-  transform: scaleY(1.02);
-  transition-duration: 0.2s;
+  /* transform: scaleY(1.02);
+  transition-duration: 0.2s; */
+ 
 }
 
 .box2 {
