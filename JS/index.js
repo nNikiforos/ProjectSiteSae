@@ -6,7 +6,7 @@ let eventimgs = [
   "/img/events/mountain.jpg",
   "/img/events/tesla.jpg",
 ];
-let time = 8000;
+let time = 2000;
 
 function changeImg() {
   document.myevents.src = eventimgs[i];
