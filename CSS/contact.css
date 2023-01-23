@@ -4,11 +4,10 @@ body {
   flex-direction: column;
   background-color: #a0e9fd9c;
 }
-.contactform{
+.contactform {
   display: grid;
   align-content: center;
   height: 100vh;
- 
 }
 .contact-container {
   display: flex;
@@ -53,19 +52,11 @@ body {
   border-radius: 5px;
   padding-left: 5px;
 }
-#lname,
-#fname,
-#email,
-#phone {
-  border-radius: 5px;
-  padding-left: 5px;
-}
-.item-group .lname {
+
+.item-group .lname , .phone {
   margin-left: 20px;
 }
-.item-group .phone {
-  margin-left: 20px;
-}
+
 .item {
   width: 100%;
 }
@@ -79,6 +70,8 @@ input {
   border-style: none;
   background-color: #ffffff;
   margin-top: 5px;
+  border-radius: 5px;
+  font-size: large;
 }
 /* MESSAGE  */
 .item-group .itemmsg {
@@ -93,6 +86,7 @@ textarea {
   border-radius: 10px;
   resize: vertical;
   margin-top: 9px;
+  font-size: large;
 }
 .item-input:hover {
   box-shadow: 0 0 2px black;
@@ -117,4 +111,3 @@ textarea {
   transform: scale(0.95);
   background-color: #3546a3;
 }
-

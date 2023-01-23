@@ -1,3 +1,8 @@
+// BACKGROUND IMAGE
+const background = document.getElementById("mainimg");
+window.addEventListener("scroll", function () {
+  background.style.backgroundSize = 140 - +window.pageYOffset / 50 + "%";
+});
 //UP COMING EVENTS
 let i = 0;
 let eventimgs = [
@@ -19,6 +24,8 @@ function changeImg() {
 }
 
 addEventListener = setInterval(changeImg, time);
+
+// 3BOXES LINK
 
 // SWIPER
 var swiper = new Swiper(".mySwiper", {

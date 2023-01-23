@@ -50,5 +50,5 @@ form.addEventListener("submit", (event) => {
   } else {
     phone.classList.remove("error");
   }
-  alert("Thank you for reaching out to us.");
+ 
 });

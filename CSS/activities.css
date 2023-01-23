@@ -27,16 +27,13 @@
   margin-bottom: 5px;
   margin-right: 12px;
   box-shadow: 0 0 5px #4e4c4c;
-  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
 }
 .mytabs label:hover,
 .mytabs label:focus,
 .mytabs label:active {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.04);
   transform: scale(1.04);
 }
 .mytabs input[type="radio"]:checked + label {
@@ -46,7 +43,6 @@
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   box-shadow: 0 0 0;
-  -webkit-transform: scale(1);
   transform: scale(1);
 }
 
@@ -69,12 +65,7 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* .mytabs input[type="radio"]:checked + label + .tab {
-  display: block;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  
-} */
+
 /* BOXES CONTENT  */
 .boxcontainer {
   display: flex;
@@ -83,14 +74,12 @@
 }
 .box {
   border-radius: 5px 5px 5px 5px;
-  display: block;
   box-shadow: 0 0 5px #4e4c4c;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
   cursor: pointer;
-  margin: 10px auto;
+  margin: 10px 10px;
 }
 .box:hover,
 .box:focus {

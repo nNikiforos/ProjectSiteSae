@@ -1,8 +1,10 @@
 /* MAIN IMAGE FOR HOME HTML */
 .mainimg {
-  background: url(/img/index/rethmain.jpg) no-repeat center center/cover;
+  background: url(/img/index/rethmain.jpg) center;
   width: 100%;
   height: 70vh;
+  background-attachment: fixed;
+  background-size: 140%;
 }
 body {
   background-color: #a0e9fd9c;

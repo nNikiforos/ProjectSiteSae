@@ -57,21 +57,35 @@ body {
 .event > p {
   font-size: 20px;
 }
-
+.event4 {
+  margin-bottom: 10px;
+}
+/* BUTTONS  */
 .btns {
   position: absolute;
   display: inline-flex;
   width: 100%;
-  height: 100%;
-  justify-content: space-evenly;
+  height: 96%;
+  justify-content: space-between;
+  padding: 0 50px;
 }
 .btns button {
   cursor: pointer;
-  font-size: 70px;
+  font-size: 110px;
   border-style: none;
   background: none;
-  color: rgba(255, 255, 255, 0.836);
+  color: rgba(250, 249, 249, 0.61);
   margin-top: auto;
+}
+.btns #prev:hover,
+#next:hover {
+  color: rgb(250, 249, 249);
+  transition-duration: 0.3s;
+}
+.btns #prev:active,
+#next:active {
+  transform: scale(0.9);
+  transition-duration: 0.1s;
 }
 .btns #playStop1,
 #playStop2,
@@ -79,11 +93,43 @@ body {
 #playStop4 {
   cursor: pointer;
   font-size: 45px;
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.616);
 }
-.btns #playStop1:active,#playStop2:active,#playStop3:active,#playStop4:active {
-  transform: scale(0.90);
+.btns #playStop1:active,
+#playStop2:active,
+#playStop3:active,
+#playStop4:active {
+  transform: scale(0.9);
 }
-.event4 {
-  margin-bottom: 10px;
+.btns #playStop1:hover,
+#playStop2:hover,
+#playStop3:hover,
+#playStop4:hover {
+  color: rgb(250, 249, 249);
+}
+/* DOTS  */
+#indicator {
+  position: absolute;
+  display: flex;
+  height: 98%;
+  width: 100%;
+  justify-content: center;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 4px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #000000;
 }

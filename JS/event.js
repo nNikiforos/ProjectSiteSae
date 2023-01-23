@@ -7,7 +7,7 @@ var event1img = [
   "../img/events/tesla.jpg",
 ];
 var num = 0;
-
+var dots = document.getElementsByClassName("dot");
 function next1() {
   num++;
   if (num >= event1img.length) {
