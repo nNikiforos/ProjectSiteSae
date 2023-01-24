@@ -1,31 +1,31 @@
+"use strict";
+
 // BACKGROUND IMAGE
 const background = document.getElementById("mainimg");
 window.addEventListener("scroll", function () {
   background.style.backgroundSize = 140 - +window.pageYOffset / 50 + "%";
 });
+
 //UP COMING EVENTS
-let i = 0;
+let i = 1;
 let eventimgs = [
-  "/img/events/land.jpg",
-  "/img/events/sea.jpg",
-  "/img/events/mountain.jpg",
-  "/img/events/tesla.jpg",
+  "/img/events/nature/land.jpg",
+  "/img/events/nature/sea.jpg",
+  "/img/events/nature/mountain.jpg",
+  "/img/events/nature/tree.jpg",
+  "/img/events/nature/waterfall.jpg",
 ];
-let time = 2000;
 
 function changeImg() {
   document.myevents.src = eventimgs[i];
-
+  console.log(i);
   if (i < eventimgs.length - 1) {
     i++;
   } else {
     i = 0;
   }
 }
-
-addEventListener = setInterval(changeImg, time);
-
-// 3BOXES LINK
+setInterval(changeImg, 5000);
 
 // SWIPER
 var swiper = new Swiper(".mySwiper", {

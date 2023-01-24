@@ -1,20 +1,36 @@
-//  event 1
+"use strict";
+// EVENT NUMBER 1 <-------
 var gallery1 = document.getElementById("event1");
 var event1img = [
-  "../img/events/land.jpg",
-  "../img/events/sea.jpg",
-  "../img/events/mountain.jpg",
-  "../img/events/tesla.jpg",
+  "../img/events/nature/land.jpg",
+  "../img/events/nature/sea.jpg",
+  "../img/events/nature/mountain.jpg",
+  "../img/events/nature/tree.jpg",
+  "../img/events/nature/waterfall.jpg",
 ];
 var num = 0;
-var dots = document.getElementsByClassName("dot");
+function currentImage(index) {
+  gallery1.src = event1img[index];
+  num = index;
+  updateDot();
+}
+
+function updateDot() {
+  var dots = document.getElementsByClassName("dot");
+  for (var i = 0; i < dots.length; i++) {
+    if (i == num) dots[i].classList.add("active");
+    else dots[i].classList.remove("active");
+  }
+}
 function next1() {
   num++;
   if (num >= event1img.length) {
     num = 0;
     gallery1.src = event1img[num];
+    updateDot();
   } else {
     gallery1.src = event1img[num];
+    updateDot();
   }
 }
 
@@ -23,8 +39,10 @@ function prev1() {
   if (num < 0) {
     num = event1img.length - 1;
     gallery1.src = event1img[num];
+    updateDot();
   } else {
     gallery1.src = event1img[num];
+    updateDot();
   }
 }
 
@@ -37,7 +55,7 @@ function playStop1() {
   if (playStopButtonText === "&#x25B7;") {
     playStopButtonText = "&#9723;";
     playStopButton.innerHTML = playStopButtonText;
-    playStopInterval = setInterval(nextSlide, 3000);
+    playStopInterval = setInterval(nextImage, 3000);
   } else {
     playStopButtonText = "&#x25B7;";
     playStopButton.innerHTML = playStopButtonText;
@@ -46,30 +64,47 @@ function playStop1() {
   }
 }
 
-function nextSlide() {
+function nextImage() {
   num++;
   if (num >= event1img.length) {
     num = 0;
   }
   gallery1.src = event1img[num];
+  updateDot();
 }
 
-// event2
+// EVENT NUMBER 2 <-------
 var gallery2 = document.getElementById("event2");
 var event2img = [
-  "../img/events/model1.jpg",
-  "../img/events/model2.jpg",
-  "../img/events/model3.jpg",
-  "../img/events/model4.jpg",
+  "../img/events/tesla/tesla.jpg",
+  "../img/events/tesla/model1.jpg",
+  "../img/events/tesla/model2.jpg",
+  "../img/events/tesla/model3.jpg",
+  "../img/events/tesla/model4.jpg",
 ];
+function currentImage(index) {
+  gallery2.src = event2img[index];
+  num = index;
+  updateDot();
+}
+
+function updateDot2() {
+  var dots = document.getElementsByClassName("dot2");
+  for (var i = 0; i < dots.length; i++) {
+    if (i == num) dots[i].classList.add("active");
+    else dots[i].classList.remove("active");
+  }
+}
 
 function next2() {
   num++;
   if (num >= event2img.length) {
     num = 0;
     gallery2.src = event2img[num];
+    updateDot2();
   } else {
     gallery2.src = event2img[num];
+    updateDot2();
   }
 }
 function prev2() {
@@ -77,8 +112,10 @@ function prev2() {
   if (num < 0) {
     num = event2img.length - 1;
     gallery2.src = event2img[num];
+    updateDot2();
   } else {
     gallery2.src = event2img[num];
+    updateDot2();
   }
 }
 
@@ -89,7 +126,7 @@ function playStop2() {
   if (playStopButton2Text === "&#9655;") {
     playStopButton2Text = "&#9723;";
     playStopButton2.innerHTML = playStopButton2Text;
-    playStopInterval = setInterval(nextSlide2, 3000);
+    playStopInterval = setInterval(nextImage2, 3000);
   } else {
     playStopButton2Text = "&#9655;";
     playStopButton2.innerHTML = playStopButton2Text;
@@ -98,30 +135,48 @@ function playStop2() {
   }
 }
 
-function nextSlide2() {
+function nextImage2() {
   num++;
   if (num >= event2img.length) {
     num = 0;
   }
   gallery2.src = event2img[num];
+  updateDot2();
 }
 
-// event 3
+// EVENT NUMBER 3 <-------
 var gallery3 = document.getElementById("event3");
 var event3img = [
-  "../img/events/sea1.jpg",
-  "../img/events/sea2.jpg",
-  "../img/events/sea3.jpg",
-  "../img/events/sea4.jpg",
+  "../img/events/sea/sea1.jpg",
+  "../img/events/sea/sea2.jpg",
+  "../img/events/sea/sea3.jpg",
+  "../img/events/sea/sea4.jpg",
+  "../img/events/sea/sea5.jpg",
 ];
+
+function currentImage(index) {
+  gallery3.src = event3img[index];
+  num = index;
+  updateDot3();
+}
+
+function updateDot3() {
+  var dots = document.getElementsByClassName("dot3");
+  for (var i = 0; i < dots.length; i++) {
+    if (i == num) dots[i].classList.add("active");
+    else dots[i].classList.remove("active");
+  }
+}
 
 function next3() {
   num++;
-  if (num >= event2img.length) {
+  if (num >= event3img.length) {
     num = 0;
     gallery3.src = event3img[num];
+    updateDot3();
   } else {
     gallery3.src = event3img[num];
+    updateDot3();
   }
 }
 function prev3() {
@@ -129,8 +184,10 @@ function prev3() {
   if (num < 0) {
     num = event3img.length - 1;
     gallery3.src = event3img[num];
+    updateDot3();
   } else {
     gallery3.src = event3img[num];
+    updateDot3();
   }
 }
 
@@ -141,7 +198,7 @@ function playStop3() {
   if (playStopButton3Text === "&#9655;") {
     playStopButton3Text = "&#9723;";
     playStopButton3.innerHTML = playStopButton3Text;
-    playStopInterval = setInterval(nextSlide3, 3000);
+    playStopInterval = setInterval(nextImage3, 3000);
   } else {
     playStopButton3Text = "&#9655;";
     playStopButton3.innerHTML = playStopButton3Text;
@@ -150,30 +207,47 @@ function playStop3() {
   }
 }
 
-function nextSlide3() {
+function nextImage3() {
   num++;
   if (num >= event3img.length) {
     num = 0;
   }
   gallery3.src = event3img[num];
+  updateDot3();
 }
 
-// event 4
+// EVENT NUMBER 4 <-------
 var gallery4 = document.getElementById("event4");
 var event4img = [
-  "../img/events/reth1.jpg",
-  "../img/events/reth2.jpg",
-  "../img/events/reth3.jpg",
-  "../img/events/reth4.jpg",
+  "../img/events/reth/reth1.jpg",
+  "../img/events/reth/reth2.jpg",
+  "../img/events/reth/reth3.jpg",
+  "../img/events/reth/reth4.jpg",
+  "../img/events/reth/reth5.jpg",
 ];
+function currentImage(index) {
+  gallery3.src = event3img[index];
+  num = index;
+  updateDot4();
+}
+
+function updateDot4() {
+  var dots = document.getElementsByClassName("dot4");
+  for (var i = 0; i < dots.length; i++) {
+    if (i == num) dots[i].classList.add("active");
+    else dots[i].classList.remove("active");
+  }
+}
 
 function next4() {
   num++;
-  if (num >= event2img.length) {
+  if (num >= event4img.length) {
     num = 0;
     gallery4.src = event4img[num];
+    updateDot4();
   } else {
     gallery4.src = event4img[num];
+    updateDot4();
   }
 }
 function prev4() {
@@ -181,8 +255,10 @@ function prev4() {
   if (num < 0) {
     num = event4img.length - 1;
     gallery4.src = event4img[num];
+    updateDot4();
   } else {
     gallery4.src = event4img[num];
+    updateDot4();
   }
 }
 
@@ -193,7 +269,7 @@ function playStop4() {
   if (playStopButton4Text === "&#9655;") {
     playStopButton4Text = "&#9723;";
     playStopButton4.innerHTML = playStopButton4Text;
-    playStopInterval = setInterval(nextSlide4, 3000);
+    playStopInterval = setInterval(nextImage4, 3000);
   } else {
     playStopButton4Text = "&#9655;";
     playStopButton4.innerHTML = playStopButton4Text;
@@ -202,10 +278,11 @@ function playStop4() {
   }
 }
 
-function nextSlide4() {
+function nextImage4() {
   num++;
   if (num >= event4img.length) {
     num = 0;
   }
   gallery4.src = event4img[num];
+  updateDot4();
 }

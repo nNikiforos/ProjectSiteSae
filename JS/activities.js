@@ -4,11 +4,21 @@ function changeTab(tabId) {
   const clickedTab = document.getElementById(tabId);
   const activeTab = document.getElementsByClassName(activeTabClassName);
 
+  const btn = document.getElementById(tabId + "-btn");
+  btn.checked = true;
+  console.log(btn);
+
   for (const tab of activeTab) {
     tab.classList.remove(activeTabClassName);
   }
 
   clickedTab.classList.add(activeTabClassName);
+}
+if (location.hash) {
+  let hashId = location.hash.replace("#", "");
+  console.log(hashId);
+
+  changeTab(hashId);
 }
 
 // MODAL BUTTONS
