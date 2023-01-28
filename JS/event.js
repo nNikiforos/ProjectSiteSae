@@ -9,14 +9,14 @@ var event1img = [
   "../img/events/nature/waterfall.jpg",
 ];
 var num = 0;
-function currentImage(index) {
+function currentImage1(index) {
   gallery1.src = event1img[index];
   num = index;
   updateDot();
 }
 
 function updateDot() {
-  var dots = document.getElementsByClassName("dot");
+  var dots = document.getElementsByClassName("dot1");
   for (var i = 0; i < dots.length; i++) {
     if (i == num) dots[i].classList.add("active");
     else dots[i].classList.remove("active");
@@ -60,7 +60,6 @@ function playStop1() {
     playStopButtonText = "&#x25B7;";
     playStopButton.innerHTML = playStopButtonText;
     clearInterval(playStopInterval);
-    gallery1.src = event1img[0];
   }
 }
 
@@ -82,10 +81,10 @@ var event2img = [
   "../img/events/tesla/model3.jpg",
   "../img/events/tesla/model4.jpg",
 ];
-function currentImage(index) {
+function currentImage2(index) {
   gallery2.src = event2img[index];
   num = index;
-  updateDot();
+  updateDot2();
 }
 
 function updateDot2() {
@@ -131,7 +130,6 @@ function playStop2() {
     playStopButton2Text = "&#9655;";
     playStopButton2.innerHTML = playStopButton2Text;
     clearInterval(playStopInterval);
-    gallery2.src = event2img[0];
   }
 }
 
@@ -154,7 +152,7 @@ var event3img = [
   "../img/events/sea/sea5.jpg",
 ];
 
-function currentImage(index) {
+function currentImage3(index) {
   gallery3.src = event3img[index];
   num = index;
   updateDot3();
@@ -203,7 +201,6 @@ function playStop3() {
     playStopButton3Text = "&#9655;";
     playStopButton3.innerHTML = playStopButton3Text;
     clearInterval(playStopInterval);
-    gallery3.src = event3img[0];
   }
 }
 
@@ -225,8 +222,8 @@ var event4img = [
   "../img/events/reth/reth4.jpg",
   "../img/events/reth/reth5.jpg",
 ];
-function currentImage(index) {
-  gallery3.src = event3img[index];
+function currentImage4(index) {
+  gallery4.src = event4img[index];
   num = index;
   updateDot4();
 }
@@ -274,7 +271,6 @@ function playStop4() {
     playStopButton4Text = "&#9655;";
     playStopButton4.innerHTML = playStopButton4Text;
     clearInterval(playStopInterval);
-    gallery4.src = event4img[0];
   }
 }
 

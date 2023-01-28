@@ -5,11 +5,9 @@
   height: 70vh;
   background-attachment: fixed;
   background-size: 140%;
-  
 }
 body {
   background-color: #a0e9fd9c;
-  
 }
 /* SWIPER TOP ACTIVITIES */
 .swipertitle {
@@ -110,6 +108,15 @@ body {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 5px;
+}
+.eventimg img {
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px rgb(116, 116, 116);
+  transition-duration: 0.5s;
+}
+.eventimg img:hover {
+  transform: scale(1.20);
+  transition:all 1.4s;
 }
 .eventphoto {
   width: 100%;
