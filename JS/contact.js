@@ -8,47 +8,80 @@ form.addEventListener("submit", (event) => {
   const phone = document.getElementById("phone");
   const text = document.getElementById("text");
 
+  // VALIDATION LIST FOR CLASSLIST.ADD
+  const firstNameValid = document.getElementById("firstNameValid");
+  const lastNameValid = document.getElementById("lastNameValid");
+  const emailValid = document.getElementById("emailValid");
+  const phoneValid = document.getElementById("phoneValid");
+  const textValid = document.getElementById("textValid");
+
+  // innerHTML ID LIST
+  const firstNameText = document.getElementById("firstNameText");
+  const lastNameText = document.getElementById("lastNameText");
+  const emailText = document.getElementById("emailText");
+  const phoneText = document.getElementById("phoneText");
+
   let isValid = true;
 
   const email_re = /^[a-z0-9\.]+\@(gmail|yahoo|hotmail)\.(com|gr)$/i;
   const firstname_re = /^[a-zα-ωά-ώ]{2,}$/i;
   const lastname_re = /^[a-zα-ωά-ώ]{2,}$/i;
   const phone_re = /^\d{10}$/;
+  const text_re = /^.{3,}$/;
 
-  // regular expression for email
-  if (!email_re.test(email.value)) {
-    alert("E-mail is not valid");
-    email.classList.add("error");
-    isValid = false;
-  } else {
-    email.classList.remove("error");
-  }
-
-  // regular expression for name
+  // REGULAR EXPRESSION FOR FIRST NAME
   if (!firstname_re.test(firstname.value)) {
-    alert("name is not valid");
-    firstname.classList.add("error");
+    firstNameValid.classList.add("notValid");
+    firstNameText.classList.add("textNotValid");
+    firstNameText.innerHTML = "NAME IS NOT VALID";
     isValid = false;
   } else {
-    firstname.classList.remove("error");
+    firstNameValid.classList.remove("notValid");
+    firstNameText.classList.remove("textNotValid");
+    firstNameText.innerHTML = "FIRST NAME";
   }
 
-  // regular expression for last name
+  // REGULAR EXPRESSION FOR LAST NAME
   if (!lastname_re.test(lastname.value)) {
-    alert("your last name is not valid");
-    lastname.classList.add("error");
+    lastNameValid.classList.add("notValid");
+    lastNameText.classList.add("textNotValid");
+    lastNameText.innerHTML = "LAST NAME IS NOT VALID";
     isValid = false;
   } else {
-    lastname.classList.remove("error");
+    lastNameValid.classList.remove("notValid");
+    lastNameText.classList.remove("textNotValid");
+    lastNameText.innerHTML = "LAST NAME";
   }
 
-  // regular expression for phone
-  if (!phone_re.test(phone.value)) {
-    alert("phone is not valid");
-    phone.classList.add("error");
+  // REGULAR EXPRESSION FOR EMAIL NAME
+  if (!email_re.test(email.value)) {
+    emailValid.classList.add("notValid");
+    emailText.classList.add("textNotValid");
+    emailText.innerHTML = "EMAIL IS NOT VALID";
     isValid = false;
   } else {
-    phone.classList.remove("error");
+    emailValid.classList.remove("notValid");
+    emailText.classList.remove("textNotValid");
+    emailText.innerHTML = "EMAIL";
   }
- 
+
+  // REGULAR EXPRESSION FOR PHONE
+  if (!phone_re.test(phone.value)) {
+    phoneValid.classList.add("notValid");
+    phoneText.classList.add("textNotValid");
+    phoneText.innerHTML = "PHONE IS NOT VALID";
+    isValid = false;
+  } else {
+    phoneValid.classList.remove("notValid");
+    phoneText.classList.remove("textNotValid");
+    phoneText.innerHTML = "PHONE";
+  }
+  // REGULAR EXPRESSION FOR TEXT
+  if (!text_re.test(text.value)) {
+    textValid.classList.add("notValid");
+    isValid = false;
+  } else {
+    textValid.classList.remove("notValid");
+  }
+  if (!isValid) event.preventDefault();
 });

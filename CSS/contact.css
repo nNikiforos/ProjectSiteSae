@@ -114,3 +114,13 @@ textarea {
   transform: scale(0.95);
   background-color: #3546a3;
 }
+/* JAVA SCRIPT CLASSLIST.ADD */
+.notValid {
+  border: 1px solid red;
+  box-shadow: 0px 0px 5px 1px rgba(255, 0, 0, 0.767);
+}
+
+.textNotValid {
+  color: red;
+  font-weight: 600;
+}

@@ -47,33 +47,32 @@
           </p>
           <form id="form">
             <div class="item-group">
-              <div class="item-input">
-                <label>FIRST NAME </label>
-                <input type="text" id="firstname" name="firstname" required />
+              <div class="item-input" id="firstNameValid">
+                <label id="firstNameText"> FIRST NAME </label>
+                <input type="text" id="firstname" name="firstname" />
               </div>
-              <div class="item-input lname">
-                <label>LAST NAME </label>
-                <input type="text" id="lastname" name="lastname" required />
+              <div class="item-input lname" id="lastNameValid">
+                <label id="lastNameText"> LAST NAME </label>
+                <input type="text" id="lastname" name="lastname" />
               </div>
             </div>
             <div class="item-group">
-              <div class="item-input">
-                <label>EMAIL </label>
+              <div class="item-input" id="emailValid">
+                <label id="emailText"> EMAIL </label>
                 <input type="text" id="email" name="email" />
               </div>
-              <div class="item-input phone">
-                <label>PHONE </label>
-                <input type="text" id="phone" name="phone" required />
+              <div class="item-input phone" id="phoneValid">
+                <label id="phoneText"> PHONE </label>
+                <input type="text" id="phone" name="phone" />
               </div>
             </div>
             <div class="item-group">
-              <div class="item-input itemmsg">
-                <label>MESSAGE </label>
+              <div class="item-input itemmsg" id="textValid">
+                <label> MESSAGE </label>
                 <textarea
                   id="text"
                   rows="5"
                   placeholder=" Your message"
-                  required
                 ></textarea>
               </div>
             </div>

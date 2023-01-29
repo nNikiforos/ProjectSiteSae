@@ -87,24 +87,16 @@ body {
   transform: scale(0.9);
   transition-duration: 0.1s;
 }
-.btns #playStop1,
-#playStop2,
-#playStop3,
-#playStop4 {
+ .btns .playStopbtn {
   cursor: pointer;
   font-size: 45px;
   color: rgba(255, 255, 255, 0.616);
+ 
 }
-.btns #playStop1:active,
-#playStop2:active,
-#playStop3:active,
-#playStop4:active {
+.btns .playStopbtn:active {
   transform: scale(0.9);
 }
-.btns #playStop1:hover,
-#playStop2:hover,
-#playStop3:hover,
-#playStop4:hover {
+.btns .playStopbtn:hover {
   color: rgb(250, 249, 249);
 }
 /* DOTS  */
