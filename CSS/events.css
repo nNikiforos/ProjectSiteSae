@@ -87,16 +87,24 @@ body {
   transform: scale(0.9);
   transition-duration: 0.1s;
 }
- .btns .playStopbtn {
+.btns #event1_playStop,
+#event2_playStop,
+#event3_playStop,
+#event4_playStop {
   cursor: pointer;
   font-size: 45px;
   color: rgba(255, 255, 255, 0.616);
- 
 }
-.btns .playStopbtn:active {
+.btns #event1_playStop:active,
+#event2_playStop:active,
+#event3_playStop:active,
+#event4_playStop:active {
   transform: scale(0.9);
 }
-.btns .playStopbtn:hover {
+.btns #event1_playStop:hover,
+#event2_playStop:hover,
+#event3_playStop:hover,
+#event4_playStop:hover {
   color: rgb(250, 249, 249);
 }
 /* DOTS  */

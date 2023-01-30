@@ -33,7 +33,7 @@ form.addEventListener("submit", (event) => {
   if (!firstname_re.test(firstname.value)) {
     firstNameValid.classList.add("notValid");
     firstNameText.classList.add("textNotValid");
-    firstNameText.innerHTML = "NAME IS NOT VALID";
+    firstNameText.innerHTML = "NAME NOT VALID";
     isValid = false;
   } else {
     firstNameValid.classList.remove("notValid");
@@ -45,7 +45,7 @@ form.addEventListener("submit", (event) => {
   if (!lastname_re.test(lastname.value)) {
     lastNameValid.classList.add("notValid");
     lastNameText.classList.add("textNotValid");
-    lastNameText.innerHTML = "LAST NAME IS NOT VALID";
+    lastNameText.innerHTML = "LAST NAME  NOT VALID";
     isValid = false;
   } else {
     lastNameValid.classList.remove("notValid");
@@ -57,7 +57,7 @@ form.addEventListener("submit", (event) => {
   if (!email_re.test(email.value)) {
     emailValid.classList.add("notValid");
     emailText.classList.add("textNotValid");
-    emailText.innerHTML = "EMAIL IS NOT VALID";
+    emailText.innerHTML = "EMAIL NOT VALID";
     isValid = false;
   } else {
     emailValid.classList.remove("notValid");
@@ -69,7 +69,7 @@ form.addEventListener("submit", (event) => {
   if (!phone_re.test(phone.value)) {
     phoneValid.classList.add("notValid");
     phoneText.classList.add("textNotValid");
-    phoneText.innerHTML = "PHONE IS NOT VALID";
+    phoneText.innerHTML = "PHONE NOT VALID";
     isValid = false;
   } else {
     phoneValid.classList.remove("notValid");

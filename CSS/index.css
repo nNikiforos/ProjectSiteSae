@@ -115,8 +115,8 @@ body {
   transition-duration: 0.5s;
 }
 .eventimg img:hover {
-  transform: scale(1.20);
-  transition:all 1.4s;
+  transform: scale(1.1);
+  transition: all 1.4s;
 }
 .eventphoto {
   width: 100%;
@@ -147,7 +147,8 @@ body {
   bottom: 1px;
 }
 .boxes3 :hover {
-  border: 1px solid rgba(0, 0, 0, 0.678);
+  transform: scale(0.99);
+  transition: all 0.5s;
 }
 
 .box2 {
