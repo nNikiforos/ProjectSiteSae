@@ -43,6 +43,7 @@
           quam.
         </p>
       </div>
+      <div class="linkevent" id="listEvent1"></div>
     </div>
     <!-- EVENT LIST  -->
     <div class="eventlistcontainer">
@@ -65,7 +66,6 @@
             commodi?
           </p>
         </div>
-        
         <div id="carousel" class="eventgallery eventgallery1">
           <div class="btns">
             <button id="prev" onclick="prev('event1')">&#8249;</button>
@@ -99,8 +99,9 @@
           </div>
         </div>
       </div>
-      <hr />
       <!-- LIST EVENT NUMBER 2 -->
+      <div class="linkevent" id="listEvent2"></div>
+      <div class="line"></div>
       <div class="list event2">
         <div class="eventgallery eventgallery2">
           <div class="btns">
@@ -110,7 +111,6 @@
             </button>
             <button id="next" onclick="next('event2')">&#8250;</button>
           </div>
-
           <img id="event2" src="../img/events/tesla/tesla.jpg" alt="img" />
           <div id="indicator">
             <span
@@ -148,8 +148,9 @@
           </p>
         </div>
       </div>
-      <hr />
       <!-- LIST EVENT NUMBER 3 -->
+      <div class="linkevent" id="listEvent3"></div>
+      <div class="line"></div>
       <div class="list event3">
         <div class="event eventinfo3">
           <h3>Lorem ipsum dolor sit amet.</h3>
@@ -196,13 +197,16 @@
           </div>
         </div>
       </div>
-      <hr />
-      <!-- LIST4 -->
+      <!-- LIST EVENT NUMBER 4 -->
+      <div class="linkevent" id="listEvent4"></div>
+      <div class="line"></div>
       <div class="list event4">
         <div class="eventgallery eventgallery4">
           <div class="btns">
             <button id="prev" onclick="prev('event4')">&#8249;</button>
-            <button id="event4_playStop" onclick="playStop('event4')">Play</button>
+            <button id="event4_playStop" onclick="playStop('event4')">
+              Play
+            </button>
             <button id="next" onclick="next('event4')">&#8250;</button>
           </div>
           <img id="event4" src="../img/events/reth/reth1.jpg" alt="img" />
@@ -243,11 +247,11 @@
         </div>
       </div>
     </div>
-
     <!-- FOOTER -->
     <footer>
       <div class="footercontainer">
-        <div class="left-side">
+        <!-- useful links side  -->
+        <div class="usefulfooter">
           <h3>USEFUL LINKS</h3>
           <a href="/HTML/index.html">HOME</a>
           <a href="/HTML/history.html">HISTORY</a>
@@ -255,16 +259,53 @@
           <a href="/HTML/Events.html">EVENTS</a>
           <a href="/HTML/contact.html">CONTACT</a>
         </div>
-        <div class="mid-side">
-          <div class="saelink">
-            <a href="https://www.sae.edu/grc/" target="blank">SAE</a>
-          </div>
+        <!-- activities footer side  -->
+        <div class="activitiesfooter">
+          <h3>ACTIVITIES</h3>
+          <a href="/HTML/Activities.html">ADVENTURES</a>
+          <a href="/HTML/Activities.html#tab-nature"> NATURE </a>
+          <a href="/HTML/Activities.html#tab-museums"> MUSEUMS </a>
         </div>
-        <div class="right-side">
-          <p>
-            Lorem ipsum dolor sit.<br />Lorem, ipsum dolor.<br />Lorem ipsum
-            dolor sit.
-          </p>
+        <!-- event footer side  -->
+        <div class="eventfooter">
+          <h3>EVENTS</h3>
+          <a href="/HTML/Events.html#listEvent1">EVENT1</a>
+          <a href="/HTML/Events.html#listEvent2">EVENT2</a>
+          <a href="/HTML/Events.html#listEvent3">EVENT3</a>
+          <a href="/HTML/Events.html#listEvent4">EVENT4</a>
+        </div>
+        <!-- contact footer side  -->
+        <div class="contactfooter">
+          <h3>CONTACT</h3>
+          <p>Crete/Rethymno</p>
+          <p>Rethymno 74100</p>
+          <p><span>&#9993;</span>: nikiforos.nik96@gmail.com</p>
+          <p><span>TEL</span>: (+30) 6971000000</p>
+        </div>
+        <!-- sae link  -->
+        <div class="saeurl">
+          <a id="saea" href="https://www.sae.edu/grc/" target="_blank">
+            <div class="sae"><img src="/img/sae.png" alt="" /></div>
+            <div class="saep">
+              <p>
+                CREATIVE <br />
+                MEDIA<br />
+                EDUCATION
+              </p>
+            </div>
+          </a>
+        </div>
+        <!-- copyright  -->
+        <div class="copyright">
+          <div class="copy">Copyright © 2023. All Rights Reserved.</div>
+        </div>
+        <!-- visit rehtymno logo  -->
+        <div class="rethymnologo">
+          <div class="logo">
+            <a href="/HTML/index.html"
+              ><img src="../img/rethlogo1.png" alt="logo"
+            /></a>
+          </div>
         </div>
       </div>
     </footer>

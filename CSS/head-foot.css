@@ -1,10 +1,16 @@
+:root {
+  --bodycolor: #a0e9fd9c;
+  --footerbgcolor: #3b71ca;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Catamaran", sans-serif;
 }
-
+body {
+  background-color: var(--bodycolor);
+}
 /* -----------Navigation Bar--------- */
 .navbar {
   background-color: #05038b;
@@ -33,44 +39,112 @@
   background-color: #0b08b3;
 }
 /* FOOTER */
+footer {
+  background-color: var(--footerbgcolor);
+}
 .footercontainer {
-  background-color: #050374;
-  width: 100%;
-  padding: 20px 5%;
-  display: flex;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  gap: 30px;
 }
-.footercontainer div {
+.footercontainer h3 {
+  color: white;
+}
+.footercontainer a {
+  text-decoration: none;
   text-align: center;
+  color: #e0e0e0;
+  transition: 0.2s;
+  background-color: none;
 }
-.mid-side {
-  flex-grow: 2;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-}
-.mid-side a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  height: 100%;
-  font-weight: 600;
-}
-.left-side h3 {
-  font-weight: normal;
-  margin-bottom: 15px;
-  letter-spacing: 1px;
-  color: white;
-}
-.left-side a {
-  display: block;
-  text-decoration: none;
-  color: rgb(194, 193, 193);
-  margin-bottom: 10px;
-  font-size: 13px;
-}
-.left-side a:hover {
+.footercontainer a:hover {
   color: #f4f4f4;
+  transform: scale(1.1);
+  transition: 0.1s;
 }
-.right-side p {
+/* useful links  */
+.usefulfooter {
+  grid-row-start: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* activities column */
+.activitiesfooter {
+  grid-row-start: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* event column  */
+.eventfooter {
+  grid-row-start: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* contact column  */
+.contactfooter {
+  grid-row-start: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contactfooter p {
   color: white;
-  padding: 25px 0;
+}
+
+/* copy rights */
+.copyright {
+  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  flex-direction: column-reverse;
+}
+/* rethymno logo  */
+.rethymnologo {
+  display: flex;
+  grid-row-start: 2;
+}
+/* SAE LINK  */
+.saeurl {
+  display: flex;
+  grid-column-start: 4;
+}
+@keyframes leters {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  25% {
+    clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%);
+  }
+  50% {
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  }
+  75% {
+    clip-path: polygon(0 0, 100% 0%, 100% 75%, 0 75%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  }
+}
+#saea {
+  display: flex;
+}
+#saea:hover {
+  transform: none;
+}
+.saep {
+  color: var(--footerbgcolor);
+}
+.saeurl:hover .saep {
+  color: white;
+  animation: leters 2s ease-in;
+}
+.sae img {
+  width: 108px;
 }

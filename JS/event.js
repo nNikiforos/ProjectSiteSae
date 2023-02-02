@@ -1,4 +1,8 @@
 "use strict";
+// direct link for each event
+document.getElementById("listEvent1");
+
+
 
 const galleryImages = {
   event1: [
