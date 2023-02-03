@@ -16,6 +16,7 @@
   <body>
     <!-- --------HEADER------- -->
     <header class="navbar">
+      <div class="navbarcontainer">
       <div class="logo">
         <a href="/HTML/index.html"
           ><img src="../img/rethlogo1.png" alt="logo"
@@ -30,12 +31,14 @@
           <li><a href="/HTML/contact.html">Contact</a></li>
         </ul>
       </div>
+    </div>
     </header>
     <!-- MAIN IMG  -->
     <div class="mainimg" id="mainimg"></div>
-    <!-- SWIPER SECTION TOP ACTIVITIES  -->
-    <div class="swipercontainer">
-      <div class="swipertitle">Top Activities</div>
+    <!-- container -->
+    <div class="container">
+      <!-- SWIPER SECTION TOP ACTIVITIES  -->
+      <div class="title"><h1>TOP LOCATIONS</h1></div>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -91,29 +94,30 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </div>
-    </div>
 
-    <!-- HISTORY SPECTATE BOX -->
-    <div class="historyspec">
-      <div class="historytitle">Our History</div>
-      <div class="borderinfo">
-        <img class="historyimg" src="/img/img.jpg" alt="img" />
-        <h1 id="title1">Lorem ipsum dolor sit amet.</h1>
-        <p id="infohistory">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non magni,
-          vel similique facilis voluptatibus debitis voluptatem eveniet libero
-          repellendus laborum, quasi delectus id reprehenderit voluptates.Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Doloremque quisquam
-          non inventore delectus maiores alias ratione nesciunt velit labore
-          culpa excepturi quo debitis architecto, repellendus quia repudiandae
-          molestiae, laboriosam fugiat.
-          <a id="readmorehistory" href="/HTML/history.html">Read more</a>
-        </p>
+      <!-- HISTORY SPECTATE BOX -->
+      <div class="titlehistory"><h1>LEARN THE HISTORY OF RETHYMNO <a href="/HTML/history.html">HERE</a> </h1></div>
+      <div class="clipcontainer">
+        <div class="historyClip historyimg1"></div>
+        <div class="historyClip historyimg2"></div>
+        <div class="historyClip historyimg3"></div>
       </div>
-    </div>
-    <!-- GALLERY -->
-    <div class="gallerycontainer">
-      <div class="gallerytitle">Photo gallery</div>
+      <!-- <div class="historyinfo">
+          <h1>Lorem ipsum dolor sit amet.</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non magni,
+            vel similique facilis voluptatibus debitis voluptatem eveniet libero
+            repellendus laborum, quasi delectus id reprehenderit
+            voluptates.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Doloremque quisquam non inventore delectus maiores alias ratione
+            nesciunt velit labore culpa excepturi quo debitis architecto,
+            repellendus quia repudiandae molestiae, laboriosam fugiat.
+            <a href="/HTML/history.html">Read more</a>
+          </p>
+        </div> -->
+
+      <!-- GALLERY -->
+      <div class="title"><h1>GALLERY</h1></div>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -148,33 +152,42 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </div>
-    </div>
-    <!-- UP COMING EVENTS -->
-    <div class="Eventscontainer">
-      <div class="eventtitle">Upcoming events</div>
-      <a href="/HTML/Events.html">
-        <div class="eventimg" id="myevents">
-          <img
-            class="eventphoto"
-            src="../img/events/nature/land.jpg"
-            name="myevents"
-          />
-        </div>
-      </a>
+
+      <!-- UP COMING EVENTS -->
+      <div class="title"><h1>UPCOMING EVENTS</h1></div>
+      <div class="events">
+        <a href="/HTML/Events.html">
+          <div class="eventimg" id="myevents">
+            <img
+              class="eventphoto"
+              src="../img/events/nature/land.jpg"
+              name="myevents"
+            />
+          </div>
+        </a>
+      </div>
     </div>
 
     <!-- 3BOXES -->
-    <div class="boxtitle"><h1>EXPLORE</h1></div>
+    <div class="boxestitle">
+      <h1>EXPLORE <br />&#8659;</h1>
+    </div>
     <div class="boxes3">
-      <a class="box box1" href="/HTML/Activities.html">
-        <p>ADVENTURES</p>
-      </a>
-      <a class="box box2" href="/HTML/Activities.html#tab-nature">
-        <p>NATURE</p>
-      </a>
-      <a class="box box3" href="/HTML/Activities.html#tab-museums">
-        <p>MUSEUMS</p>
-      </a>
+      <div class="box box1">
+        <a href="/HTML/Activities.html">
+          <p>ADVENTURES</p>
+        </a>
+      </div>
+      <div class="box box2">
+        <a href="/HTML/Activities.html#tab-nature">
+          <p>NATURE</p>
+        </a>
+      </div>
+      <div class="box box3">
+        <a href="/HTML/Activities.html#tab-museums">
+          <p>MUSEUMS</p>
+        </a>
+      </div>
     </div>
     <!-- FOOTER -->
     <footer>

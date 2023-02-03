@@ -1,5 +1,5 @@
 :root {
-  --bodycolor: #a0e9fd9c;
+  --bodycolor: #d1f5ffb7;
   --footerbgcolor: #3b71ca;
 }
 * {
@@ -14,12 +14,15 @@ body {
 /* -----------Navigation Bar--------- */
 .navbar {
   background-color: #05038b;
-  width: 100%;
+}
+.navbarcontainer {
   display: flex;
   align-items: center;
   padding: 5px 0;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
 }
 .navbar ul {
   display: flex;
@@ -43,9 +46,10 @@ footer {
   background-color: var(--footerbgcolor);
 }
 .footercontainer {
+  width: 80%;
+  margin: auto;
   display: grid;
   justify-items: center;
-  align-content: center;
   padding-top: 40px;
   padding-bottom: 10px;
   gap: 30px;

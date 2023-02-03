@@ -1,25 +1,25 @@
 /* MAIN IMAGE FOR HOME HTML */
 .mainimg {
-  background: url(/img/index/rethmain.jpg) center;
+  background: url(/img/index/rethmain.jpg) no-repeat center center/cover;
   width: 100%;
   height: 70vh;
   background-attachment: fixed;
   background-size: 140%;
 }
+.container {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+  display: grid;
+}
+
+.title h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", sans-serif;
+  margin-top: 200px;
+  margin-bottom: 25px;
+}
 
 /* SWIPER TOP ACTIVITIES */
-.swipertitle {
-  font-family: Montserrat;
-  text-transform: uppercase;
-  display: inline-block;
-  letter-spacing: 0.02em;
-  font-size: 25px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-.swipercontainer {
-  padding: 40px 15%;
-}
 .swiper {
   width: 100%;
 }
@@ -45,68 +45,69 @@
   min-height: 5vh;
   text-align: center;
 }
+
 /* HISTORY SPECTATE BOX */
-.historytitle {
-  font-family: Montserrat;
-  text-transform: uppercase;
-  display: inline-block;
-  letter-spacing: 0.02em;
-  font-size: 25px;
-  font-weight: 600;
-  margin-bottom: 5px;
+.titlehistory {
+  display: flex;
+  justify-content: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", sans-serif;
+  margin-top: 200px;
+  margin-bottom: 25px;
 }
-.historyspec {
-  padding: 40px 15%;
+.titlehistory a {
+  color: red;
 }
-.historyspec .historyimg {
+.clipcontainer {
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  position: relative;
   width: 100%;
   height: 60vh;
 }
+.historyClip {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: clip-path 1.5s ease;
+}
+.historyClip:hover {
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  position: relative;
+}
 
-.borderinfo {
-  background-color: #ffffff;
+/* HISTORY IMAGE ANIMATION 1  */
+.historyimg1 {
+  background: url(/img/index/museumlogo.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(10% 0, 38% 0, 28% 100%, 0% 100%);
 }
-.historyspec #title1 {
-  font-size: 20px;
-  padding-left: 2px;
+
+/* HISTORY IMAGE ANIMATION 2  */
+.historyimg2 {
+  background: url(/img/events/reth/reth3.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(40% 0, 69% 0, 59% 100%, 30% 100%);
 }
-.historyspec #infohistory {
-  padding-left: 2px;
+
+/* HISTORY IMAGE ANIMATION 3  */
+.historyimg3 {
+  background: url(/img/events/sea/sea3.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(71% 0, 100% 0, 90% 100%, 61% 100%);
 }
-.historyspec #readmorehistory {
-  text-decoration: none;
-}
+
+/* history info  */
 /* GALLERY */
-.gallerycontainer {
-  padding: 40px 15%;
-}
-.gallerycontainer .gallerytitle {
-  font-family: Montserrat;
-  text-transform: uppercase;
-  display: inline-block;
-  letter-spacing: 0.02em;
-  font-size: 25px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
+
 /* SWIPER CSS AT LINE20 */
 .swiper-slide .galimg {
   height: 35vh;
   border-radius: 3% 3% 3% 3%;
 }
+
 /* UPCOMING EVENTS */
-.Eventscontainer {
-  padding: 40px 15%;
-}
-.eventtitle {
-  font-family: Montserrat;
-  text-transform: uppercase;
-  display: inline-block;
-  letter-spacing: 0.02em;
-  font-size: 25px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
 .eventimg img {
   border-radius: 5px;
   box-shadow: 0 0 5px 2px rgb(116, 116, 116);
@@ -120,56 +121,45 @@
   width: 100%;
   height: 45vh;
 }
+
 /* 3BOXES */
 .boxes3 {
-  display: flex;
+  display: grid;
   height: 40vh;
   cursor: pointer;
 }
-.boxtitle {
-  height: 8vh;
+.box:hover {
+  background-size: 104%;
 }
-.boxtitle h1 {
-  font-family: Montserrat;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  font-size: 25px;
-  font-weight: 600;
-  margin: 0 46%;
+.boxestitle {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 10vh;
 }
 .box1 {
-  width: 40%;
-  text-decoration: none;
+  grid-column-start: 1;
+  grid-column-end: 4;
   background: url(/img/index/actlogo.jpg) no-repeat center center/cover;
-
-  bottom: 1px;
 }
-.boxes3 :hover {
-  transform: scale(0.99);
-  transition: all 0.5s;
-}
-
 .box2 {
-  width: 30%;
-  text-decoration: none;
-  background: url(/img/index/natlogo.jpg) no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  background: url(/img/index/natlogo.jpg) no-repeat center center/cover;
 }
 .box3 {
-  width: 30%;
-  text-decoration: none;
+  grid-column-start: 6;
+  grid-column-end: 8;
   background: url(/img/index/museumlogo.jpg) no-repeat center center/cover;
-}
-.box {
-  font-size: 35px;
-  color: whitesmoke;
 }
 .box p {
   margin: 50px;
+  font-size: 35px;
+  color: whitesmoke;
 }
-.box p:hover {
-  transform: none;
-  border: none;
+.box a {
+  text-decoration: none;
 }
