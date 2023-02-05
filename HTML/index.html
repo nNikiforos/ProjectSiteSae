@@ -17,21 +17,21 @@
     <!-- --------HEADER------- -->
     <header class="navbar">
       <div class="navbarcontainer">
-      <div class="logo">
-        <a href="/HTML/index.html"
-          ><img src="../img/rethlogo1.png" alt="logo"
-        /></a>
+        <div class="logo">
+          <a href="/HTML/index.html"
+            ><img src="../img/rethlogo1.png" alt="logo"
+          /></a>
+        </div>
+        <div class="mylist">
+          <ul>
+            <li><a class="current" href="/HTML/index.html">Home</a></li>
+            <li><a href="/HTML/history.html">History</a></li>
+            <li><a href="/HTML/Activities.html">Activities</a></li>
+            <li><a href="/HTML/Events.html">Events</a></li>
+            <li><a href="/HTML/contact.html">Contact</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="mylist">
-        <ul>
-          <li><a class="current" href="/HTML/index.html">Home</a></li>
-          <li><a href="/HTML/history.html">History</a></li>
-          <li><a href="/HTML/Activities.html">Activities</a></li>
-          <li><a href="/HTML/Events.html">Events</a></li>
-          <li><a href="/HTML/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
     </header>
     <!-- MAIN IMG  -->
     <div class="mainimg" id="mainimg"></div>
@@ -96,61 +96,83 @@
       </div>
 
       <!-- HISTORY SPECTATE BOX -->
-      <div class="titlehistory"><h1>LEARN THE HISTORY OF RETHYMNO <a href="/HTML/history.html">HERE</a> </h1></div>
+      <div class="titlehistory">
+        <h1>
+          LEARN THE HISTORY OF RETHYMNO <a href="/HTML/history.html">HERE</a>
+        </h1>
+      </div>
       <div class="clipcontainer">
         <div class="historyClip historyimg1"></div>
         <div class="historyClip historyimg2"></div>
         <div class="historyClip historyimg3"></div>
       </div>
-      <!-- <div class="historyinfo">
-          <h1>Lorem ipsum dolor sit amet.</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non magni,
-            vel similique facilis voluptatibus debitis voluptatem eveniet libero
-            repellendus laborum, quasi delectus id reprehenderit
-            voluptates.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Doloremque quisquam non inventore delectus maiores alias ratione
-            nesciunt velit labore culpa excepturi quo debitis architecto,
-            repellendus quia repudiandae molestiae, laboriosam fugiat.
-            <a href="/HTML/history.html">Read more</a>
-          </p>
-        </div> -->
 
-      <!-- GALLERY -->
-      <div class="title"><h1>GALLERY</h1></div>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img class="galimg" src="/img/img.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img class="galimg" src="/img/img.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img class="galimg" src="/img/img.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img class="galimg" src="/img/img.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img class="galimg" src="/img/img.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img class="galimg" src="/img/img.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img class="galimg" src="/img/img.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img class="galimg" src="/img/img.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img class="galimg" src="/img/img.jpg" />
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+      <!-- MINI BOXES -->
+      <div class="title"><h1>MORE TO SEE</h1></div>
+      <div class="miniboxes">
+        <a
+          id="oldtown"
+          href="https://en.wikipedia.org/wiki/Rethymno"
+          target="_blank"
+        >
+          <img src="/img/index/miniboxes/oldtown.jpg"
+        /></a>
+        <a
+          id="arkadi"
+          href="https://en.wikipedia.org/wiki/Arkadi"
+          target="_blank"
+        >
+          <img src="/img/index/miniboxes/arkadi.jpg" />
+        </a>
+        <a
+          id="fortetza"
+          href="https://en.wikipedia.org/wiki/Fortezza_of_Rethymno"
+          target="_blank"
+        >
+          <img src="/img/index/miniboxes/fortetza.jpg" />
+        </a>
+        <a
+          id="preveli"
+          href="https://en.wikipedia.org/wiki/Preveli"
+          target="_blank"
+        >
+          <img src="/img/index/miniboxes/preveli.jpg" />
+        </a>
+        <a
+          id="Frangokastello"
+          href="https://en.wikipedia.org/wiki/Frangokastello"
+          target="_blank"
+        >
+          <img src="/img/index/miniboxes/Frangokastello.jpg"
+        /></a>
+        <a
+          id="samaria"
+          href="https://en.wikipedia.org/wiki/Samari%C3%A1_Gorge"
+          target="_blank"
+        >
+          <img src="/img/index/miniboxes/samaria.jpg" />
+        </a>
+        <a
+          id="kournas"
+          href="https://en.wikipedia.org/wiki/Lake_Kournas"
+          target="_blank"
+        >
+          <img src="/img/index/miniboxes/kournas.jpg" />
+        </a>
+        <a
+          id="tzami"
+          href="https://en.wikipedia.org/wiki/Neradje_Mosque"
+          target="_blank"
+        >
+          <img src="/img/index/miniboxes/tzami.jpg" />
+        </a>
+        <a
+          id="lighthouse"
+          href="https://www.wikidata.org/wiki/Q28375077"
+          target="_blank"
+        >
+          <img src="/img/index/miniboxes/lighthouse.jpg"
+        /></a>
       </div>
 
       <!-- UP COMING EVENTS -->

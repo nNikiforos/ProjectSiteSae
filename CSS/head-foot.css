@@ -1,5 +1,5 @@
 :root {
-  --bodycolor: #d1f5ffb7;
+  --bodycolor: #fafafa;
   --footerbgcolor: #3b71ca;
 }
 * {
@@ -13,7 +13,7 @@ body {
 }
 /* -----------Navigation Bar--------- */
 .navbar {
-  background-color: #05038b;
+  background-color:rgb(3, 47, 244);
 }
 .navbarcontainer {
   display: flex;
@@ -39,7 +39,8 @@ body {
 /* -------HOVER--------- */
 .navbar ul li a:hover,
 .navbar ul li a.current {
-  background-color: #0b08b3;
+  background-color: #fafafa;
+  color: #3b71ca;
 }
 /* FOOTER */
 footer {

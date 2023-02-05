@@ -43,3 +43,18 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+const grid = document.querySelector(".grid");
+const gridItems = document.querySelectorAll(".grid-item");
+
+gridItems.forEach((item) => {
+  const colStart = Math.floor(Math.random() * 11) + 1;
+  const colEnd = Math.floor(Math.random() * 11) + 1;
+  const rowStart = Math.floor(Math.random() * 11) + 1;
+  const rowEnd = Math.floor(Math.random() * 11) + 1;
+
+  item.style.gridColumnStart = colStart;
+  item.style.gridColumnEnd = `span ${colEnd - colStart + 1}`;
+  item.style.gridRowStart = rowStart;
+  item.style.gridRowEnd = `span ${rowEnd - rowStart + 1}`;
+});
