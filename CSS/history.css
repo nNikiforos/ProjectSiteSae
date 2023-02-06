@@ -1,51 +1,95 @@
 /* MAIN IMAGE FOR HISTORY HTML */
-.mainimg {
-  background: url(/img/img.jpg) no-repeat center center/cover;
+.mainimg img {
   width: 100%;
-  height: 450px;
+  margin-bottom: 50px;
+}
+
+/* TITLE  */
+.title {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 /* HISTORY SECTION */
 .container {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border-style: double;
+  box-shadow: 0 0 20px 5px rgb(124, 114, 114), 0 0 10px 5px rgb(18, 55, 134);
+  background-color: rgba(255, 251, 216, 0.5);
+}
+
+/* CONTENT ADJUSTMPENTS  */
+.content {
   display: flex;
-  padding: 30px 5px;
+  gap: 20px;
+  padding: 0 110px;
+  padding-top: 90px;
 }
-.col {
+.content2 {
+  padding: 0 110px;
+  padding-top: 20px;
+}
+.content,
+.content2 p {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+/* OLD IMAGES */
+.images1-list {
+  display: flex;
+  gap: 10px;
   width: 100%;
-  padding: 0 25px;
+  justify-content: space-between;
+  margin-top: 15px;
 }
-/* LEFT COL */
+.images1-list img {
+  width: 260px;
+}
 
-.leftimg1 {
-  background: url(/img/img.jpg) no-repeat center center/cover;
-  height: 300px;
-  width: 30vw;
+/* MINOANS IMAGES  */
+.image2-list {
+  display: grid;
+  gap: 20px;
 }
-.leftimg2 {
-  background: url(/img/img.jpg) no-repeat center center/cover;
-  height: 300px;
-  width: 30vw;
-  margin-top: 25px;
+#minoans1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 100%;
 }
-/* MID COL */
-.mid h3 {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 2em;
-  font-size: 25px;
+#minoans2 {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
 }
-.mid p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+#minoans3 {
+  grid-column-start: 2;
+  grid-row-start: 2;
 }
-/* RIGHT COL */
 
-.rightimg1 {
-  background: url(/img/img.jpg) no-repeat center center/cover;
-  width: 30vw;
-  height: 300px;
+.image2-list img {
+  height: 100%;
+  width: 350px;
 }
-.rightimg2 {
-  background: url(/img/img.jpg) no-repeat center center/cover;
-  width: 30vw;
-  height: 300px;
-  margin-top: 25px;
+
+/* RETHYMNO IMAGES  */
+.image3-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 60px;
+}
+.image3-list img {
+  width: 19vw;
+  height: 30vh;
+  background-size: cover;
+}
+
+/* IMAGES STYLES  */
+.container img{
+  border-radius: 5px;
+  box-shadow: 0 0 3px 1px rgb(131, 131, 131);
 }

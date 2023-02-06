@@ -33,49 +33,50 @@ form.addEventListener("submit", (event) => {
   if (!firstname_re.test(firstname.value)) {
     firstNameValid.classList.add("notValid");
     firstNameText.classList.add("textNotValid");
-    firstNameText.innerHTML = "NAME NOT VALID";
+    firstNameText.innerText = "NAME NOT VALID";
     isValid = false;
   } else {
     firstNameValid.classList.remove("notValid");
     firstNameText.classList.remove("textNotValid");
-    firstNameText.innerHTML = "FIRST NAME";
+    firstNameText.innerText = "FIRST NAME";
   }
 
   // REGULAR EXPRESSION FOR LAST NAME
   if (!lastname_re.test(lastname.value)) {
     lastNameValid.classList.add("notValid");
     lastNameText.classList.add("textNotValid");
-    lastNameText.innerHTML = "LAST NAME  NOT VALID";
+    lastNameText.innerText = "LAST NAME  NOT VALID";
     isValid = false;
   } else {
     lastNameValid.classList.remove("notValid");
     lastNameText.classList.remove("textNotValid");
-    lastNameText.innerHTML = "LAST NAME";
+    lastNameText.innerText = "LAST NAME";
   }
 
   // REGULAR EXPRESSION FOR EMAIL NAME
   if (!email_re.test(email.value)) {
     emailValid.classList.add("notValid");
     emailText.classList.add("textNotValid");
-    emailText.innerHTML = "EMAIL NOT VALID";
+    emailText.innerText = "EMAIL NOT VALID";
     isValid = false;
   } else {
     emailValid.classList.remove("notValid");
     emailText.classList.remove("textNotValid");
-    emailText.innerHTML = "EMAIL";
+    emailText.innerText = "EMAIL";
   }
 
   // REGULAR EXPRESSION FOR PHONE
   if (!phone_re.test(phone.value)) {
     phoneValid.classList.add("notValid");
     phoneText.classList.add("textNotValid");
-    phoneText.innerHTML = "PHONE NOT VALID";
+    phoneText.innerText = "PHONE NOT VALID";
     isValid = false;
   } else {
     phoneValid.classList.remove("notValid");
     phoneText.classList.remove("textNotValid");
-    phoneText.innerHTML = "PHONE";
+    phoneText.innerText = "PHONE";
   }
+
   // REGULAR EXPRESSION FOR TEXT
   if (!text_re.test(text.value)) {
     textValid.classList.add("notValid");
