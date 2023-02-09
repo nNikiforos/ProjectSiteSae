@@ -35,7 +35,6 @@
 }
 .content,
 .content2 p {
-  font-size: 23px;
   margin-bottom: 10px;
 }
 .column1 {
@@ -143,21 +142,6 @@
 
 /* IMAGES STYLES  */
 .container img {
-  border-radius: 5px;
   box-shadow: 0 0 3px 1px rgb(131, 131, 131);
-  transition: all 0.2s;
 }
-.container img:hover {
-  border-radius: 5px;
-  box-shadow: 0 0 3px 1px rgb(131, 131, 131);
-  transform: scale(1.1);
-  transition: all 0.6s;
-}
-.images1-list img:hover {
-  transform: scale(1.5);
-  transition: all 0.6s;
-}
-.image2-list img:hover {
-  transform: scale(1.9);
-  transition: all 0.6s;
-}
+

@@ -7,8 +7,9 @@
     <title>Activities</title>
     <link rel="stylesheet" href="/CSS/head-foot.css" />
     <link rel="stylesheet" href="/CSS/activities.css" />
+    <script src="../JS/activities.js" defer></script>
   </head>
-  <body>
+  <body id="containerId">
     <!-- --------HEADER------- -->
     <header class="navbar">
       <div class="navbarcontainer">
@@ -31,302 +32,762 @@
       </div>
     </header>
     <!-- MAIN IMAGE -->
-    <div class="activitiesmainimg"></div>
-    <!-- TABS CONTAINER -->
-    <div class="mytabs">
-      <!-- TAB FOR ADVENTURES -->
-      <input
-        type="radio"
-        id="tab-adventures-btn"
-        name="mytabs"
-        checked="checked"
-      />
-      <label for="tab-adventures-btn" onclick="changeTab('tab-adventures')"
-        >ADVENTURES</label
-      >
-      <div class="tab activeTab" id="tab-adventures">
-        <h2>ADVENTURES</h2>
-        <div class="boxcontainer">
-          <!-- ADVENTURES MODAL 1  -->
-          <div class="box" data-modal-target="#modal1">
-            <img class="img" src="/img/img.jpg" alt="img" />
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="modal" id="modal1">
-            <div class="modal-header">
-              <div class="title">ADVENTURES MODAL 1</div>
-              <button data-close-button class="close-button">&times;</button>
+    <div class="activitiesmainimg">
+      <img id="adventures" class="activeImg" />
+      <img id="nature" />
+      <img id="museums" />
+    </div>
+    <div class="container">
+      <div class="title-info">
+        <h2>
+          Rethymno: A Destination for Adventure-Seekers and Culture Enthusiasts
+        </h2>
+        <p>
+          Rethymno, is the perfect destination for travelers seeking a mix of
+          adventure and culture. From its pristine beaches and crystal clear
+          waters, to its rich historical and cultural heritage, Rethymno has
+          something to offer for everyone. Take a stroll through the old town,
+          admire the Venetian architecture, and immerse yourself in the local
+          museums and monuments. Or, if you're feeling adventurous, go on a hike
+          in the nearby mountains, go snorkeling in the turquoise waters, or
+          simply relax and soak up the Mediterranean sun. With so much to see
+          and do, Rethymno is the ultimate destination for adventure-seekers and
+          culture enthusiasts.
+        </p>
+      </div>
+      <!-- TABS CONTAINER -->
+      <div class="mytabs">
+        <!-- TAB FOR ADVENTURES -->
+        <input
+          type="radio"
+          id="tab-adventures-btn"
+          name="mytabs"
+          checked="checked"
+        />
+        <label for="tab-adventures-btn" onclick="changeTab('tab-adventures')">
+          <h2>ADVENTURES</h2>
+        </label>
+        <div class="tab activeTab" id="tab-adventures">
+          <h2>ADVENTURES</h2>
+          <div class="boxcontainer">
+            <!-- ADVENTURES MODAL 1  -->
+            <div class="box" data-modal-target="#modal1">
+              <img
+                class="img"
+                src="/img/activities/adventures/bungee.jpg"
+                alt="bungee"
+              />
+              <p>Bungee Jumping Aradaina.</p>
             </div>
-            <div class="modal-body">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure sed
-              libero, perspiciatis omnis doloremque enim harum illo eveniet
-              tempore repudiandae, dolores quibusdam saepe. Quos aspernatur ea
-              possimus, nam corrupti odio!
+            <div class="modal" id="modal1">
+              <div class="modal-header">
+                <div class="title">ARADAINA BUNGEE JUMPING</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  The 138m jump is the code number indicating the only point for
+                  bungee jumping in Crete where you can test your limits facing
+                  and releasing the fear by diving into the wild nature of the
+                  south Crete, at one of the highest points for bungee jumping
+                  in Europe. The tallest bridge for bungee jumping in Greece
+                  unites the two edges of the Aradena gorge at the height of
+                  138m
+                </p>
+                <img
+                  src="/img/activities/adventures/modal-bungee.jpg"
+                  alt="bungee"
+                />
+                <p>
+                  The gorge of Aradena is located in the region of Sfakia, in
+                  the prefecture of Chania, 85 kilometres from the city and same
+                  distance from Rethymno. The risky plunge into the void of the
+                  steepest and deepest gorge of 138 meters deep is one of the
+                  most impressive natural scenery that you have ever visited in
+                  the island of Crete. The iron bridge over the vertiginous
+                  precipice is the highest bridge for bungee in Greece and the
+                  second in Europe. The Aradena Gorge, also known as "Faraggas",
+                  is one of the most beautiful and largest of Crete, having a
+                  length of 15 meters. If you prefer hiking in the gorge, a
+                  quieter gorge than Samaria, Imbros or Agia Irini, take the
+                  route starts from the abandoned village of Aradena that runs a
+                  deep cut of the southern slopes of the White Mountains and
+                  ends to the beach of Marmara (2½ to 3 hours of walking time).
+                </p>
+              </div>
             </div>
-          </div>
-          <!-- ADVENTURES MODAL 2  -->
-          <div class="box" data-modal-target="#modal2">
-            <img class="img" src="/img/img.jpg" alt="img" />
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="modal" id="modal2">
-            <div class="modal-header">
-              <div class="title">ADVENTURES MODAL 2</div>
-              <button data-close-button class="close-button">&times;</button>
+
+            <!-- ADVENTURES MODAL 2  -->
+            <div class="box" data-modal-target="#modal2">
+              <img
+                class="img"
+                src="/img/activities/adventures/dive.jpg"
+                alt="dive"
+              />
+              <p>Diving Center Rethymno</p>
             </div>
-            <div class="modal-body">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure sed
-              libero, perspiciatis omnis doloremque enim harum illo eveniet
-              tempore repudiandae, dolores quibusdam saepe. Quos aspernatur ea
-              possimus, nam corrupti odio!bbvbvbvbvbvb
+            <div class="modal" id="modal2">
+              <div class="modal-header">
+                <div class="title">RETHYMNO DIVING CENTER</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  The diving center in Rethymno, Crete, is a popular destination
+                  for both experienced and novice divers. With crystal-clear
+                  waters and an abundance of marine life, the center provides a
+                  unique and unforgettable diving experience. The staff is
+                  knowledgeable, friendly, and committed to ensuring the safety
+                  and enjoyment of every diver. They offer a range of services,
+                  including diving lessons, guided dives, and snorkeling
+                  excursions. Whether you're a seasoned diver or just starting
+                  out, the diving center in Rethymno has something to offer. The
+                  center's equipment is well-maintained and up-to-date, and they
+                  use only the latest technology and techniques to provide their
+                  guests with the best possible experience. The center's
+                  location, with its stunning views of the Aegean Sea and the
+                  surrounding mountains, makes it an ideal base for exploring
+                  all that this region has to offer. Overall, the diving center
+                  in Rethymno is a must-visit for anyone interested in exploring
+                  the underwater world.
+                </p>
+                <img
+                  src="/img/activities/adventures/modal-dive1.jpg"
+                  alt="dive"
+                />
+              </div>
             </div>
-          </div>
-          <!-- ADVENTURES MODAL 3  -->
-          <div class="box" data-modal-target="#modal3">
-            <img class="img" src="/img/img.jpg" alt="img" />
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="modal" id="modal3">
-            <div class="modal-header">
-              <div class="title">ADVENTURES MODAL 3</div>
-              <button data-close-button class="close-button">&times;</button>
+
+            <!-- ADVENTURES MODAL 3  -->
+            <div class="box" data-modal-target="#modal3">
+              <img
+                class="img"
+                src="/img/activities/adventures/modal-samaria2.jpg"
+                alt="pezoporia"
+              />
+              <p>Samaria Gorge</p>
             </div>
-            <div class="modal-body">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure sed
-              libero, perspiciatis omnis doloremque enim harum illo eveniet
-              tempore repudiandae, dolores quibusdam saepe. Quos aspernatur ea
-              possimus, nam corrupti odio!bbvbvbvbvbvb
+            <div class="modal" id="modal3">
+              <div class="modal-header">
+                <div class="title">THE SAMARIA GORGE</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  The gorge of Samaria is situated in the National park of
+                  Samaria, in the White Mountains in West Crete. This majestuous
+                  gorge is considered one of the great attractions of Crete and
+                  many tourists want to visit it. But you must realise that it
+                  is a long (5 to 7 hours) walk on rough terrain so you will
+                  need to have a certain degree of fitness and walking
+                  experience in order to enjoy it.
+                </p>
+                <img
+                  src="/img/activities/adventures/modal-samaria1.jpg"
+                  alt="samaria"
+                />
+                <img
+                  src="/img/activities/adventures/modal-samaria3.jpg"
+                  alt="samaria"
+                />
+                <p>
+                  The Samaria National Park has traditionally always opened to
+                  the public at the beginning of May. It has often been possible
+                  to enter the gorge of Samaria at some point in April from the
+                  bottom part but this depends on the weather and the amount of
+                  work needed to restore the path after the winter rains. So the
+                  opening dates of the gorge vary: it could open a little before
+                  the 1st of May, on the 1st of May or later (if the weather is
+                  bad or repair work is late).
+                </p>
+                <p>
+                  The gorge of Samaria closes to the public at the end of
+                  October. but may close earlier if autumn rains (not uncommon
+                  in October) damage the path or make some cliffs unstable. The
+                  gorge will also be closed on rainy days (when there is a
+                  danger of rock falls). In winter, high water makes the gorge
+                  of Samaria dangerous and impassable. The park opens daily at
+                  daylight (so the exact time will vary depending on the time of
+                  the year) and closes in the evening. If you want to enter the
+                  park after around 14.00 you will not be allowed past the first
+                  quarter of the walk and will need to return to your starting
+                  point.
+                </p>
+              </div>
             </div>
-          </div>
-          <!-- ADVENTURES MODAL 4  -->
-          <div class="box" data-modal-target="#modal4">
-            <img class="img" src="/img/img.jpg" alt="img" />
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="modal" id="modal4">
-            <div class="modal-header">
-              <div class="title">ADVENTURES MODAL 4</div>
-              <button data-close-button class="close-button">&times;</button>
+
+            <!-- ADVENTURES MODAL 4  -->
+            <div class="box" data-modal-target="#modal4">
+              <img
+                class="img"
+                src="/img/activities/adventures/pirates.jpg"
+                alt="img"
+              />
+              <p>Pirate Boat Cruise</p>
             </div>
-            <div class="modal-body">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure sed
-              libero, perspiciatis omnis doloremque enim harum illo eveniet
-              tempore repudiandae, dolores quibusdam saepe. Quos aspernatur ea
-              possimus, nam corrupti odio!bbvbvbvbvbvb
+            <div class="modal" id="modal4">
+              <div class="modal-header">
+                <div class="title">RETHYMNO: PIRATE BOAT CRUISE</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Channel your inner pirate and sail along Crete’s north coast
+                  on this pirate-themed cruise from Rethymno. Board the
+                  'Barbarossa' replica Spanish galleon, and sail to the pirate
+                  caves and Camarola rock arch. After taking photos here, swim
+                  and snorkel in Geropotamus Bay before cruising past Rethymno’s
+                  Venetian fortress back to port. Onboard bar with drinks (own
+                  expense), live onboard commentary, and use of snorkeling
+                  equipment and pirate costumes included.
+                </p>
+                <li>
+                  Pirate-themed cruise from Rethymno Sail along Crete’s north
+                  coast on a mock Spanish galleon.
+                </li>
+                <li>
+                  See the pirate caves, Camarola arch, and Rethymno Venetian
+                  fortress from the water
+                </li>
+                <li>Swim and snorkel from the ship at Geropotamus Bay</li>
+                <li>Use of pirate costumes and snorkeling equipment</li>
+                <li>
+                  Ship bar with drinks at own expense, plus live onboard
+                  commentary
+                </li>
+                <li>Family-friendly cruise</li>
+                <img
+                  src="/img/activities/adventures/modal-pirates1.jpg"
+                  alt="ship"
+                />
+                <img
+                  src="/img/activities/adventures/modal-pirates2.jpg"
+                  alt="ship2"
+                />
+              </div>
             </div>
-          </div>
-          <!-- ADVENTURES MODAL 5  -->
-          <div class="box" data-modal-target="#modal5">
-            <img class="img" src="/img/img.jpg" alt="img" />
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="modal" id="modal5">
-            <div class="modal-header">
-              <div class="title">ADVENTURES MODAL 5</div>
-              <button data-close-button class="close-button">&times;</button>
+
+            <!-- ADVENTURES MODAL 5  -->
+            <div class="box" data-modal-target="#modal5">
+              <img
+                class="img"
+                src="/img/activities/adventures/modal-safari1.jpg"
+                alt="img"
+              />
+              <p>Cretan Safari</p>
             </div>
-            <div class="modal-body">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure sed
-              libero, perspiciatis omnis doloremque enim harum illo eveniet
-              tempore repudiandae, dolores quibusdam saepe. Quos aspernatur ea
-              possimus, nam corrupti odio!bbvbvbvbvbvb
+            <div class="modal" id="modal5">
+              <div class="modal-header">
+                <div class="title">CRETAN SAFARI</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Explore the scenic landscape of Crete on an 8-hour Land Rover
+                  safari, and travel off-road along the old Minoan Path. Enjoy
+                  panoramic views during a barbecue lunch with unlimited wine on
+                  the Lassithi Plateau. Visit quaint villages, and more.
+                </p>
+                <li>Drive along off-road paths in the mountains of Crete</li>
+                <li>See the cave where Zeus was born</li>
+                <li>Enjoy a barbecue lunch with unlimited wine</li>
+                <li>
+                  Discover one of the mountain shelters used by the shepherds
+                </li>
+                <li>
+                  Look at the traditional handicrafts of the Lassinthos Eco Park
+                </li>
+                <img
+                  class="img"
+                  src="/img/activities/adventures/modal-safari2.jpg"
+                  alt="safari"
+                />
+                <img
+                  class="img"
+                  src="/img/activities/adventures/modal-safaei3.jpg"
+                  alt="safari"
+                />
+              </div>
             </div>
-          </div>
-          <!-- ADVENTURES MODAL 6  -->
-          <div class="box" data-modal-target="#modal6">
-            <img class="img" src="/img/img.jpg" alt="img" />
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="modal" id="modal6">
-            <div class="modal-header">
-              <div class="title">ADVENTURES MODAL 6</div>
-              <button data-close-button class="close-button">&times;</button>
+
+            <!-- ADVENTURES MODAL 6  -->
+            <div class="box" data-modal-target="#modal6">
+              <img
+                class="img"
+                src="/img/activities/adventures/watersport.jpg"
+                alt="img"
+              />
+              <p>Water Sports</p>
             </div>
-            <div class="modal-body">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure sed
-              libero, perspiciatis omnis doloremque enim harum illo eveniet
-              tempore repudiandae, dolores quibusdam saepe. Quos aspernatur ea
-              possimus, nam corrupti odio!bbvbvbvbvbvb
+            <div class="modal" id="modal6">
+              <div class="modal-header">
+                <div class="title">WATER SPORTS</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+                sed libero, perspiciatis omnis doloremque enim harum illo
+                eveniet tempore repudiandae, dolores quibusdam saepe. Quos
+                aspernatur ea possimus, nam corrupti odio!bbvbvbvbvbvb
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- TAB FOR NATURE -->
 
-      <input type="radio" id="tab-nature-btn" name="mytabs" />
-      <label for="tab-nature-btn" onclick="changeTab('tab-nature')"
-        >NATURE</label
-      >
-      <div class="tab" id="tab-nature">
-        <h2>NATURE</h2>
-        <div class="boxcontainer">
-          <!-- NATURE MODAL 1 -->
-          <div class="box" data-modal-target="#modalnat1">
-            <img class="img" src="/img/img.jpg" alt="img" />
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="modal" id="modalnat1">
-            <div class="modal-header">
-              <div class="title">NATURE MODAL 1</div>
-              <button data-close-button class="close-button">&times;</button>
+        <!-- TAB FOR NATURE -->
+        <input type="radio" id="tab-nature-btn" name="mytabs" />
+        <label for="tab-nature-btn" onclick="changeTab('tab-nature')">
+          <h2>NATURE</h2></label
+        >
+        <div class="tab" id="tab-nature">
+          <h2>NATURE</h2>
+          <div class="boxcontainer">
+            <!-- NATURE MODAL 1 -->
+            <div class="box" data-modal-target="#modalnat1">
+              <img
+                class="img"
+                src="/img/activities/nature/melidoni.jpg"
+                alt="melidoni"
+              />
+              <p>Melidoni Cave</p>
             </div>
-            <div class="modal-body">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure sed
-              libero, perspiciatis omnis doloremque enim harum illo eveniet
-              tempore repudiandae, dolores quibusdam saepe. Quos aspernatur ea
-              possimus, nam corrupti odio!bbvbvbvbvbvb nature
+            <div class="modal" id="modalnat1">
+              <div class="modal-header">
+                <div class="title">THE MELIDONI CAVE</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  The Melidoni Cave is located about 1 800 metres northwest of
+                  the village. It has an extremely interesting history and
+                  amazing archaeological findings some of which are exhibited in
+                  the Archaeological Museum of Rethymno. ​ The Melidoni cave is
+                  also called "Gerondospilios". It was used for religious
+                  ceremonies. During the Minoan Civilization, it was a place of
+                  worship for Talos the bronze giant guardian of Crete who
+                  protected the island of Crete from enemies. ​ It is of
+                  archaeological and historical interest. In October 1823 370
+                  women and children and 30 warriors who hid from Hussein Bey
+                  sought refuge in the Melidoni cave. When he found out, the
+                  cave was surrounded by his army and he asked Cretan people to
+                  surrender. ​ When they refused to do so, Ottomans started to
+                  attack them. Three months later they dropped combustible
+                  materials into an opening leading to the cave and set it on
+                  fire. Men, women and children lost their lives in the cave in
+                  January 1824.
+                </p>
+                <img
+                  src="/img/activities/nature/modal-melidoni1.jpg"
+                  alt="cave"
+                />
+                <img
+                  src="/img/activities/nature/modal-melidoni2.jpg"
+                  alt="cave"
+                />
+                <p>
+                  In the central room of the cave there is an ossuary containing
+                  the bones of the heroes of Melidoni cave. ​ The arched
+                  entrance to the cave is leading to the first chamber of the
+                  cave called "Room of Heroes", where we see "Mnemion"
+                  (Monument), a complex filled with stalagmites. On the way to
+                  "Stavrodromi" (Crossroad) we get into the right chamber. We
+                  reach the "Pashley Room" where stalagmites and stalactites
+                  create a wonderful complex. ​ As we keep on walking, the rock
+                  formations give the impression of being on another planet. In
+                  the "Room of the rocks" through a narrow path we reach the
+                  "Chamber of Katavothra" and we turn right to the "Iperoon"
+                  (Gallery). ​ Walking down the cave we reach "Stavrodromi"
+                  again and we walk on the left side of the cave which has only
+                  one chamber "The Chamber of Curtains", which is adorned with
+                  impressive stalactites and stalagmites.
+                </p>
+              </div>
             </div>
-          </div>
-          <!-- NATURE MODAL 2 -->
-          <div class="box" data-modal-target="#modalnat2">
-            <img class="img" src="/img/img.jpg" alt="img" />
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="modal" id="modalnat2">
-            <div class="modal-header">
-              <div class="title">NATURE MODAL 2</div>
-              <button data-close-button class="close-button">&times;</button>
+
+            <!-- NATURE MODAL 2 -->
+            <div class="box" data-modal-target="#modalnat2">
+              <img
+                class="img"
+                src="/img/activities/nature/preveli.jpg"
+                alt="preveli"
+              />
+              <p>Preveli Beach</p>
             </div>
-            <div class="modal-body">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure sed
-              libero, perspiciatis omnis doloremque enim harum illo eveniet
-              tempore repudiandae, dolores quibusdam saepe. Quos aspernatur ea
-              possimus, nam corrupti odio!bbvbvbvbvbvb nature
+            <div class="modal" id="modalnat2">
+              <div class="modal-header">
+                <div class="title">PREVELI BEACH (FOINIKODASOS)</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Preveli is a famous beach on the south side of Crete Island.
+                  Crete is the biggest island in Greece, and it attracts
+                  visitors because it is a place where you can find everything,
+                  from modern cities and exotic beaches to gorges and big
+                  mountains. The local legend says that the mythological king
+                  Odysseus stopped in Preveli on the way to his homeland,
+                  Ithaka. What makes Preveli beach so famous is the palm forest
+                  surrounding the river, which comes from a gorge and ends up in
+                  the sea. The exotic beauty of nature attracted in the 60s and
+                  70s hippies from around the globe who used to live here and
+                  make huts under the palm trees. Due to the sensitivity of
+                  nature around Preveli Beach, the area is protected by the
+                  Natura 2000, and it is a natural reserve. If you plan a trip
+                  to the area of Rethymno, this place should be on the top of
+                  your list. In this article, you will find all the information
+                  you might need to organize your excursion to Preveli beach.
+                </p>
+                <img
+                  src="/img/activities/nature/modal-preveli1.jpg"
+                  alt="preveli"
+                />
+                <img
+                  src="/img/activities/nature/modal-preveli2.jpg"
+                  alt="preveli"
+                />
+              </div>
             </div>
-          </div>
-          <!-- NATURE MODAL 3 -->
-          <div class="box" data-modal-target="#modalnat3">
-            <img class="img" src="/img/img.jpg" alt="img" />
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="modal" id="modalnat3">
-            <div class="modal-header">
-              <div class="title">NATURE MODAL 3</div>
-              <button data-close-button class="close-button">&times;</button>
+
+            <!-- NATURE MODAL 3 -->
+            <div class="box" data-modal-target="#modalnat3">
+              <img
+                class="img"
+                src="/img/activities/nature/psiloritis.jpg"
+                alt="psiloritis"
+              />
+              <p>Psiloritis</p>
             </div>
-            <div class="modal-body">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure sed
-              libero, perspiciatis omnis doloremque enim harum illo eveniet
-              tempore repudiandae, dolores quibusdam saepe. Quos aspernatur ea
-              possimus, nam corrupti odio!bbvbvbvbvbvb nature
+            <div class="modal" id="modalnat3">
+              <div class="modal-header">
+                <div class="title">PSILORITIS MOUNTAIN</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Hiking to the Psiloritis on Crete: This walk is actually a
+                  heavier hike or mountain walk to the Psiloritis. The
+                  Psiloritis is the highest mountain of Crete with a height of
+                  2.456 meters. This mountain is also known as the Ida mountain.
+                  The Psiloritis is located in central Crete in the province of
+                  Rethymnon. Psiloritis is a bit higher than the Lefka Ori
+                  mountains in Chania (white mountains). The mountain has snow
+                  for approximately 7 months per year.
+                </p>
+                <img
+                  src="/img/activities/nature/modal-psiloritis1.jpg"
+                  alt="psiloritis"
+                />
+                <img
+                  src="/img/activities/nature/modal-psiloritis2.jpg"
+                  alt="psiloritis"
+                />
+                <p>
+                  On the top of Psiloritis is a small church built from rocks,
+                  with a cross. The name of this church is Timios Stavros, which
+                  is also written on some signs to show you the way to the top
+                  of the mountain. Every year at the 14th of September the name
+                  day of the church Timios Stavros is celebrated. The mountain
+                  was used in ancient times for the extraction of gold and
+                  copper. Down from the Psiloritis mountain, at the Nida
+                  plateau, is the Idaion Antron cave located. In this cave Zeus
+                  was born, or was it the cave of Zeus at Lassithi?! According
+                  to the legend, Zeus grew up on the top of Psiloritis.
+                </p>
+              </div>
             </div>
-          </div>
-          <!-- NATURE MODAL 4 -->
-          <div class="box" data-modal-target="#modalnat4">
-            <img class="img" src="/img/img.jpg" alt="img" />
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="modal" id="modalnat4">
-            <div class="modal-header">
-              <div class="title">NATURE MODAL 4</div>
-              <button data-close-button class="close-button">&times;</button>
+
+            <!-- NATURE MODAL 4 -->
+            <div class="box" data-modal-target="#modalnat4">
+              <img
+                class="img"
+                src="/img/activities/nature/triopetra.jpg"
+                alt="spilies"
+              />
+              <p>Triopetra Beach</p>
             </div>
-            <div class="modal-body">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure sed
-              libero, perspiciatis omnis doloremque enim harum illo eveniet
-              tempore repudiandae, dolores quibusdam saepe. Quos aspernatur ea
-              possimus, nam corrupti odio!bbvbvbvbvbvb nature
+            <div class="modal" id="modalnat4">
+              <div class="modal-header">
+                <div class="title">TRIOPETRA BEACH</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Crete Triopetra Rethymno: Triopetra (=three stones) beach owes
+                  its name to the three imposing rocks found in its waters. It
+                  is located 52 km south of Rethymno town and 13 km north of
+                  Akoumia village. The beach of Triopetra is long and sandy. Due
+                  to its geographical position, it is frequently affected by
+                  southern winds. However, it remains popular due to its crystal
+                  waters. There are some accommodation options close to this
+                  beach and nice taverns with excellent seafood. Triopetra beach
+                  is mostly famous for the wide range of water sports and for
+                  its lovely sunset that creates beautiful colors in the sky. To
+                  go to Triopetra beach, you have to go to Akoumia village and
+                  then take a difficult track. When you are about to reach the
+                  beach, you have to continue on foot for about 5 minutes.
+                </p>
+                <img
+                  src="/img/activities/nature/modal-triopetra1.jpg"
+                  alt="triopetra"
+                />
+                <img
+                  src="/img/activities/nature/modal-triopetra2.jpg"
+                  alt="triopetra"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <!-- TAB FOR MUSEUMS -->
+        <input type="radio" id="tab-museums-btn" name="mytabs" />
+        <label for="tab-museums-btn" onclick="changeTab('tab-museums')"
+          ><h2>MUSEUMS</h2></label
+        >
+        <div class="tab" id="tab-museums">
+          <h2>MUSEUMS</h2>
+          <div class="boxcontainer">
+            <!-- MUSEUM MODAL 1 -->
+            <div class="box" data-modal-target="#modalmus1">
+              <img
+                class="img"
+                src="/img/activities/museums/arkadi.jpg"
+                alt="arkadi"
+              />
+              <p>Arkadi</p>
+            </div>
+            <div class="modal" id="modalmus1">
+              <div class="modal-header">
+                <div class="title">ARKADI</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  The Arkadi Monastery is an Eastern Orthodox monastery,
+                  situated on a fertile plateau 23 km (14 mi) to the southeast
+                  of Rethymnon . The current catholicon (church) dates back to
+                  the 16th century and is marked by the influence of the
+                  Renaissance. This influence is visible in the architecture,
+                  which mixes both Roman and baroque elements. As early as the
+                  16th century, the monastery was a place for science and art
+                  and had a school and a rich library. Situated on a plateau,
+                  the monastery is well fortified, being surrounded by a thick
+                  and high wall. The monastery played an active role in the
+                  Cretan resistance of Ottoman rule during the Cretan revolt of
+                  1866. 943 Greeks, mostly women and children,[1] sought refuge
+                  in the monastery. After three days of battle and under orders
+                  from the hegumen (abbot) of the monastery, the Cretans blew up
+                  barrels of gunpowder, choosing to sacrifice themselves rather
+                  than surrender. The monastery became a national sanctuary in
+                  honor of the Cretan resistance. 8 November is a day of
+                  commemorative parties in Arkadi and Rethymno. The explosion
+                  did not end the Cretan insurrection, but it attracted the
+                  attention of the rest of the world.
+                </p>
+                <img
+                  src="/img/activities/museums/modal-arkadi1.jpg"
+                  alt="arkadi"
+                />
+                <img
+                  src="/img/activities/museums/modal-arkadi1.jpg"
+                  alt="arkadi"
+                />
+              </div>
+            </div>
 
-      <!-- TAB FOR MUSEUMS -->
-      <input type="radio" id="tab-museums-btn" name="mytabs" />
-      <label for="tab-museums-btn" onclick="changeTab('tab-museums')"
-        >MUSEUMS</label
-      >
-      <div class="tab" id="tab-museums">
-        <h2>MUSEUMS</h2>
-        <div class="boxcontainer">
-          <!-- MUSEUM MODAL 1 -->
-          <div class="box" data-modal-target="#modalmus1">
-            <img class="img" src="/img/img.jpg" alt="img" />
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="modal" id="modalmus1">
-            <div class="modal-header">
-              <div class="title">MUSEM MODAL 1</div>
-              <button data-close-button class="close-button">&times;</button>
+            <!-- MUSEUM MODAL 2 -->
+            <div class="box" data-modal-target="#modalmus2">
+              <img
+                class="img"
+                src="/img/activities/museums/logia.jpg"
+                alt="logia"
+              />
+              <p>Loggia Rethymno</p>
             </div>
-            <div class="modal-body">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure sed
-              libero, perspiciatis omnis doloremque enim harum illo eveniet
-              tempore repudiandae, dolores quibusdam saepe. Quos aspernatur ea
-              possimus, nam corrupti odio!bbvbvbvbvbvb nature
+            <div class="modal" id="modalmus2">
+              <div class="modal-header">
+                <div class="title">THE LOGGIA OF RETHYMNO</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  he Venetian Loggia in Rethymno Crete: The Loggia of Rethymno
+                  is a 16th-century Venetian building situated right in the
+                  center of the Old Town of Rethymno. It is a wonderful square
+                  building with three visible walls, each provided with three
+                  equal semicircular arches. The middle arch provides an
+                  entrance at the ground level. The southern side of this
+                  elegant structure has no opening. The Loggia of Rethymno used
+                  to be the meeting place of the noble people of the town to
+                  discuss economic and political issues. It also acted as a
+                  hosting place for many business and entertainment activities
+                  of the Venetians. The Loggia was built according to the plans
+                  of the well-known Veronese engineer Michele Sanmicheli. There
+                  are two statues with human faces on the west wall. In the year
+                  1625, an upper storey was added to the main building. It was
+                  converted into a mosque after the fall of Rethymnon to the
+                  Turks. A turret was built on the west side of the mosque, but
+                  it was pulled down in the 1930s. The Loggia is a few yards
+                  away from the Venetian harbor, directly opposite to it. There
+                  is a narrow passage near the center of the Venetian harbor
+                  that leads to this elegant Venetian structure. At present,
+                  Loggia belongs to the Ministry of Culture and hosts the
+                  Archaeological Museum of Rethymno.
+                </p>
+                <img
+                  src="/img/activities/museums/modal-loggia1.jpg"
+                  alt="loggia"
+                />
+              </div>
             </div>
-          </div>
-          <!-- MUSEUM MODAL 2 -->
-          <div class="box" data-modal-target="#modalmus2">
-            <img class="img" src="/img/img.jpg" alt="img" />
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="modal" id="modalmus2">
-            <div class="modal-header">
-              <div class="title">MUSEM MODAL 2</div>
-              <button data-close-button class="close-button">&times;</button>
+
+            <!-- MUSEUM MODAL 3 -->
+            <div class="box" data-modal-target="#modalmus3">
+              <img
+                class="img"
+                src="/img/activities/museums/military1.jpg"
+                alt="military"
+              />
+              <p>Rethymno Military Museum</p>
             </div>
-            <div class="modal-body">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure sed
-              libero, perspiciatis omnis doloremque enim harum illo eveniet
-              tempore repudiandae, dolores quibusdam saepe. Quos aspernatur ea
-              possimus, nam corrupti odio!bbvbvbvbvbvb nature
+            <div class="modal" id="modalmus3">
+              <div class="modal-header">
+                <div class="title">
+                  RETHYMNO MILITARY MUSEUM OF CHRONOMONASTIRI
+                </div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  The Military Museum of Chromonastiri is located at the central
+                  square of the picturesque traditional village of the same
+                  name, 10 kilometers outside of Rethymno town and operates
+                  since 2010. The museum is hosted in the renowned Villa
+                  Claudio, an impressive mansion of Venetian architecture that
+                  dates from the 17th century and belonged to the homonymous
+                  noble family, while it was restored in recent years. The
+                  building was granted by the locals to the Greek Army in 1997
+                  and is home to military and war-related exhibits that cover a
+                  wide chronological range. The items include weapons, uniforms,
+                  medals, and military equipment from the Venetian era, the
+                  Hellenic Revolution of 1821, the Macedonian Liberation Wars,
+                  the World War II etc. while there is also rich photographic
+                  material related to the evolution and presence of the Greek
+                  military forces to this day. On the outer space, visitors can
+                  also admire warplanes and military vehicles while there are
+                  frequent periodic exhibitions. The museum is closed on
+                  Mondays. It is also closed on Saturdays as it only accepts
+                  groups' visits. From Tuesday to Friday, the museum operates
+                  from 9:00 to 15:00 and on Sunday from 10:00 to 14:00. The
+                  regular fee is at 3 euros and the reduced one at 1,5 euros.
+                </p>
+                <img
+                  src="/img/activities/museums/modal-military1.jpg"
+                  alt="military"
+                />
+                <img
+                  src="/img/activities/museums/modal-military2.jpg"
+                  alt="military"
+                />
+              </div>
             </div>
-          </div>
-          <!-- MUSEUM MODAL 3 -->
-          <div class="box" data-modal-target="#modalmus3">
-            <img class="img" src="/img/img.jpg" alt="img" />
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="modal" id="modalmus3">
-            <div class="modal-header">
-              <div class="title">MUSEM MODAL 3</div>
-              <button data-close-button class="close-button">&times;</button>
+
+            <!-- MUSEUM MODAL 4 -->
+            <div class="box" data-modal-target="#modalmus4">
+              <img
+                class="img"
+                src="/img/activities/museums/palentologiko.jpg"
+                alt="palentologiko"
+              />
+              <p>Paleontological Museum.</p>
             </div>
-            <div class="modal-body">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure sed
-              libero, perspiciatis omnis doloremque enim harum illo eveniet
-              tempore repudiandae, dolores quibusdam saepe. Quos aspernatur ea
-              possimus, nam corrupti odio!bbvbvbvbvbvb nature
+            <div class="modal" id="modalmus4">
+              <div class="modal-header">
+                <div class="title">PALEONTOLOGICAL OF RETHYMNON</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  The Temple of Mastabas, with the characteristic 9-dome
+                  architecture, is an authentic monument of Rethymnon and has
+                  been conceded to GNHM following a decision of the Ministry of
+                  Culture. Upon completion of restoration and of the relevant
+                  museological study, it will operate as a Museum of
+                  Palaeontology, being annex of the Goulandris National History
+                  museum in Crete. The paleontological collection of the
+                  Municipality of Rethymnon, which is the basis of the exhibited
+                  material, has already been conceded to GNHM. It has been
+                  studied and conserved with the cooperation of the University
+                  of Athens (Historical Geology and Palaeontology Faculty,
+                  Department of Geology and Geoenvironment), by the emeritus
+                  professor N. Symeonidis and the assistant professor Dr. G.
+                  Theodorou. Original findings of endemic mammals in real-size
+                  representations and in anatomic arrangement shall accompany
+                  the exhibition. Visitors shall get to know the dwarf Cretan
+                  elephants, dwarf hippopotamuses, and polymorphous Cretan
+                  deers, and they will find information on these animals, the
+                  first inhabitants of Crete, and on Greek mythology.
+                </p>
+                <img
+                  src="/img/activities/museums/modal-pal1.jpg"
+                  alt="palentologiko"
+                />
+                <img
+                  src="/img/activities/museums/modal-pal2.jpg"
+                  alt="palentologiko"
+                />
+              </div>
             </div>
-          </div>
-          <!-- MUSEUM MODAL 4 -->
-          <div class="box" data-modal-target="#modalmus4">
-            <img class="img" src="/img/img.jpg" alt="img" />
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="modal" id="modalmus4">
-            <div class="modal-header">
-              <div class="title">MUSEM MODAL 4</div>
-              <button data-close-button class="close-button">&times;</button>
+
+            <!-- MUSEUM MODAL 5 -->
+            <div class="box" data-modal-target="#modalmus5">
+              <img
+                class="img"
+                src="/img/activities/museums/tehnon.jpg"
+                alt="kalon technon"
+              />
+              <p>Contemporary Art Museum</p>
             </div>
-            <div class="modal-body">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure sed
-              libero, perspiciatis omnis doloremque enim harum illo eveniet
-              tempore repudiandae, dolores quibusdam saepe. Quos aspernatur ea
-              possimus, nam corrupti odio!bbvbvbvbvbvb nature
-            </div>
-          </div>
-          <!-- MUSEUM MODAL 5 -->
-          <div class="box" data-modal-target="#modalmus5">
-            <img class="img" src="/img/img.jpg" alt="img" />
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="modal" id="modalmus5">
-            <div class="modal-header">
-              <div class="title">MUSEM MODAL 5</div>
-              <button data-close-button class="close-button">&times;</button>
-            </div>
-            <div class="modal-body">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure sed
-              libero, perspiciatis omnis doloremque enim harum illo eveniet
-              tempore repudiandae, dolores quibusdam saepe. Quos aspernatur ea
-              possimus, nam corrupti odio!bbvbvbvbvbvb nature
+            <div class="modal" id="modalmus5">
+              <div class="modal-header">
+                <div class="title">CONTEMPORARY ART</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  The Municipal Gallery “L.Kanakakis” was founded in 1992. From
+                  its beginning, the Municipal Gallery was housed in a Venetian
+                  building in the center of the old, historical town of
+                  Rethymnon, below the Fortezza and the Archaeological Museum.
+                  Its permanent collection includes works of Lefteris Kanakakis
+                  (oil paintings, drafts, and aquarelles) thus representing all
+                  the stages of his achievements and works of contemporary Greek
+                  artists, thus covering a wide spectrum of modern Greek art as
+                  it has been accomplished from 1950 until today. In 1995, the
+                  town of Rethymnon was incorporated into the National Cultural
+                  Network and, as a result, the Centre for Contemporary Art.
+                  Since 2002 functions within the framework of Visual Art
+                  Network – The domain of culture. The Rethymnon Centre for
+                  Contemporary Art is initiating dynamic activities in the field
+                  of periodic exhibitions of local, national, and international
+                  interest in co-operation with many agencies in Greece and
+                  abroad. All events are accompanied by lectures, training
+                  programs, speeches, seminars, etc. The exhibition activities
+                  of the Rethymnon Centre for Contemporary Art-Municipal Gallery
+                  “L.Kanakakis” will be concluded with the issue of catalogs and
+                  other printed material of educational and informative nature.
+                  At the same time, visual art workshops, have been operating
+                  under the auspices of the R.C.A. since 1995.
+                </p>
+                <img src="/img/activities/museums/modal-art1.jpg" alt="art" />
+                <img src="/img/activities/museums/modal-art2.jpg" alt="art" />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div id="overlay"></div>
+
     <!-- FOOTER -->
     <footer>
       <div class="footercontainer">
@@ -389,6 +850,5 @@
         </div>
       </div>
     </footer>
-    <script src="../JS/activities.js"></script>
   </body>
 </html>

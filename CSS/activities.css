@@ -1,8 +1,55 @@
 .activitiesmainimg {
-  background: url(/img/img.jpg) no-repeat center center/cover;
   width: 100%;
-  height: 450px;
+  height: 55vh;
+  position: relative;
 }
+.activitiesmainimg #adventures {
+  background: url(/img/activities/adventure.jpg) no-repeat center center/cover;
+}
+.activitiesmainimg #nature {
+  background: url(/img/activities/nature.jpg) no-repeat center center/cover;
+}
+.activitiesmainimg #museums {
+  background: url(/img/activities/museum.jpg) no-repeat center center/cover;
+}
+.activitiesmainimg img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.activeImg {
+  z-index: 1;
+  animation: imageDo 2s;
+}
+@keyframes imageDo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* CONTAINER  */
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 70px;
+  display: grid;
+  align-content: space-around;
+}
+
+/* title and info  */
+.title-info {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.title-info h2 {
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
 /* TABS  */
 .mytabs {
   display: flex;
@@ -10,38 +57,38 @@
   margin: 0 auto;
   padding: 18px 20px;
   width: 100%;
+  margin-bottom: 100px;
 }
-
 .mytabs input[type="radio"] {
   display: none;
 }
+
 /* BUTTON TABS */
 .mytabs label {
   cursor: pointer;
   padding: 15px 50px;
-  font-weight: 600;
-  background-color: #2b3985;
+  background-color: #0a15b8;
   border-radius: 10px;
   color: white;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   margin-right: 12px;
-  box-shadow: 0 0 5px #4e4c4c;
   transition-duration: 0.3s;
-  transition-property: box-shadow, transform;
 }
-.mytabs label:hover,
+.mytabs label:hover {
+  transform: scale(1.05);
+}
 .mytabs label:focus,
 .mytabs label:active {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transform: scale(1.04);
+  transform: scale(0.9);
+  transition: all 0.1s;
 }
 .mytabs input[type="radio"]:checked + label {
-  background: white;
-  color: #2b3985;
+  background: #fafafa;
+  color: #1b42c2;
   margin-bottom: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-  box-shadow: 0 0 0;
+  box-shadow: 0 -5px 2px 2px rgb(129, 129, 129);
   transform: scale(1);
 }
 
@@ -49,15 +96,13 @@
 .mytabs .tab {
   width: 100%;
   padding: 60px 10px;
-  background-color: white;
+  box-shadow: 0 0 3px 2px rgb(129, 129, 129);
   order: 1;
   display: none;
 }
 .mytabs .tab h2 {
-  padding-left: 25px;
-  font-size: 1.6em;
-  padding-bottom: 9px;
-  padding-top: 15px;
+  text-align: center;
+  padding-bottom: 50px;
 }
 .activeTab {
   display: block !important;
@@ -69,37 +114,39 @@
 .boxcontainer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   padding: 0 25px;
+  gap: 60px;
 }
 .box {
-  border-radius: 5px 5px 5px 5px;
-  box-shadow: 0 0 5px #4e4c4c;
-  -webkit-transition-duration: 0.3s;
+  width: 30%;
+  box-shadow: 0 0 5px 2px #4e4c4c;
   transition-duration: 0.3s;
   transition-property: box-shadow, transform;
   cursor: pointer;
-  margin: 10px 10px;
+  background-color: #666666;
 }
 .box:hover,
 .box:focus {
-  box-shadow: 0 0 5px rgb(29, 29, 29);
+  box-shadow: 0 0 5px 3px rgb(78, 78, 78);
   transform: scale(1.02);
 }
 .box:active {
   transform: scale(0.97);
   transition-duration: 0.2s;
 }
-
 .box .img {
   width: 100%;
-  height: 35vh;
-  border-radius: 5px 5px 0px 0px;
+  height: 30vh;
+
 }
 .box p {
-  padding: 0 10px;
-  font-size: 18px;
-  font-family: "Heebo", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: whitesmoke;
+  padding-bottom: 5px;
 }
+
 /* MODAL  */
 .modal {
   position: fixed;
@@ -107,14 +154,12 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
-  border: 1px solid black;
+  box-shadow: 0 0 3px 5px rgb(151, 151, 151);
   border-radius: 10px;
   z-index: 10;
   background-color: white;
-  width: 500px;
   max-width: 80%;
 }
-
 .modal.active {
   transform: translate(-50%, -50%) scale(1);
 }
@@ -125,7 +170,6 @@
   align-items: center;
   border-bottom: 1px solid black;
 }
-
 .modal-header .title {
   font-size: 1.25rem;
   font-weight: bold;
@@ -140,6 +184,17 @@
 }
 .modal-body {
   padding: 10px 15px;
+  display: grid;
+  overflow-y: scroll;
+  height: 80vh;
+  gap: 25px;
+}
+.modal-body img {
+  width: 60%;
+  margin: auto;
+}
+.modal-body li{
+  font-size: 20px;
 }
 
 #overlay {
@@ -149,10 +204,13 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.562);
+  background-color: rgba(0, 0, 0, 0.61);
   pointer-events: none;
 }
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+.dontScroll {
+  overflow: hidden;
 }

@@ -1,23 +1,23 @@
 /* MAIN IMAGE FOR EVENTS HTML */
 .mainimg {
-  background: url(/img/img.jpg) no-repeat center center/cover;
+  display: flex;
+  background-color: rgb(165, 208, 248);
+  clip-path: polygon(0 0, 100% 0, 100% 84%, 50% 100%, 0 84%, 0 40%);
+}
+.mainimg img{
   width: 100%;
-  height: 450px;
 }
 
 /*  START OF INFO CONTENT  */
 .maininfocontainer {
   display: flex;
   justify-content: center;
-  padding: 50px 0px;
+  width: 40%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 5%;
 }
-.maininfo h3 {
-  font-size: 21px;
-}
-.maininfo p {
-  padding-top: 10px;
-  font-size: 20px;
-}
+
 .line {
   background-color: rgb(141, 141, 141);
   height: 2px;
@@ -31,6 +31,10 @@
   display: grid;
   gap: 50px;
 }
+.maininfo h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
 .list {
   display: flex;
   justify-content: space-evenly;
@@ -43,21 +47,19 @@
 .eventgallery img {
   width: 50vw;
   height: 60vh;
-  border-radius: 10px;
   box-shadow: 0 2px 9px 3px rgb(34, 34, 34);
 }
 .event {
   max-width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
-.event h3 {
+.event h2 {
   text-align: center;
   margin-bottom: 10px;
 }
 .event > p {
-  font-size: 20px;
+  margin-bottom: 5px;
 }
 .event4 {
   margin-bottom: 30px;
@@ -76,12 +78,12 @@
   font-size: 110px;
   border-style: none;
   background: none;
-  color: rgba(250, 249, 249, 0.61);
+  color: rgb(253, 20, 20);
   margin-top: auto;
 }
 .btns #prev:hover,
 #next:hover {
-  color: rgb(250, 249, 249);
+  color: rgba(255, 22, 22, 0.76);
   transition-duration: 0.3s;
 }
 .btns #prev:active,
@@ -95,7 +97,8 @@
 #event4_playStop {
   cursor: pointer;
   font-size: 45px;
-  color: rgba(255, 255, 255, 0.616);
+  color: rgb(255, 1, 1);
+  text-shadow: 0 0 10px white;
 }
 .btns #event1_playStop:active,
 #event2_playStop:active,
@@ -107,7 +110,8 @@
 #event2_playStop:hover,
 #event3_playStop:hover,
 #event4_playStop:hover {
-  color: rgb(250, 249, 249);
+  color: rgba(255, 22, 22, 0.76);
+  text-shadow: 0 0 10px white;
 }
 /* DOTS  */
 #indicator {
@@ -116,7 +120,6 @@
   justify-content: center;
   margin: 10px 0;
 }
-
 .dot {
   cursor: pointer;
   height: 100px;
@@ -126,75 +129,79 @@
   transition: all 0.6s ease;
   opacity: 0.5;
 }
+.dot:hover {
+  opacity: 1;
+}
+
 /* EVENT 1 IMAGES  */
 .img01 {
-  background: url(../img/events/nature/land.jpg) center center/cover;
+  background: url(../img/events/miriokefala/miriokefala.jpg) center center/cover;
 }
 .img02 {
-  background: url(../img/events/nature/sea.jpg) center center/cover;
+  background: url(../img/events/miriokefala/miriokefala2.jpg) center
+    center/cover;
 }
 .img03 {
-  background: url(../img/events/nature/mountain.jpg) center center/cover;
+  background: url(../img/events/miriokefala/miriokefala3.jpeg) center
+    center/cover;
 }
 .img04 {
-  background: url(../img/events/nature/tree.jpg) center center/cover;
+  background: url(../img/events/miriokefala/miriokefala4.jpeg) center
+    center/cover;
 }
 .img05 {
-  background: url(../img/events/nature/waterfall.jpg) center center/cover;
+  background: url(../img/events/miriokefala/miriokefala5.jpg) center
+    center/cover;
 }
 /* EVENT 2 IMAGES  */
-.tesla1 {
-  background: url(../img/events/tesla/tesla.jpg) center center/cover;
+.carnival1 {
+  background: url(../img/events/carnival/carnival1.jpg) center center/cover;
 }
-.tesla2 {
-  background: url(../img/events/tesla/model1.jpg) center center/cover;
+.carnival2 {
+  background: url(../img/events/carnival/carnival2.jpg) center center/cover;
 }
-.tesla3 {
-  background: url(../img/events/tesla/model2.jpg) center center/cover;
+.carnival3 {
+  background: url(../img/events/carnival/carnival3.jpg) center center/cover;
 }
-.tesla4 {
-  background: url(../img/events/tesla/model3.jpg) center center/cover;
+.carnival4 {
+  background: url(../img/events/carnival/carnival4.jpg) center center/cover;
 }
-.tesla5 {
-  background: url(../img/events/tesla/model4.jpg) center center/cover;
+.carnival5 {
+  background: url(../img/events/carnival/carnival5.jpg) center center/cover;
 }
 /* EVENT 3 IMAGES  */
-.img21 {
-  background: url(../img/events/sea/sea1.jpg) center center/cover;
+.arkadi1 {
+  background: url(../img/events/arkadi/arkadi1.jpg) center center/cover;
 }
-.img22 {
-  background: url(../img/events/sea/sea2.jpg) center center/cover;
+.arkadi2 {
+  background: url(../img/events/arkadi/arkadi2.jpg) center center/cover;
 }
-.img23 {
-  background: url(../img/events/sea/sea3.jpg) center center/cover;
+.arkadi3 {
+  background: url(../img/events/arkadi/arkadi3.jpg) center center/cover;
 }
-.img24 {
-  background: url(../img/events/sea/sea4.jpg) center center/cover;
+.arkadi4 {
+  background: url(../img/events/arkadi/arkadi4.jpg) center center/cover;
 }
-.img25 {
-  background: url(../img/events/sea/sea5.jpg) center center/cover;
+.arkadi5 {
+  background: url(../img/events/arkadi/arkadi5.jpg) center center/cover;
 }
 /* EVENT 4 IMAGES  */
-.img31 {
-  background: url(../img/events/reth/reth1.jpg) center center/cover;
+.treasure1 {
+  background: url(../img/events/treasure/treasure1.jpg) center center/cover;
 }
-.img32 {
-  background: url(../img/events/reth/reth2.jpg) center center/cover;
+.treasure2 {
+  background: url(../img/events/treasure/treasure2.jpg) center center/cover;
 }
-.img33 {
-  background: url(../img/events/reth/reth3.jpg) center center/cover;
+.treasure3 {
+  background: url(../img/events/treasure/treasure3.jpg) center center/cover;
 }
-.img34 {
-  background: url(../img/events/reth/reth4.jpg) center center/cover;
+.treasure4 {
+  background: url(../img/events/treasure/treasure4.jpg) center center/cover;
 }
-.img35 {
-  background: url(../img/events/reth/reth5.jpg) center center/cover;
+.treasure5 {
+  background: url(../img/events/treasure/treasure5.jpg) center center/cover;
 }
 .active {
   opacity: 1;
   transform: scale(1.1);
-}
-
-.dot:hover {
-  opacity: 1;
 }

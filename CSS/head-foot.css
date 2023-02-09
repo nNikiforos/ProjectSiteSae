@@ -8,12 +8,15 @@
   box-sizing: border-box;
   font-family: "Catamaran", sans-serif;
 }
+* > p {
+  font-size: 23px;
+}
 body {
   background-color: var(--bodycolor);
 }
 /* -----------Navigation Bar--------- */
 .navbar {
-  background-color:rgb(3, 47, 244);
+  background-color: rgb(3, 47, 244);
 }
 .navbarcontainer {
   display: flex;
@@ -118,6 +121,7 @@ footer {
 /* SAE LINK  */
 .saeurl {
   display: flex;
+
   grid-column-start: 4;
 }
 @keyframes leters {
@@ -145,11 +149,16 @@ footer {
 }
 .saep {
   color: var(--footerbgcolor);
+ 
+}
+.saep p {
+  font-size: 15px;
 }
 .saeurl:hover .saep {
   color: white;
   animation: leters 2s ease-in;
 }
 .sae img {
-  width: 108px;
+  width: 100px;
+ 
 }
