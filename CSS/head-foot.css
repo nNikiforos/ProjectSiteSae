@@ -1,7 +1,12 @@
 :root {
   --bodycolor: #fafafa;
-  --footerbgcolor: #3b71ca;
+  --footerbgcolor: rgb(36, 106, 185);
+  --navbarcolor: rgb(16, 72, 136);
 }
+body {
+  background-color: var(--bodycolor);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,19 +16,41 @@
 * > p {
   font-size: 23px;
 }
-body {
-  background-color: var(--bodycolor);
+/* media  */
+@media (max-width: 1380px) {
+  * > p {
+    font-size: 16px;
+  }
+  * > h1 {
+    font-size: 20px;
+  }
 }
+@media (max-width: 1220px) {
+  * > p {
+    font-size: 14px;
+  }
+  * > h1 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 600px) {
+  * > p {
+    font-size: 13px;
+  }
+  * > h1 {
+    font-size: 16px;
+  }
+}
+
 /* -----------Navigation Bar--------- */
 .navbar {
-  background-color: rgb(3, 47, 244);
+  background-color: var(--navbarcolor);
 }
 .navbarcontainer {
   display: flex;
   align-items: center;
   padding: 5px 0;
   justify-content: space-between;
-  flex-wrap: wrap;
   width: 80%;
   margin: auto;
 }
@@ -39,12 +66,47 @@ body {
   color: #fff;
   text-transform: uppercase;
 }
+
 /* -------HOVER--------- */
 .navbar ul li a:hover,
 .navbar ul li a.current {
   background-color: #fafafa;
   color: #3b71ca;
 }
+
+/* media  navbar */
+@media (max-width: 1120px) {
+  .navbarcontainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar ul {
+    gap: 10px;
+  }
+  .navbar ul li a {
+    padding: 5px;
+    border-radius: 5px;
+  }
+}
+@media (max-width: 500px) {
+  .navbarcontainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar ul {
+    gap: 0;
+  }
+  .navbar ul li a {
+    padding: 10px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 390px) {
+  .navbar ul li a {
+    padding: 2px;
+  }
+}
+
 /* FOOTER */
 footer {
   background-color: var(--footerbgcolor);
@@ -113,6 +175,11 @@ footer {
   grid-row-start: 2;
   flex-direction: column-reverse;
 }
+.copy {
+  color: black;
+
+  font-size: 20px;
+}
 /* rethymno logo  */
 .rethymnologo {
   display: flex;
@@ -149,7 +216,6 @@ footer {
 }
 .saep {
   color: var(--footerbgcolor);
- 
 }
 .saep p {
   font-size: 15px;
@@ -160,5 +226,117 @@ footer {
 }
 .sae img {
   width: 100px;
- 
+}
+
+/* media  footer */
+@media (max-width: 1120px) {
+  .footercontainer {
+    margin: auto;
+    gap: 15px;
+  }
+  .footercontainer * h3 {
+    font-size: 16px;
+  }
+  .footercontainer * p,
+  .footercontainer * a {
+    font-size: 15px;
+    text-transform: lowercase;
+  }
+  /* useful links  */
+  .usefulfooter {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    gap: 2px;
+  }
+  /* activities column */
+  .activitiesfooter {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  /* event column  */
+  .eventfooter {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    gap: 2px;
+  }
+  /* contact column  */
+  .contactfooter {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    text-align: center;
+    gap: 2px;
+  }
+
+  /* rethymno logo  */
+  .rethymnologo {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+  /* SAE LINK  */
+  .saeurl {
+    grid-row-start: 3;
+    grid-column-start: 2;
+  }
+  .saep p {
+    color: white;
+  }
+  /* copy rights */
+  .copyright {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+  }
+}
+@media (max-width: 540px) {
+  .footercontainer {
+    width: 95%;
+  }
+  .usefulfooter,
+  .eventfooter,
+  .contactfooter,
+  .activitiesfooter {
+    align-items: flex-start;
+  }
+  .footercontainer * h3 {
+    font-size: 14px;
+  }
+  .footercontainer * p,
+  .footercontainer * a {
+    font-size: 13px;
+    text-transform: lowercase;
+  }
+  .usefulfooter {
+    margin-right: 85px;
+  }
+  .activitiesfooter {
+    margin-right: 50px;
+  }
+  .contactfooter {
+    margin-right: 20px;
+  }
+  .eventfooter {
+    margin-right: 70px;
+  }
+  .rethymnologo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    margin-right: 50px;
+  }
+
+  /* SAE LINK  */
+  .saeurl {
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  /* copy rights */
+  .copyright {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+  }
+  .copy {
+    font-size: 15px;
+  }
 }

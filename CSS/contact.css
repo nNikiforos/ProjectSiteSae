@@ -11,16 +11,15 @@ body {
 .contact-container {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
+
 /* LEFT SIDE  */
 .left {
   line-height: 3rem;
-  justify-content: center;
-  display: flex;
-  font-size: 16px;
 }
-.leftinfo h2 {
-  font-weight: lighter;
+.leftinfo p {
+  margin-bottom: 20px;
 }
 .leftinfo span {
   font-weight: 600;
@@ -34,7 +33,7 @@ div.right {
   margin: 20px 0px;
 }
 .right p {
-  font-size: 16px;
+  font-size: 20px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -47,7 +46,6 @@ div.right {
 .item-group .item-input {
   flex-basis: 100%;
   background-color: white;
-  /* border-bottom: 1px solid black; */
   font-size: 16px;
   color: rgb(53, 53, 53);
   border-radius: 5px;
@@ -124,4 +122,61 @@ textarea {
 .textNotValid {
   color: red;
   font-weight: 600;
+}
+
+/* MAX WIDTH 1000PX  */
+@media (max-width: 1000px) {
+  .contact-container {
+    display: grid;
+    gap: 50px;
+    margin: 30px 0;
+    justify-items: center;
+  }
+  .left {
+    width: 100%;
+    line-height: 2rem;
+  }
+  .leftinfo p {
+    margin-bottom: 5px;
+  }
+  .right p {
+    justify-content: space-around;
+  }
+}
+
+/* MAX WIDTH 650PX  */
+@media (max-width: 650px) {
+  * > h2 {
+    font-size: 17px;
+  }
+  * > label {
+    font-size: 15px;
+  }
+  .contact-container {
+    display: grid;
+    gap: 50px;
+    margin: 30px 0;
+  }
+  .left {
+    line-height: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .right {
+    width: 80%;
+  }
+  .leftinfo p {
+    margin-top: 15px;
+  }
+  .right p {
+    justify-content: space-around;
+    font-size: 17px;
+  }
+  .certify {
+    justify-content: center;
+  }
+  .certify button {
+    margin: auto;
+    margin-top: 10px;
+  }
 }

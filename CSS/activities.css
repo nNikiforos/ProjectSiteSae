@@ -32,7 +32,7 @@
 
 /* CONTAINER  */
 .container {
-  width: 80%;
+  width: 70%;
   margin: auto;
   margin-top: 70px;
   display: grid;
@@ -112,14 +112,13 @@
 
 /* BOXES CONTENT  */
 .boxcontainer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   padding: 0 25px;
   gap: 60px;
 }
 .box {
-  width: 30%;
   box-shadow: 0 0 5px 2px #4e4c4c;
   transition-duration: 0.3s;
   transition-property: box-shadow, transform;
@@ -137,8 +136,9 @@
 }
 .box .img {
   width: 100%;
-  height: 30vh;
-
+  height: 40vh;
+  object-fit: cover;
+  object-position: center;
 }
 .box p {
   font-weight: 600;
@@ -171,8 +171,9 @@
   border-bottom: 1px solid black;
 }
 .modal-header .title {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: bold;
+  padding: 10px 40px;
 }
 .modal-header .close-button {
   cursor: pointer;
@@ -183,18 +184,29 @@
   font-weight: bold;
 }
 .modal-body {
-  padding: 10px 15px;
+  padding: 60px;
   display: grid;
   overflow-y: scroll;
   height: 80vh;
+  box-shadow: 0 0 5px 3px grey;
+}
+.modal-body p {
+  margin-bottom: 30px;
+}
+.images-flex {
+  display: flex;
   gap: 25px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 .modal-body img {
-  width: 60%;
-  margin: auto;
+  width: 30vw;
+  object-fit: cover;
+  object-position: center;
 }
-.modal-body li{
+.modal-body li {
   font-size: 20px;
+  margin-bottom: 30px;
 }
 
 #overlay {
@@ -214,3 +226,209 @@
 .dontScroll {
   overflow: hidden;
 }
+
+@media (max-width: 1440px) {
+  * > p {
+    font-size: 17px;
+  }
+  .container {
+    width: 80%;
+  }
+  .title-info {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .title-info h2 {
+    text-align: center;
+  }
+  .box .img {
+    height: 25vh;
+  }
+  .modal-body {
+    height: 55vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .activitiesmainimg {
+    height: 30vh;
+  }
+  .box .img {
+    height: 20vh;
+  }
+  .boxcontainer {
+    gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  * > p {
+    font-size: 15px;
+  }
+  * > h2 {
+    font-size: 18px;
+  }
+  .activitiesmainimg {
+    width: 90%;
+    margin: auto;
+    height: 25vh;
+    margin-top: 20px;
+  }
+  .container {
+    width: 90%;
+  }
+  /* BUTTON TABS */
+  .mytabs label {
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 12px;
+  }
+  .modal-body {
+    padding: 10px;
+    height: 45vh;
+  }
+  .modal-body p {
+    margin: 5px;
+  }
+}
+@media (max-width: 550px) {
+  * > p {
+    font-size: 13px;
+  }
+  * > h2 {
+    font-size: 15px;
+  }
+  .activitiesmainimg {
+    width: 97%;
+    height: 20vh;
+  }
+  .title-info {
+    margin-bottom: 0;
+  }
+  .container {
+    width: 97%;
+    margin-top: 20px;
+  }
+  .mytabs {
+    display: block;
+  }
+  .mytabs .tab h2 {
+    padding: 10px;
+  }
+  .mytabs .tab {
+    display: block;
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+  .mytabs label {
+    display: none;
+  }
+  .activeTab {
+    display: none;
+  }
+  .boxcontainer {
+    padding: 0;
+    gap: 10px;
+  }
+  .modal-header .title {
+    font-size: 14px;
+  }
+}
+
+/* CAROUSEL STYLE */
+/* .gallery {
+  width: 40vw;
+  height: 50vh;
+  position: relative;
+  box-shadow: 0 0 4px 3px grey;
+  margin-bottom: 100px;
+}
+.gallery > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+.slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0;
+}
+/* BUTTON PREV NEXT  */
+/* .gallery-button {
+  position: absolute;
+  background: none;
+  border: none;
+  z-index: 2;
+  font-size: 4rem;
+  top: 50%;
+  color: rgb(255, 253, 253);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+}
+.gallery-button:hover {
+  color: white;
+  transform: scale(1.1);
+}
+.gallery-button:active {
+  transform: scale(0.95);
+}
+.gallery-button.prev {
+  left: 1rem;
+}
+.gallery-button.next {
+  right: 1rem;
+}
+
+/* NAVIGATION DOTS  */
+/* .navigation-dot {
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  color: rgb(236, 5, 5);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+}
+.flex-dot {
+  display: flex;
+}
+.dot {
+  list-style: none;
+  opacity: 0.5;
+  width: 7vw;
+  height: 100%;
+  margin: 0 25px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.dot img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px rgb(83, 83, 83);
+}
+.dot[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0;
+}
+.dot:hover {
+  opacity: 1;
+  transition: 0.5s;
+}   */

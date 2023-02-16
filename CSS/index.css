@@ -1,25 +1,26 @@
 /* MAIN IMAGE FOR HOME HTML */
 .mainimg {
-  background: url(/img/index/rethmain1.jpg) no-repeat center center/cover;
+  background: url(/img/index/rethmain1.jpg) no-repeat center;
+  background-position-y: 60%;
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   background-attachment: fixed;
-  background-size: 140%;
 }
+
+/* container  */
 .container {
-  width: 80%;
+  width: 70%;
   margin: auto;
   margin-bottom: 50px;
   display: grid;
 }
-
 .title h1 {
   font-family: "Lucida Sans", "Lucida Sans Regular", sans-serif;
   margin-top: 200px;
   margin-bottom: 25px;
 }
 
-/* SWIPER TOP ACTIVITIES */
+/* SWIPER TOP LOCATIONS */
 .swiper {
   width: 100%;
 }
@@ -28,7 +29,6 @@
   border-radius: 15px 15px 15px 15px;
   border: 1px solid rgba(128, 128, 128, 0.349);
 }
-
 .swiper-slide img {
   height: 35vh;
   background-position: center;
@@ -37,11 +37,11 @@
   border-radius: 15px 15px 0 0;
 }
 .swiper-slide .location {
-  padding-top: 5px;
+  margin-top: 25px;
   text-align: center;
 }
 .swiper-slide .info {
-  padding: 5px 0 25px 0;
+  padding: 0 30px;
   text-align: center;
 }
 
@@ -75,7 +75,7 @@
   position: absolute;
   clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
   z-index: 1;
- transition: all 2s;
+  transition: all 2s;
 }
 
 /* HISTORY IMAGE ANIMATION 1  */
@@ -162,12 +162,18 @@
 }
 
 /* UPCOMING EVENTS */
-.eventimg img {
-  border-radius: 5px;
-  box-shadow: 0 0 5px 2px rgb(116, 116, 116);
-  transition-duration: 0.5s;
+.title #event-title {
+  margin-left: 15%;
 }
-.eventphoto {
+.events {
+  width: 70%;
+  margin: auto;
+}
+
+.eventimg img {
+  box-shadow: 0 0 5px 2px rgb(116, 116, 116);
+  object-position: center;
+  object-fit: cover;
   width: 100%;
   height: 45vh;
 }
@@ -212,4 +218,178 @@
   margin: 50px;
   font-size: 35px;
   color: whitesmoke;
+}
+
+/* MEDIA FOR 1380PX  */
+/* MEDIA  */
+@media (max-width: 1380px) {
+  .container {
+    width: 85%;
+  }
+  .container * h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .container * h2 {
+    font-size: 19px;
+  }
+  /* TITLES  */
+  .title h1 {
+    margin-top: 100px;
+  }
+  /* SWIPER TOP LOCATIONS */
+  .swiper-slide img {
+    height: 30vh;
+  }
+  .swiper-slide .location {
+    margin-top: 5px;
+  }
+  .swiper-slide .info {
+    padding: 0 5px;
+  }
+  .titlehistory {
+    margin-top: 100px;
+  }
+  .title #event-title {
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+}
+
+/* MEDIA FOR 900PX  */
+/* MAIN IMG  */
+@media (max-width: 900px) {
+  .mainimg {
+    height: 30vh;
+    width: 90%;
+    margin: auto;
+    background-position: center;
+    margin-top: 50px;
+    border-radius: 50px;
+    background-attachment: local;
+    background-position-y: 35%;
+  }
+
+  /* CONTAINER  */
+  .container {
+    width: 90%;
+  }
+
+  /* SWIPER TOP LOCATIONS */
+  .swiper-slide img {
+    height: 14vh;
+  }
+
+  /* EVENT IMG BOX  */
+  .eventimg img {
+    height: 20vh;
+  }
+
+  /* HISTORY BOX  */
+  .clipcontainer {
+    height: 25vh;
+
+    /* 3 BOXES  */
+  }
+  .boxes3 {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .box {
+    border-radius: 25px;
+    height: 16vh;
+  }
+  .box p {
+    font-size: 20px;
+  }
+}
+
+/* MEDIA FOR 600PX  */
+/* MAIN IMG  */
+@media (max-width: 600px) {
+  .mainimg {
+    height: 15vh;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    background-position: center;
+    background-attachment: local;
+    background-position-y: 35%;
+  }
+
+  /* CONTAINER  */
+  .container {
+    width: 90%;
+  }
+  .title h1{
+    font-size: 17px;
+  }
+
+  /* SWIPER TOP LOCATIONS */
+  .swiper-slide img {
+   width: 100%;
+  }
+  .title h1 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+  .swiper-slide .location {
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .swiper-slide .info {
+    display:none;
+  }
+
+  /* EVENT IMG  */
+  .eventimg img {
+    height: 20vh;
+  }
+
+  /* history box  */
+  .titlehistory{
+    margin-top: 50px;
+  }
+  .titlehistory h1{
+    font-size: 16px;
+  }
+  .clipcontainer {
+    height: 25vh;
+  }
+
+  /* mini boxes  */
+  .miniboxes{
+    gap: 10px;
+  }
+  
+  /* upcoming events  */
+  .title #event-title{
+    margin-top: 50px;
+  }
+  /* 3 BOXES  */
+  .boxes3 {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .box {
+    border-radius: 25px;
+    height: 16vh;
+  }
+  .box p {
+    font-size: 20px;
+  }
 }

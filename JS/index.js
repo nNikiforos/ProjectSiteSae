@@ -9,11 +9,10 @@ window.addEventListener("scroll", function () {
 //UP COMING EVENTS
 let i = 1;
 let eventimgs = [
-  "/img/events/nature/land.jpg",
-  "/img/events/nature/sea.jpg",
-  "/img/events/nature/mountain.jpg",
-  "/img/events/nature/tree.jpg",
-  "/img/events/nature/waterfall.jpg",
+  "/img/events/arkadi/arkadi4.jpg",
+  "/img/events/carnival/carnival3.jpg",
+  "/img/events/miriokefala/miriokefala2.jpg",
+  "/img/events/treasure/treasure4.jpg",
 ];
 
 function changeImg() {

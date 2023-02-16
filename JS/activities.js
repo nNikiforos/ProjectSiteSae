@@ -75,3 +75,43 @@ function closeModal(modal) {
   overlay.classList.remove("active");
   bodyS.classList.remove("dontScroll");
 }
+
+// // CAROUSEL
+// const buttons = document.querySelectorAll("[data-gallery-button]");
+// const dots = document.querySelectorAll("[data-dots] .dot");
+// const slides = document.querySelectorAll("[data-slides] .slide");
+
+// buttons.forEach((button) => {
+//   button.addEventListener("click", () => {
+//     const offset = button.dataset.galleryButton === "next" ? 1 : -1;
+//     const activeSlide = document.querySelector("[data-slides] [data-active]");
+//     let newIndex = [...slides].indexOf(activeSlide) + offset;
+//     if (newIndex < 0) newIndex = slides.length - 1;
+//     if (newIndex >= slides.length) newIndex = 0;
+//     activeSlide.removeAttribute("data-active");
+//     slides[newIndex].setAttribute("data-active", "");
+//     updateDots();
+//   });
+// });
+
+// // carousel dots
+// dots.forEach((dot, index) => {
+//   dot.addEventListener("click", () => {
+//     const activeSlide = document.querySelector("[data-slides] [data-active]");
+//     activeSlide.removeAttribute("data-active");
+//     slides[index].setAttribute("data-active", "");
+//     updateDots();
+//   });
+// });
+
+// function updateDots() {
+//   const activeSlide = document.querySelector("[data-slides] [data-active]");
+//   const activeIndex = [...slides].indexOf(activeSlide);
+//   dots.forEach((dot, index) => {
+//     if (index === activeIndex) {
+//       dot.setAttribute("data-active", "");
+//     } else {
+//       dot.removeAttribute("data-active");
+//     }
+//   });
+// }
