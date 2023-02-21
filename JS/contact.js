@@ -5,21 +5,23 @@ form.addEventListener("submit", (event) => {
   const firstname = document.getElementById("firstname");
   const lastname = document.getElementById("lastname");
   const email = document.getElementById("email");
+  const vrEmail = document.getElementById("vr_email");
   const phone = document.getElementById("phone");
-  const text = document.getElementById("text");
 
   // VALIDATION LIST FOR CLASSLIST.ADD
   const firstNameValid = document.getElementById("firstNameValid");
   const lastNameValid = document.getElementById("lastNameValid");
   const emailValid = document.getElementById("emailValid");
+  const vrEmailValid = document.getElementById("vrEmailValid");
   const phoneValid = document.getElementById("phoneValid");
-  const textValid = document.getElementById("textValid");
 
   // innerHTML ID LIST
   const firstNameText = document.getElementById("firstNameText");
   const lastNameText = document.getElementById("lastNameText");
   const emailText = document.getElementById("emailText");
+  const vrEmailText = document.getElementById("vrEmailText");
   const phoneText = document.getElementById("phoneText");
+  const text = document.getElementById("text");
 
   let isValid = true;
 
@@ -65,6 +67,19 @@ form.addEventListener("submit", (event) => {
     emailText.innerText = "EMAIL";
   }
 
+  //EMAIL VERIFY
+  if (email.value === vrEmail.value) {
+    isValid;
+    vrEmailValid.classList.remove("notValid");
+    vrEmailText.classList.remove("textNotValid");
+    vrEmailText.innerText = "VERIFY EMAIL";
+  } else {
+    vrEmailValid.classList.add("notValid");
+    vrEmailText.classList.add("textNotValid");
+    vrEmailText.innerText = "EMAIL NOT THE SAME";
+    isValid = false;
+  }
+
   // REGULAR EXPRESSION FOR PHONE
   if (!phone_re.test(phone.value)) {
     phoneValid.classList.add("notValid");
@@ -76,13 +91,15 @@ form.addEventListener("submit", (event) => {
     phoneText.classList.remove("textNotValid");
     phoneText.innerText = "PHONE";
   }
-
   // REGULAR EXPRESSION FOR TEXT
   if (!text_re.test(text.value)) {
-    textValid.classList.add("notValid");
+    textMsg.classList.add("textNotValid");
+    textMsg.innerText = "MESSAGE: TYPE A MESSAGE";
     isValid = false;
   } else {
-    textValid.classList.remove("notValid");
+    textMsg.classList.remove("textNotValid");
+    textMsg.innerText = "MESSAGE";
   }
+
   if (!isValid) event.preventDefault();
 });

@@ -32,7 +32,7 @@
     </header>
     <!-- MAIN IMG -->
     <div class="mainimg">
-      <img src="/img/events/eventimg.jpg" alt="events" />
+      <img id="image1main" src="/img/events/eventimg.jpg" alt="events" />
       <img
         id="image2main"
         src="/img/events/miriokefala/miriokefala2.jpg"
@@ -91,35 +91,39 @@
         <div class="gallery-container">
           <div id="carousel" class="eventgallery eventgallery1">
             <div class="btns">
-              <button id="prev" onclick="prev('event1')">&#8249;</button>
+              <button id="prev" onclick="prev('event1')">
+                <span>&#8656;</span>
+              </button>
               <button id="event1_playStop" onclick="playStop('event1')">
                 Play
               </button>
-              <button id="next" onclick="next('event1')">&#8250;</button>
+              <button id="next" onclick="next('event1')">
+                <span>&#8658;</span>
+              </button>
             </div>
             <img id="event1" src="../img/events/miriokefala/miriokefala.jpg" />
-            <div id="indicator">
-              <span
-                class="dot dot1 active img01"
-                onclick="currentImage(0,'event1')"
-              ></span>
-              <span
-                class="dot dot1 img02"
-                onclick="currentImage(1,'event1')"
-              ></span>
-              <span
-                class="dot dot1 img03"
-                onclick="currentImage(2,'event1')"
-              ></span>
-              <span
-                class="dot dot1 img04"
-                onclick="currentImage(3,'event1')"
-              ></span>
-              <span
-                class="dot dot1 img05"
-                onclick="currentImage(4,'event1')"
-              ></span>
-            </div>
+          </div>
+          <div id="indicator">
+            <span
+              class="dot dot1 active img01"
+              onclick="currentImage(0,'event1')"
+            ></span>
+            <span
+              class="dot dot1 img02"
+              onclick="currentImage(1,'event1')"
+            ></span>
+            <span
+              class="dot dot1 img03"
+              onclick="currentImage(2,'event1')"
+            ></span>
+            <span
+              class="dot dot1 img04"
+              onclick="currentImage(3,'event1')"
+            ></span>
+            <span
+              class="dot dot1 img05"
+              onclick="currentImage(4,'event1')"
+            ></span>
           </div>
         </div>
       </div>
@@ -131,39 +135,43 @@
         <div class="gallery-container">
           <div class="eventgallery eventgallery2">
             <div class="btns">
-              <button id="prev" onclick="prev('event2')">&#8249;</button>
-              <button id="event2_playStop" onclick="playStop('event2')">
+              <button id="prev" onclick="prev('event2')">
+                <span>&#8656;</span>
+              </button>
+              <button id="event1_playStop" onclick="playStop('event2')">
                 Play
               </button>
-              <button id="next" onclick="next('event2')">&#8250;</button>
+              <button id="next" onclick="next('event2')">
+                <span>&#8658;</span>
+              </button>
             </div>
             <img
               id="event2"
               src="../img/events/carnival/carnival1.jpg"
               alt="img"
             />
-            <div id="indicator">
-              <span
-                class="dot dot2 active carnival1"
-                onclick="currentImage(0,'event2')"
-              ></span>
-              <span
-                class="dot dot2 carnival2"
-                onclick="currentImage(1,'event2')"
-              ></span>
-              <span
-                class="dot dot2 carnival3"
-                onclick="currentImage(2,'event2')"
-              ></span>
-              <span
-                class="dot dot2 carnival4"
-                onclick="currentImage(3,'event2')"
-              ></span>
-              <span
-                class="dot dot2 carnival5"
-                onclick="currentImage(4,'event2')"
-              ></span>
-            </div>
+          </div>
+          <div id="indicator">
+            <span
+              class="dot dot2 active carnival1"
+              onclick="currentImage(0,'event2')"
+            ></span>
+            <span
+              class="dot dot2 carnival2"
+              onclick="currentImage(1,'event2')"
+            ></span>
+            <span
+              class="dot dot2 carnival3"
+              onclick="currentImage(2,'event2')"
+            ></span>
+            <span
+              class="dot dot2 carnival4"
+              onclick="currentImage(3,'event2')"
+            ></span>
+            <span
+              class="dot dot2 carnival5"
+              onclick="currentImage(4,'event2')"
+            ></span>
           </div>
         </div>
         <div class="event eventinfo2">
@@ -235,35 +243,39 @@
         <div class="gallery-container">
           <div class="eventgallery eventgallery3">
             <div class="btns">
-              <button id="prev" onclick="prev('event3')">&#8249;</button>
-              <button id="event3_playStop" onclick="playStop('event3')">
+              <button id="prev" onclick="prev('event3')">
+                <span>&#8656;</span>
+              </button>
+              <button id="event1_playStop" onclick="playStop('event3')">
                 Play
               </button>
-              <button id="next" onclick="next('event3')">&#8250;</button>
+              <button id="next" onclick="next('event3')">
+                <span>&#8658;</span>
+              </button>
             </div>
             <img id="event3" src="../img/events/arkadi/arkadi1.jpg" alt="img" />
-            <div id="indicator">
-              <span
-                class="dot dot3 active arkadi1"
-                onclick="currentImage(0,'event3')"
-              ></span>
-              <span
-                class="dot dot3 arkadi2"
-                onclick="currentImage(1,'event3')"
-              ></span>
-              <span
-                class="dot dot3 arkadi3"
-                onclick="currentImage(2,'event3')"
-              ></span>
-              <span
-                class="dot dot3 arkadi4"
-                onclick="currentImage(3,'event3')"
-              ></span>
-              <span
-                class="dot dot3 arkadi5"
-                onclick="currentImage(4,'event3')"
-              ></span>
-            </div>
+          </div>
+          <div id="indicator">
+            <span
+              class="dot dot3 active arkadi1"
+              onclick="currentImage(0,'event3')"
+            ></span>
+            <span
+              class="dot dot3 arkadi2"
+              onclick="currentImage(1,'event3')"
+            ></span>
+            <span
+              class="dot dot3 arkadi3"
+              onclick="currentImage(2,'event3')"
+            ></span>
+            <span
+              class="dot dot3 arkadi4"
+              onclick="currentImage(3,'event3')"
+            ></span>
+            <span
+              class="dot dot3 arkadi5"
+              onclick="currentImage(4,'event3')"
+            ></span>
           </div>
         </div>
       </div>
@@ -275,39 +287,43 @@
         <div class="gallery-container">
           <div class="eventgallery eventgallery4">
             <div class="btns">
-              <button id="prev" onclick="prev('event4')">&#8249;</button>
-              <button id="event4_playStop" onclick="playStop('event4')">
+              <button id="prev" onclick="prev('event4')">
+                <span>&#8656;</span>
+              </button>
+              <button id="event1_playStop" onclick="playStop('event4')">
                 Play
               </button>
-              <button id="next" onclick="next('event4')">&#8250;</button>
+              <button id="next" onclick="next('event4')">
+                <span>&#8658;</span>
+              </button>
             </div>
             <img
               id="event4"
               src="../img/events/treasure/treasure1.jpg"
               alt="img"
             />
-            <div id="indicator">
-              <span
-                class="dot dot4 active treasure1"
-                onclick="currentImage(0,'event4')"
-              ></span>
-              <span
-                class="dot dot4 treasure2"
-                onclick="currentImage(1,'event4')"
-              ></span>
-              <span
-                class="dot dot4 treasure3"
-                onclick="currentImage(2,'event4')"
-              ></span>
-              <span
-                class="dot dot4 treasure4"
-                onclick="currentImage(3,'event4')"
-              ></span>
-              <span
-                class="dot dot4 treasure5"
-                onclick="currentImage(4,'event4')"
-              ></span>
-            </div>
+          </div>
+          <div id="indicator">
+            <span
+              class="dot dot4 active treasure1"
+              onclick="currentImage(0,'event4')"
+            ></span>
+            <span
+              class="dot dot4 treasure2"
+              onclick="currentImage(1,'event4')"
+            ></span>
+            <span
+              class="dot dot4 treasure3"
+              onclick="currentImage(2,'event4')"
+            ></span>
+            <span
+              class="dot dot4 treasure4"
+              onclick="currentImage(3,'event4')"
+            ></span>
+            <span
+              class="dot dot4 treasure5"
+              onclick="currentImage(4,'event4')"
+            ></span>
           </div>
         </div>
         <div class="event eventinfo4">

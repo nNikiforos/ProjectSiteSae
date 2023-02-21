@@ -13,7 +13,6 @@
 .container {
   width: 80%;
   display: grid;
-  gap: 40px;
   margin: auto;
   margin-bottom: 50px;
   margin-top: 50px;
@@ -31,14 +30,10 @@
   padding: 0 110px;
   padding-top: 90px;
 }
-.content2 {
-  padding: 0 110px;
-  padding-top: 20px;
-}
-.content,
-.content2 p {
+.text-box p {
   margin-bottom: 10px;
 }
+
 .column1 {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -161,6 +156,9 @@
   .content2 {
     padding: 0 25px;
   }
+  .image2-list {
+    height: 63vh;
+  }
 }
 /* MEDIA WIDTH 1024 PX  */
 @media (max-width: 1024px) {
@@ -192,7 +190,7 @@
     grid-row-end: 9;
   }
   .image2-list {
-    height: 70vh;
+    height: 71vh;
   }
   .image3-list {
     height: 20vh;
@@ -219,6 +217,7 @@
   .container {
     width: 90%;
   }
+  
   .images1-list {
     height: 10vh;
   }

@@ -54,7 +54,7 @@ div.right {
 }
 
 .item-group .lname,
-.phone {
+.lemail {
   margin-left: 20px;
 }
 
@@ -96,6 +96,10 @@ textarea {
 .item-group .itemmsg:hover {
   box-shadow: none;
 }
+.flex-msg {
+  display: flex;
+  justify-content: space-between;
+}
 /* button submit  */
 .submit {
   margin: 0 10px 0 auto;
@@ -113,15 +117,16 @@ textarea {
   transform: scale(0.95);
   background-color: rgb(3, 79, 244);
 }
+
 /* JAVA SCRIPT CLASSLIST.ADD */
 .notValid {
   border: 1px solid red;
   box-shadow: 0px 0px 5px 1px rgba(255, 0, 0, 0.767);
 }
-
-.textNotValid {
+.textNotValid  {
   color: red;
-  font-weight: 600;
+  font-size: 17px;
+  text-align: center;
 }
 
 /* MAX WIDTH 1000PX  */

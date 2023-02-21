@@ -17,7 +17,7 @@
   font-style: normal;
 }
 :root {
-  --swiper-theme-color: #ff3300;
+  --swiper-theme-color: #f80202;
 }
 .swiper {
   margin-left: auto;
@@ -61,7 +61,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+  color: whitesmoke;
 }
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
@@ -239,5 +239,3 @@ button.swiper-pagination-bullet {
   .swiper-pagination-bullet {
   transition: 0.2s transform, 0.2s right;
 }
-
-

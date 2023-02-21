@@ -81,6 +81,7 @@ body {
     flex-direction: column;
   }
   .navbar ul {
+    margin: 5px 15px;
     gap: 10px;
   }
   .navbar ul li a {

@@ -220,9 +220,9 @@
   color: whitesmoke;
 }
 
-/* MEDIA FOR 1380PX  */
+/* MEDIA FOR 1440PX  */
 /* MEDIA  */
-@media (max-width: 1380px) {
+@media (max-width: 1440px) {
   .container {
     width: 85%;
   }
@@ -256,11 +256,17 @@
     margin-top: 100px;
     margin-bottom: 20px;
   }
+  .eventimg img {
+    height: 30vh;
+  }
+  .boxes3 {
+    height: 30vh;
+  }
 }
 
-/* MEDIA FOR 900PX  */
+/* MEDIA FOR 1024PX  */
 /* MAIN IMG  */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .mainimg {
     height: 30vh;
     width: 90%;
@@ -279,7 +285,7 @@
 
   /* SWIPER TOP LOCATIONS */
   .swiper-slide img {
-    height: 14vh;
+    height: 200px;
   }
 
   /* EVENT IMG BOX  */
@@ -309,6 +315,9 @@
   .box p {
     font-size: 20px;
   }
+  .events {
+    width: 80%;
+  }
 }
 
 /* MEDIA FOR 600PX  */
@@ -328,13 +337,14 @@
   .container {
     width: 90%;
   }
-  .title h1{
+  .title h1 {
     font-size: 17px;
   }
 
   /* SWIPER TOP LOCATIONS */
   .swiper-slide img {
-   width: 100%;
+    width: 100%;
+    height: 100px;
   }
   .title h1 {
     margin-top: 50px;
@@ -344,10 +354,10 @@
     margin-top: 5px;
     padding: 5px;
     text-align: center;
-    font-size: 16px;
+    font-size: 12px;
   }
   .swiper-slide .info {
-    display:none;
+    display: none;
   }
 
   /* EVENT IMG  */
@@ -356,10 +366,10 @@
   }
 
   /* history box  */
-  .titlehistory{
+  .titlehistory {
     margin-top: 50px;
   }
-  .titlehistory h1{
+  .titlehistory h1 {
     font-size: 16px;
   }
   .clipcontainer {
@@ -367,12 +377,15 @@
   }
 
   /* mini boxes  */
-  .miniboxes{
+  .miniboxes {
     gap: 10px;
   }
-  
+  .miniboxes img {
+    border-radius: 5px;
+  }
+
   /* upcoming events  */
-  .title #event-title{
+  .title #event-title {
     margin-top: 50px;
   }
   /* 3 BOXES  */
