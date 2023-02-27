@@ -5,8 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+
+    <!-- FAVICOIN  -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="256x256"
+      href="/img/favicon-256x256.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/img/favicon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon-16x16.png"
+    />
+
+    <!-- CSS  -->
     <link rel="stylesheet" href="/CSS/head-foot.css" />
     <link rel="stylesheet" href="/CSS/contact.css" />
+
     <!-- JAVA SCRIPT  -->
     <script src="../JS/contact.js" defer></script>
   </head>
@@ -30,10 +59,33 @@
         </div>
       </div>
     </header>
+    <!-- END OF HEADER  -->
+
     <div class="contactform" id="contactform">
       <div class="contact-container">
         <!-- LEFT SIDE -->
         <div class="left">
+          <!-- SVG ICONS  -->
+          <div class="svg-icon">
+            <img
+              class="svg-img"
+              id="svg-sendmsg"
+              src="/img/send-message-icon.svg"
+              alt="message svg"
+            />
+            <img
+              id="svg-sendmsg2"
+              src="/img/phone-line-icon.svg"
+              alt="phone svg"
+            />
+            <img
+              id="svg-sendmsg3"
+              src="/img/24-hour-icon.svg"
+              alt="24hours svg"
+            />
+          </div>
+
+          <!-- left info  -->
           <div class="leftinfo">
             <h2>How can we assist you?</h2>
             <p>Crete/Rethymno</p>
@@ -42,38 +94,46 @@
             <p><span>TEL</span>: (+30) 6971000000</p>
           </div>
         </div>
+        <!-- END OF LEFT SIDE  -->
+
         <!-- RIGHT SIDE -->
         <div class="right">
           <p>
             Fill up this form to contact us if you have any further questions
           </p>
           <form id="form">
+            <!-- FIRST NAME BOX  -->
             <div class="item-group">
               <div class="item-input" id="firstNameValid">
                 <label id="firstNameText"> FIRST NAME </label>
                 <input type="text" id="firstname" name="firstname" />
               </div>
+              <!-- LAST NAME BOX  -->
               <div class="item-input lname" id="lastNameValid">
                 <label id="lastNameText"> LAST NAME </label>
                 <input type="text" id="lastname" name="lastname" />
               </div>
             </div>
+            <!-- EMAIL BOX  -->
             <div class="item-group">
               <div class="item-input" id="emailValid">
                 <label id="emailText"> EMAIL </label>
                 <input type="text" id="email" name="email" />
               </div>
+              <!-- VERIFY EMAIL BOX  -->
               <div class="item-input lemail" id="vrEmailValid">
                 <label id="vrEmailText"> VERIFY EMAIL </label>
                 <input type="text" id="vr_email" name="vr_email" />
               </div>
             </div>
+            <!-- PHONE BOX  -->
             <div class="item-group">
               <div class="item-input phone" id="phoneValid">
                 <label id="phoneText"> PHONE </label>
                 <input type="text" id="phone" name="phone" />
               </div>
             </div>
+            <!-- MESSAGE BOX  -->
             <div class="item-group">
               <div class="item-input itemmsg" id="textValid">
                 <label id="textMsg"> MESSAGE </label>
@@ -85,7 +145,7 @@
                 ></textarea>
               </div>
             </div>
-
+            <!-- CERTIFY BUTTON  -->
             <div class="certify">
               <p>I certify that the above information is accurate and true.</p>
               <button class="submit" id="submitButton" type="submit">
@@ -96,6 +156,8 @@
         </div>
       </div>
     </div>
+    <!-- END OF RIGHT SIDE -->
+
     <!-- FOOTER  -->
     <footer>
       <div class="footercontainer">
@@ -108,6 +170,7 @@
           <a href="/Events.html">EVENTS</a>
           <a href="/contact.html">CONTACT</a>
         </div>
+
         <!-- activities footer side  -->
         <div class="activitiesfooter">
           <h3>ACTIVITIES</h3>
@@ -115,6 +178,7 @@
           <a href="/Activities.html#tab-nature"> NATURE </a>
           <a href="/Activities.html#tab-museums"> MUSEUMS </a>
         </div>
+
         <!-- event footer side  -->
         <div class="eventfooter">
           <h3>EVENTS</h3>
@@ -123,6 +187,7 @@
           <a href="/Events.html#listEvent3">EVENT3</a>
           <a href="/Events.html#listEvent4">EVENT4</a>
         </div>
+
         <!-- contact footer side  -->
         <div class="contactfooter">
           <h3>CONTACT</h3>
@@ -131,6 +196,7 @@
           <p><span>&#9993;</span>: nikiforos.nik96@gmail.com</p>
           <p><span>TEL</span>: (+30) 6971000000</p>
         </div>
+
         <!-- sae link  -->
         <div class="saeurl">
           <a id="saea" href="https://www.sae.edu/grc/" target="_blank">
@@ -144,10 +210,12 @@
             </div>
           </a>
         </div>
+
         <!-- copyright  -->
         <div class="copyright">
           <div class="copy"><p>Copyright © 2023. All Rights Reserved.</p></div>
         </div>
+
         <!-- visit rehtymno logo  -->
         <div class="rethymnologo">
           <div class="logo">

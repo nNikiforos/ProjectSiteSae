@@ -24,6 +24,44 @@ body {
 .leftinfo span {
   font-weight: 600;
 }
+
+/* SVG ICON ANIMATION  */
+.svg-icon {
+  display: flex;
+  justify-content: space-between;
+}
+.svg-icon img {
+  width: 80px;
+}
+/* SVG FOR MESSAGE ICON  */
+#svg-sendmsg {
+  width: 140px;
+  animation: moveIn1 2s;
+}
+@keyframes moveIn1 {
+  0% {
+    transform: translateX(-2000%);
+  }
+}
+/* SVG FOR PHONE ICON  */
+#svg-sendmsg2 {
+  animation: moveIn2 2s;
+}
+@keyframes moveIn2 {
+  0% {
+    transform: translateX(-1500%);
+  }
+}
+/* SVG FOR 24H ICON  */
+#svg-sendmsg3 {
+  animation: moveIn3 1.5s;
+}
+@keyframes moveIn3 {
+  0% {
+    transform: translateX(-1000%);
+  }
+}
+
 /* RIGHT SIDE */
 div.right {
   max-width: 600px;
@@ -123,7 +161,7 @@ textarea {
   border: 1px solid red;
   box-shadow: 0px 0px 5px 1px rgba(255, 0, 0, 0.767);
 }
-.textNotValid  {
+.textNotValid {
   color: red;
   font-size: 17px;
   text-align: center;
