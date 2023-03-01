@@ -17,17 +17,9 @@
   height: 100%;
   position: absolute;
 }
+/* classList add using java script  */
 .activeImg {
   z-index: 1;
-  animation: imageDo 2s;
-}
-@keyframes imageDo {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 /* CONTAINER  */

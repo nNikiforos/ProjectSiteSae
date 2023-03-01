@@ -33,33 +33,10 @@ body {
 .svg-icon img {
   width: 80px;
 }
+
 /* SVG FOR MESSAGE ICON  */
 #svg-sendmsg {
   width: 140px;
-  animation: moveIn1 2s;
-}
-@keyframes moveIn1 {
-  0% {
-    transform: translateX(-2000%);
-  }
-}
-/* SVG FOR PHONE ICON  */
-#svg-sendmsg2 {
-  animation: moveIn2 2s;
-}
-@keyframes moveIn2 {
-  0% {
-    transform: translateX(-1500%);
-  }
-}
-/* SVG FOR 24H ICON  */
-#svg-sendmsg3 {
-  animation: moveIn3 1.5s;
-}
-@keyframes moveIn3 {
-  0% {
-    transform: translateX(-1000%);
-  }
 }
 
 /* RIGHT SIDE */
@@ -203,7 +180,19 @@ textarea {
   .left {
     line-height: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 80%;
+  }
+  .svg-icon {
+    display: flex;
+    margin-bottom: 25px;
+  }
+  .svg-icon img {
+    width: 50px;
+  }
+  #svg-sendmsg {
+    width: 100px;
   }
   .right {
     width: 80%;

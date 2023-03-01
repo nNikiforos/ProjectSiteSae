@@ -76,6 +76,35 @@
 }
 
 /* BUTTONS  */
+/* multi2 multi4 timer  */
+.timer {
+  display: flex;
+  position: absolute;
+  left: 90%;
+  top: 1%;
+  width: 80px;
+  justify-content: space-between;
+}
+.timer button {
+  border: 1px solid rgba(255, 255, 255, 0.541);
+  border-radius: 20px;
+  background-color: #00000086;
+  font-size: 17px;
+  padding: 8px 8px;
+  color: white;
+  transition: all 0.3s ease;
+}
+.timer button:hover {
+  background-color: #000000e0;
+  cursor: pointer;
+}
+button.clicked {
+  background-color: #ca0d0d;
+  box-shadow: 0 0 0 1px 3px white;
+  transform: scale(0.8);
+}
+
+/* next prev stop buttons  */
 .btns {
   position: absolute;
   display: flex;
@@ -127,6 +156,7 @@
   color: rgba(255, 255, 255);
   background-color: rgba(0, 0, 0);
 }
+
 /* DOTS  */
 #indicator {
   display: flex;

@@ -87,15 +87,16 @@ function next(eventName) {
   }
   updateDot(galleryDots[eventName]);
 }
-
 // PLAY STOP BUTTON
 let playStopInterval;
+let mainTimeSeconds = 1000;
+
 function playStop(eventName) {
   const playStopButton = document.getElementById(eventName + "_playStop");
 
   if (playStopButton.innerText === "Play") {
     playStopButton.innerText = "Stop";
-    playStopInterval = setInterval(() => nextImage(eventName), 2000);
+    playStopInterval = setInterval(() => nextImage(eventName), mainTimeSeconds);
   } else {
     playStopButton.innerText = "Play";
     clearInterval(playStopInterval);
@@ -114,3 +115,31 @@ function nextImage(eventName) {
 
   updateDot(galleryDots[eventName]);
 }
+
+// X2 X4 AND SCREEN
+const timers = document.querySelectorAll(".timer");
+
+timers.forEach((container) => {
+  const multi2 = container.querySelector("#multi2");
+  const multi4 = container.querySelector("#multi4");
+
+  multi2.addEventListener("click", function () {
+    multi2.classList.toggle("clicked");
+    if (multi2.classList.contains("clicked")) {
+      mainTimeSeconds = 2000;
+      multi4.classList.remove("clicked");
+    } else {
+      mainTimeSeconds = 1000;
+    }
+  });
+
+  multi4.addEventListener("click", function () {
+    multi4.classList.toggle("clicked");
+    if (multi4.classList.contains("clicked")) {
+      mainTimeSeconds = 4000;
+      multi2.classList.remove("clicked");
+    } else {
+      mainTimeSeconds = 1000;
+    }
+  });
+});

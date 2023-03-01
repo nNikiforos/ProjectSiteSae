@@ -1,4 +1,13 @@
 "use strict";
+// SVG ANIMATION
+const message = document.getElementById("svg-sendmsg");
+const phone = document.getElementById("svg-sendmsg2");
+const hour24 = document.getElementById("svg-sendmsg3");
+
+gsap.from(message, { duration: 1, translateX: -1000, delay: 1 });
+gsap.from(phone, { duration: 1, translateX: -1000, delay: 0.5 });
+gsap.from(hour24, { duration: 1, translateX: -1000, rotation: -360 });
+
 const form = document.getElementById("form");
 
 form.addEventListener("submit", (event) => {

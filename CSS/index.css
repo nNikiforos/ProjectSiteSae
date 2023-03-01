@@ -18,6 +18,12 @@
   margin-top: 200px;
   margin-bottom: 25px;
 }
+.title span {
+  font-style: italic;
+}
+.title a {
+  color: red;
+}
 
 /* SWIPER TOP LOCATIONS */
 .swiper {
@@ -27,6 +33,10 @@
   background-color: white;
   border-radius: 15px 15px 15px 15px;
   border: 1px solid rgba(128, 128, 128, 0.349);
+}
+.swiper-slide a {
+  text-decoration: none;
+  color: black;
 }
 .swiper-slide img {
   height: 35vh;

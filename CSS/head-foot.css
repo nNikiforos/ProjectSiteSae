@@ -127,6 +127,18 @@ body {
     padding: 2px;
   }
 }
+/* MAX WIDTH 650PX  */
+@media (max-width: 330px) {
+  .logo img{
+    width: 250px;
+  }
+  .navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
 
 /* FOOTER */
 footer {
