@@ -80,7 +80,7 @@
 .timer {
   display: flex;
   position: absolute;
-  left: 90%;
+  left: 80%;
   top: 1%;
   width: 80px;
   justify-content: space-between;
@@ -382,5 +382,11 @@ button.clicked {
   }
   .gallery-container {
     width: 90vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .timer {
+    left: 40%;
   }
 }
